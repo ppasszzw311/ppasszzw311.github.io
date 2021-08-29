@@ -1,0 +1,18 @@
+body {
+  font-family: system-ui;
+  background: #f06d06;
+  color: white;
+  text-align: center;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+.form {
+  border: 1px solid red;
+  border-radius: 5px;
+  width: 40%;
+  text-align: left;
+  padding: 10px;
+}
