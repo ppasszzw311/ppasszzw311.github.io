@@ -1,0 +1,23 @@
+/* 測試用 */
+/* div {
+  border: 1px solid sandybrown;
+} */
+
+#datetime {
+  color: red;
+}
+
+#menu {
+  min-height: 500px;
+}
+
+#number10 {
+  padding: 1em;
+}
+
+#number10 button {
+  height: 3em;
+  width: 30%;
+  margin: 1%;
+  font-size: 24px;
+}
