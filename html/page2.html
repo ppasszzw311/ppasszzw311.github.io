@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <div class="container-lg">
+    <div class="row px-2 py-2">
+      <div class="col-md-2">
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a class="h5 nav-link disabled" tabindex="-1" aria-disable="true">老闆管理</a>
+          </li>
+          <a class="nav-link" aria-current="page" href="./f.html">庫存管理</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">業績查詢與商品排行</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./page3.html">月報表</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./page4.html">商品資料編輯</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./page5.html">錯誤班表修正</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">回使用者頁面</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-10">
+        <p class="h4">業績查詢與商品排行</p>
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-10 py-3 d-flex justify-content-center">
+            <label for="selectstore" class="form-label m-3">分店</label>
+            <select class="form-select form-select-sm" name="store" id="store" aria-label="Default select example">
+              <option selected>選擇分店</option>
+              <option value="1">大安</option>
+              <option value="2">信義</option>
+              <option value="3">永和</option>
+            </select>
+            <label for="selectstore" class="form-label m-3">日期</label>
+            <select class="form-select form-select-sm" name="store" id="store" aria-label="Default select example">
+              <option selected>選擇日期</option>
+              <option value="1">大安</option>
+              <option value="2">信義</option>
+              <option value="3">永和</option>
+            </select>
+          </div>
+    
+        </div>
+        <div class="row">
+          <table class="table table-light table-stript table-hover text-center">
+            <thead>
+              <tr class="table-primary">
+                <th>名次</th>
+                <th>店名</th>
+                <th>檳榔包數</th>
+                <th>檳榔總金額</th>
+                <th>飲料總金額</th>
+                <th>香菸總金額</th>
+                <th>總金額</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table table-light table-stript table-hover text-center">
+            <thead>
+              <tr class="table-primary">
+                <th>名次</th>
+                <th>商品名稱</th>
+                <th>銷售金額</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- import bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

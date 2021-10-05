@@ -3,6 +3,14 @@
   border: 1px solid sandybrown;
 } */
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ebeee8;
+  font-family: "MicroSoft Jhenghei", sans-serif;
+}
+
 #datetime {
   color: red;
 }
