@@ -43,9 +43,14 @@
         <div class="row">
           <div class="col-sm-8">
             <p class="h5">商品編輯</p>
-            <div class="col d-flex justify-content-center">
-              <p class="h4">店名</p>
-              <input type="text">
+            <div class="d-flex justify-content-center">
+              <label for="selectstore" class="form-label col-sm-3">選擇分店</label>
+              <select class="form-select" name="store" id="store" aria-label="select example1">
+                <option selected>選擇分店</option>
+                <option value="1">大安</option>
+                <option value="2">信義</option>
+                <option value="3">永和</option>
+              </select>
             </div>
           </div>
           <div class="col-sm-4 d-flex align-items-center">
