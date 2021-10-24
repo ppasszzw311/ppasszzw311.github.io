@@ -11,6 +11,34 @@ body {
   font-family: "MicroSoft Jhenghei", sans-serif;
 }
 
+.left {
+  width: 30%;
+  height: 100vh;
+  padding: auto ;
+  background-color: #91b46e;
+}
+
+.right {
+  width: 70%;
+  height: 100vh;
+  padding: auto;
+  background-color: tomato;
+}
+.left .avator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 90%;
+  height: 30%;
+  border-radius: 50%;
+  background-color: thistle;
+}
+
+.left .name {
+  text-align: center;
+}
+
 #datetime {
   color: red;
 }
