@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html class="text-m" lang="zh-Hant-TW">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="Designer&Developer" content="楊軒羽 Shen Yang | Graphic Web Designer & Front-end Developer | 前端設計工程師">
+		<title>客家文化發展中心-圖書資料中心</title>
+		<!-- favicon -->
+		<link rel="shortcut icon" type="image/svg" href="img/favicon.svg" />
+		<!-- /favicon -->
+		<link rel="stylesheet" href="css/uikit.min.css">
+		<link rel="stylesheet" href="css/tailwind.min.css">
+		<link rel="stylesheet" href="css/fontawesome.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+		<link rel="stylesheet" href="css/colors.min.css">
+		<link rel="stylesheet" href="css/editor.min.css">
+		<link rel="stylesheet" href="css/style.min.css">
+		<script src="js/uikit.min.js"></script>
+		<script src="js/uikit-icons.min.js"></script>
+		<script src="js/script.min.js" defer></script>
+	</head>
+
+	<body id="top" class="page focus">
+		<div class="tw-text-center tw-leading-10 tw-text-white tw-bg-pink-900"><noscript class="tw-py-1">您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態！</noscript></div>
+		<span class="tw-hidden">Some images has been designed using resources from <a href="https://unsplash.com/">Unsplash</a> &amp; <a href="https://pixabay.com/">Pixabay</a> &amp; <a href="https://www.freepik.com/">Freepik</a> and some icons from <a href="https://www.flaticon.com/">Flaticon</a></span>
+		<!-- header -->
+		<header class="tw-shadow" >
+			<div class="uk-sticky" uk-sticky="media: (max-width: 959px); cls-active: tw-shadow-md">
+				<nav class="tw-w-full tw-shadow-md tw-z-10">
+					<!-- logo & sideLinks -->
+					<div class="logoBG s:tw-py-2 m:tw-py-4 tw-relative">
+						<!-- color background -->
+						<div class="tw-bg-white tw-bg-opacity-70 uk-position-cover"></div>
+						<!-- color background -->
+						<!-- container -->
+						<div class="uk-container">
+							<!-- uk-grid -->
+							<div class="uk-flex-middle uk-flex-between uk-grid uk-grid-small uk-grid-match uk-child-width-expand" uk-grid>
+								<!-- logo -->
+								<div class="logo tw-relative">
+									<h1 class="tw-m-0 tw-text-base">
+										<a class="logoimg tw-no-underline uk-flex uk-flex-middle" href="index3.html" title="客家文化發展中心-圖書資料中心">
+											<span class="tw-sr-only">客家文化發展中心-圖書資料中心</span>
+											<img class="uk-preserve" data-src="img/logo.svg" data-width data-height alt="客家文化發展中心-圖書資料中心" uk-img uk-svg>
+										</a>
+									</h1>
+								</div>
+								<!-- /logo -->
+								<!-- sideLinks -->
+								<div class="tw-m-0 tw-relative uk-width-auto uk-visible@m">
+									<div class="sub_nav uk-flex uk-flex-middle">
+										<span class="uk-visible@m"><a class="tw-no-underline tw-inline-block tw-px-2" href="#U" id="AU" name="U" title="上方功能區塊" accesskey="U" style="padding-bottom: 3px;">:::</a></span>
+										<div>
+											<span>
+											<a class="tw-px-2"  href="#">網站導覽</a></span>
+											<span>
+											<a class="tw-px-2"  href="#">中心首頁</a></span>
+											<span>
+											<a class="tw-px-2"  href="#">英文版</a></span>
+											<span>
+											<a class="tw-px-2"  href="#login" uk-toggle>圖資帳號登入</a></span>
+										</div>
+										<span class="text_size text_size-s hover_bg"><button class="tw-py-0 tw-border-none uk-button uk-button-default uk-button-small" type="button" title="縮小字級">A-</button></span>
+										<span class="text_size text_size-m hover_bg active"><button class="tw-py-0 tw-border-none uk-button uk-button-default uk-button-small" type="button" title="適中字級">A</button></span>
+										<span class="text_size text_size-l hover_bg"><button class="tw-py-0 tw-border-none uk-button uk-button-default uk-button-small" type="button" title="加大字級">A+</button></span>
+									</div>
+								</div>
+								<!-- /sideLinks -->
+								<!-- top nav buttons on mobile -->
+								<div class="uk-flex-nowrap uk-width-auto uk-hidden@m">
+									<button class="min_width-50! min_height-50! color_primary tw-px-0 uk-flex uk-flex-right uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas"><span class="tw-sr-only">選單</span></button>
+								</div>
+								<!-- /top nav buttons on mobile -->
+							</div>
+							<!-- /uk-grid -->
+						</div>
+						<!-- /container -->
+					</div>
+					<!-- /logo & sideLinks -->
+					<!-- main menu -->
+					<!-- main menu -->
+					<div class="mainMenu tw-relative uk-visible@m">
+						<!-- color background -->
+						<div class="mainMenuBg uk-position-cover"></div>
+						<!-- /color background -->
+						<!-- container -->
+						<div class="uk-container uk-container-expand">
+							<div class="uk-flex uk-navbar" uk-navbar>
+								<div class="uk-navbar-center">
+									<ul class="nav_bar tw-m-0 uk-tab">
+										<li>
+											<a class="color_white! tw-text-lg" href="#">館藏資源</a>
+											<div class="bg_white tw-opacity-90 uk-overflow-auto uk-dropdown" uk-dropdown="offset: 1">
+												<ul class="nav_header-dotted uk-nav uk-dropdown-nav">
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="#">館藏資源</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="#">電子資源查詢</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="#">資源探索系統</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="#">個人借閱紀錄</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="#">新書展示</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="#">客家文化發展中心數位典藏系統</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="#">客家文化發展中心數位典藏系統</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<a class="color_white! tw-text-lg" href="#">特藏資源</a>
+											<div class="bg_white tw-opacity-90 uk-overflow-auto uk-dropdown" uk-dropdown="offset: 1">
+												<ul class="nav_header-dotted uk-nav uk-dropdown-nav">
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="#">機構成果報告</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="#">專藏文庫</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<a class="color_white! tw-text-lg" href="#">關於本館</a>
+											<div class="bg_white tw-opacity-90 uk-overflow-auto uk-dropdown" uk-dropdown="offset: 1">
+												<ul class="nav_header-dotted uk-nav uk-dropdown-nav">
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="p3-1.html">緣起</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="p3-2.html">館舍空間</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="p3-3.html">位置及交通方式</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="p3-4.html">聯絡我們</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="p3-5.html">最新消息</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="p3-6.html">隱私權及安全宣告</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<a class="color_white! tw-text-lg" href="#">服務項目</a>
+											<div class="bg_white tw-opacity-90 uk-overflow-auto uk-dropdown" uk-dropdown="offset: 1">
+												<ul class="nav_header-dotted uk-nav uk-dropdown-nav">
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="p4-1.html">使用要點</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="p4-2.html">圖資中心預約導覽服務</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="p4-3.html">館藏薦購</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="p4-4.html">表單下載</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="p4-5.html">常見問題</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<!-- <li>
+																<a class="color_white! tw-text-lg" href="#">表單下載</a>
+															</li> -->
+										<!-- <li>
+																<a class="color_white! tw-text-lg" href="#" target="_blank">常見問題</a>
+															</li> -->
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- /container -->
+					</div>
+					<!-- /main menu -->
+					<!-- /main menu -->
+				</nav>
+			</div>
+			
+		<!-- uk-offcanvas -->
+		<div id="offcanvas" uk-offcanvas>
+			<div class="bg_primary tw-py-5 uk-offcanvas-bar uk-box-shadow-large">
+				<button class="uk-offcanvas-close" type="button" title="關閉" uk-close></button>
+				<ul class="tw-pt-6 uk-nav uk-nav-default">
+					<li class="tw-py-1 uk-parent">
+						<div class="tw-flex tw-justify-between">
+							<a class="tw-flex tw-flex-1 tw-items-center" href="#"><span class="tw-text-white">資源查詢</span></a>
+							<a class="min_width-50 tw-flex tw-flex-none tw-items-start tw-justify-end tw-pt-px"
+								href="javascript:void(0)"><span class="toggle" uk-icon="icon: chevron-right" title="展開選單"><small
+										class="tw-sr-only">展開選單</small></span><span class="toggle tw-hidden" uk-icon="icon: chevron-down"
+									title="收合選單"><small class="tw-sr-only">收合選單</small></span></a>
+						</div>
+						<ul class="toggle tw-hidden tw-py-0 uk-nav uk-nav-sub">
+							<li class="tw-py-1"><a href="https://webpaclib.thcdc.hakka.gov.tw/"><span
+										class="tw-text-white tw-text-tw-opacity-50">館藏資源</span></a>
+							</li>
+							<li class="tw-py-1"><a href="https://lib.thcdc.hakka.gov.tw/smartweaver"><span
+										class="tw-text-white tw-text-tw-opacity-50">電子資源查詢</span></a>
+							</li>
+							<li class="tw-py-1"><a href="https://primo.thcdc.hakka.gov.tw/"><span
+										class="tw-text-white tw-text-tw-opacity-50">資源探索系統</span></a>
+							</li>
+							<li class="tw-py-1"><a href="#"><span class="tw-text-white tw-text-tw-opacity-50">個人借閱紀錄</span></a>
+							</li>
+							<li class="tw-py-1"><a href="#"><span class="tw-text-white tw-text-tw-opacity-50">客家文化發展中心數位典藏系統</span></a>
+							</li>
+							<li class="tw-py-1"><a href="http://125.227.157.247:8998/HAKKAINVES/#/"><span
+										class="tw-text-white tw-text-tw-opacity-50">客莊文化資源普查成果檢索系統</span></a>
+							</li>
+						</ul>
+					</li>
+					<li class="tw-py-1 uk-parent">
+						<div class="tw-flex tw-justify-between">
+							<a class="tw-flex tw-flex-1 tw-items-center" href="#"><span class="tw-text-white">特藏資源</span></a>
+							<a class="min_width-50 tw-flex tw-flex-none tw-items-start tw-justify-end tw-pt-px"
+								href="javascript:void(0)"><span class="toggle" uk-icon="icon: chevron-right" title="展開選單"><small
+										class="tw-sr-only">展開選單</small></span><span class="toggle tw-hidden" uk-icon="icon: chevron-down"
+									title="收合選單"><small class="tw-sr-only">收合選單</small></span></a>
+						</div>
+						<ul class="toggle tw-hidden tw-py-0 uk-nav uk-nav-sub">
+							<li class="tw-py-1"><a href="#"><span class="tw-text-white tw-text-tw-opacity-50">機構成果報告</span></a>
+							</li>
+							<li class="tw-py-1"><a href="#"><span class="tw-text-white tw-text-tw-opacity-50">專藏文庫</span></a>
+							</li>
+						</ul>
+					</li>
+					<li class="tw-py-1 uk-parent">
+						<div class="tw-flex tw-justify-between">
+							<a class="tw-flex tw-flex-1 tw-items-center" href="#"><span class="tw-text-white">關於本館</span></a>
+							<a class="min_width-50 tw-flex tw-flex-none tw-items-start tw-justify-end tw-pt-px"
+								href="javascript:void(0)"><span class="toggle" uk-icon="icon: chevron-right" title="展開選單"><small
+										class="tw-sr-only">展開選單</small></span><span class="toggle tw-hidden" uk-icon="icon: chevron-down"
+									title="收合選單"><small class="tw-sr-only">收合選單</small></span></a>
+						</div>
+						<ul class="toggle tw-hidden tw-py-0 uk-nav uk-nav-sub">
+							<li class="tw-py-1">
+								<a href="p3-1.html"><span class="tw-text-white tw-text-tw-opacity-50">緣起</span></a>
+							</li>
+							<li class="tw-py-1">
+								<a href="p3-2.html"><span class="tw-text-white tw-text-tw-opacity-50">館舍空間</span></a>
+							</li>
+							<li class="tw-py-1">
+								<a href="p3-3.html"><span class="tw-text-white tw-text-tw-opacity-50">位置及交通方式</span></a>
+							</li>
+							<li class="tw-py-1">
+								<a href="p3-4.html"><span class="tw-text-white tw-text-tw-opacity-50">聯絡我們</span></a>
+							</li>
+							<li class="tw-py-1">
+								<a href="p3-5.html"><span class="tw-text-white tw-text-tw-opacity-50">最新消息</span></a>
+							</li>
+							<li class="tw-py-1">
+								<a href="p3-6.html"><span class="tw-text-white tw-text-tw-opacity-50">隱私權及安全宣告</span></a>
+							</li>
+						</ul>
+					</li>
+					<li class="tw-py-1 uk-parent">
+						<div class="tw-flex tw-justify-between">
+							<a class="tw-flex tw-flex-1 tw-items-center" href="#"><span class="tw-text-white">服務項目</span></a>
+							<a class="min_width-50 tw-flex tw-flex-none tw-items-start tw-justify-end tw-pt-px"
+								href="javascript:void(0)"><span class="toggle" uk-icon="icon: chevron-right" title="展開選單"><small
+										class="tw-sr-only">展開選單</small></span><span class="toggle tw-hidden" uk-icon="icon: chevron-down"
+									title="收合選單"><small class="tw-sr-only">收合選單</small></span></a>
+						</div>
+						<ul class="toggle tw-hidden tw-py-0 uk-nav uk-nav-sub">
+							<li class="tw-py-1"><a href="p4-1.html"><span class="tw-text-white tw-text-tw-opacity-50">使用要點</span></a>
+							</li>
+							<li class="tw-py-1"><a href="p4-2.html"><span class="tw-text-white tw-text-tw-opacity-50">圖資中心預約導覽服務</span></a>
+							</li>
+							<li class="tw-py-1">
+								<a href="p4-3.html"><span class="tw-text-white tw-text-tw-opacity-50">館藏薦購</span></a>
+							</li>
+							<li class="tw-py-1">
+								<a href="p4-4.html"><span class="tw-text-white tw-text-tw-opacity-50">表單下載</span></a>
+							</li>
+							<li class="tw-py-1">
+								<a href="p4-5.html"><span class="tw-text-white tw-text-tw-opacity-50">常見問題</span></a>
+							</li>
+						</ul>
+					</li>
+					<li class="uk-nav-divider"></li>
+					<li><a href="#">網站導覽</a></li>
+					<li><a href="#">客發中心首頁</a></li>
+					<li><a href="#">英文版</a></li>
+					<li><a href="#">常問問題</a></li>
+					<li><a href="#">聯絡我們</a></li>
+					<li><a href="#">意見信箱</a></li>
+					<li><a href="#login" uk-toggle>圖資帳號登入</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- uk-offcanvas -->
+			</header>
+			<!-- uk-modal-login -->
+			<div id="login" class="uk-flex-top uk-modal" uk-modal>
+				<div class="uk-modal-dialog uk-margin-auto-vertical">
+					<form onsubmit="return false;">
+						<button class="uk-modal-close-default" type="button" title="關閉" uk-close><span
+								class="tw-sr-only">關閉</span></button>
+						<div class="uk-modal-header">
+							<h2 class="uk-modal-title">圖資帳號登入</h2>
+						</div>
+						<div class="uk-modal-body">
+							<div class="margin_y_child-even-m uk-grid uk-grid-collapse uk-child-width-expand@s" uk-grid>
+								<div class="min_width-1/4!@s">
+									<label class="min_height-40 font_size-10 tw-font-bold tw-flex uk-flex-middle uk-form-label"
+										for="form_id">讀者帳號</label>
+								</div>
+								<div class="tw-space-y-1 min_width-3/4!@s">
+									<input id="form_id" class="match uk-input" type="text" placeholder="讀者帳號/ID">
+									<!-- <p class="color_secondary-text tw-text-sm">驗證提示語</p> -->
+								</div>
+								<div class="min_width-1/4!@s">
+									<label class="min_height-40 font_size-10 tw-font-bold tw-flex uk-flex-middle uk-form-label"
+										for="form_pwd">讀者密碼</label>
+								</div>
+								<div class="tw-space-y-1 min_width-3/4!@s">
+									<input id="form_pwd" class="match uk-input" type="password" placeholder="讀者密碼/Password">
+									<!-- <p class="color_secondary-text tw-text-sm">驗證提示語</p> -->
+								</div>
+								<div class="note tw-mt-2">
+									<small class="tw-font-bold tw-block tw-mb-2"><i class="tw-mr-1 fas fa-question-circle"></i>登入說明</small>
+									<div class="noteText tw-text-sm">
+										<p>帳號：閱覽證號</p>
+										<p>密碼：預設為身份證字號</p>
+			
+										<p><strong>忘記密碼</strong></p>
+										<p>如無法登入，請於開館時間聯絡037-985-558分機325，或來信lib@mail2.hakka.gov.tw，註明閱覽證號及姓名，我們將儘速為您處理。</p>
+			
+										<p><strong>相關注意事項</strong></p>
+										<p><strong>請遵守智慧財產權及合理使用相關規定:</strong></p>
+										<p>圖書資料中心提供之電子資源僅供學術研究使用，嚴禁大量、連續及利用任何軟體下載及列印全部內容，請勿流通及進行商業用途。
+											不得將檢索所得之資料內容，如文字、圖表或版權聲明加以編輯、引申，或以任何形式與其他資料組合，違反上述規定，致損及本中心使用權，一經查證屬實，將處以停權處分，並由讀者自行負擔相關法律責任。</p>
+			
+										<p><strong>部分資料庫有上線人數限制，使用完畢請務必立即登出。</strong></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tw-text-center s:tw-text-left uk-modal-footer">
+							<div class="uk-grid-small uk-child-width-expand@s uk-grid" uk-grid>
+			
+								<div class="margin_y_child-all s:tw-text-center">
+									<a href="#" class="btn_primary min_width-100 uk-button uk-button-primary">登　　入</a>
+									<button class="min_width-100 uk-button uk-button-default uk-modal-close" type="button">取　　消</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- /uk-modal-login -->
+		
+			<!-- /header -->
+
+		
+		<!-- page main content -->
+		<div class="mainContent tw-p-0 m:tw-py-2 tw-relative" uk-height-viewport="expand: true">
+		  <!-- container -->
+		  <div class="container_responsive@s uk-container uk-container-xlarge">
+		
+		    <!-- Breadcrumb & User -->
+		    <div class="tw-px-2 tw-mb-2 tw-justify-between uk-grid uk-grid-small uk-grid-match uk-flex-middle" uk-grid>
+		      <div class="tw-m-0">
+		        
+		        <!-- uk-breadcrumb -->
+		        <ul class="tw-m-0 uk-float-left uk-breadcrumb">
+		        	<li><a class="tw-text-xs m:tw-text-sm" href="index3.html">首頁</a></li>
+		        	<li><a class="tw-text-xs m:tw-text-sm" href="p4-1.html">服務項目</a></li>
+		        	<li><span class="tw-text-xs m:tw-text-sm">館藏薦購</span></li>
+		        </ul>
+		        <!-- uk-breadcrumb -->      </div>
+		      <div class="tw-text-xs m:tw-text-sm content-center tw-m-0">
+		        <span class="tw-mr-2 uk-width-auto">帳號：陳大天</span>
+		        <a class="color_primary-text! uk-width-auto" href="index3.html">登出</a>
+		      </div>
+		    </div>
+		    <!-- /Breadcrumb & User -->
+		    <!-- accesskey -->
+		    <div class="uk-position-relative uk-visible@m">
+		      <a class="tw-no-underline tw-px-1 uk-position-absolute" href="#L" id="AL" name="L" title="左側選單" accesskey="L" style="left:-30px;top: -5px;">:::</a>
+		    </div>
+		    <!-- /accesskey -->
+		    <!-- uk-card -->
+		    <div class="min_height-550@m s:tw-mb-2 uk-card uk-card-small uk-card-default uk-card-body" >
+		      <!-- uk-grid -->
+		      <div class="tw-space-y-4 m:tw-space-y-0 uk-grid-medium uk-grid-row-collapse uk-grid" uk-grid>
+		        <!-- left menu -->
+		        <nav class="leftMenu uk-width-1-4@m uk-width-1-5@l">
+		          
+		          <!-- listMenu -->
+		          <div class="listMenu_titlelink uk-visible@m">
+		          	<ul class="list_tabs uk-nav-default">
+		          		<li class="uk-nav-header uk-parent open">
+		          			<div class="tw-p-0 uk-grid uk-grid-collapse" uk-grid uk-height-match="target: >div>a">
+		          				<div class="uk-width-expand"><a class="tw-no-underline tw-break-all tw-block" href="#">服務項目</a></div>
+		          				<div class="uk-width-auto"><a class="tw-flex uk-flex-middle" href="" title="展開/收合選單"><span class="toggle tw-hidden" uk-icon="icon: chevron-right"></span><span class="toggle" uk-icon="icon: chevron-down"></span></a></div>
+		          			</div>
+		          			<ul class="toggle tw-p-0 uk-nav uk-nav-sub">
+		          				<li>
+		          					<ul class="uk-nav uk-nav-sub tw-p-0 tw-bg-white">
+		          						<li><a class="tw-no-underline tw-break-all tw-block" href="p4-1.html">使用要點</a></li>
+		          						<li><a class="tw-no-underline tw-break-all tw-block" href="p4-2.html">圖資中心預約導覽服務</a></li>
+													<li class="active"><a class="tw-no-underline tw-break-all tw-block" href="#">館藏薦購</a></li>
+													<li><a class="tw-no-underline tw-break-all tw-block" href="p4-4.html">表單下載</a></li>
+													<li><a class="tw-no-underline tw-break-all tw-block" href="p4-5.html">常見問題</a></li>
+		          					</ul>
+		          				</li>
+		          			</ul>
+		          		</li>
+		          	</ul>
+		          </div>
+		          <div class="uk-width-1-1 uk-hidden@m">
+		          	<button class="uk-button uk-button-default uk-width-1-1" type="button">服務項目</button>
+		          	<!-- Dropdown -->
+		          	<div class="min_width-100" uk-dropdown="boundary: ">
+		          		<ul class="uk-nav uk-dropdown-nav tw-text-left">
+		          			<li class="uk-parent">
+		          				<ul class="tw-pt-0 uk-nav uk-nav-sub">
+		          					<li><a href="#">使用要點</a></li>
+		          					<li><a href="p4-2.html">圖資中心預約導覽服務</a></li>
+												<li><a href="p4-3.html">館藏薦購</a></li>
+												<li><a href="p4-4.html">表單下載</a></li>
+												<li><a href="p4-5.html">常見問題</a></li>
+		          				</ul>
+		          			</li>
+		          		</ul>
+		          	</div>
+		          	<!-- /Dropdown -->
+		          </div>
+		          <!-- listMenu -->
+		        </nav>
+		        <!-- /left menu -->
+		        <!-- main -->
+		        <main class="uk-width-expand@m">
+		          <!-- accesskey -->
+							<div class="uk-position-relative uk-visible@m">
+								<a class="tw-no-underline tw-px-1 uk-position-absolute" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C"
+									style="left:-25px;top: 5px;">:::</a>
+							</div>
+							<!-- /accesskey -->
+							<h2 class="tw-border-b tw-text-base s:tw-text-2xl tw-mt-0">
+								<div class="tw-justify-between uk-grid uk-grid-small uk-grid-row-collapse uk-child-width-expand" uk-grid>
+									<div>館藏薦購</div>
+									<div class="uk-flex uk-width-auto"><small class="m:tw-mt-2"><a class="tw-no-underline" href="#"><i
+													class="tw-mr-1 fas fa-angle-left"></i>回上頁</a></small></div>
+								</div>
+							</h2>
+							<!-- content -->
+							<div id="content" class="tw-space-y-4">
+								<p class="tw-m-0">圖資中心以收藏客家相關主題資源為主，推薦前請先查詢<a class="color3" href="https://webpaclib.thcdc.hakka.gov.tw/F/">館藏目錄</a>是否已有該館藏資料，推薦後將以Email通知處理情形。(備註：<strong
+										class="color3 tw-pr-1">*</strong>為必填欄位)
+								</p>
+							
+								<form onsubmit="return false;">
+									<!-- grid -->
+									<div class="uk-grid uk-grid-small uk-child-width-expand@s" uk-grid>
+										<!-- form item -->
+										<div class="tw-space-y-1 min_width-1/2!@s">
+											<label class="tw-text-base tw-font-bold uk-form-label" for="f-sel" title="必填欄位"><strong
+													class="color3 tw-pr-1">*</strong>資料類型</label>
+											<select id="f-sel" class="uk-select">
+												<option value="圖書資料">圖書資料</option>
+												<option value="視聽資料">視聽資料</option>
+											</select>
+											<!-- <p class="color_primary tw-text-sm">驗證提示語</p> -->
+										</div>
+										<!-- /form item -->
+										<!-- form item -->
+										<div class="tw-space-y-1 min_width-1/2!@s">
+											<label class="tw-text-base tw-font-bold uk-form-label" for="f-name" title="必填欄位"><strong
+													class="color3 tw-pr-1">*</strong>書名</label>
+											<input id="f-name" class="uk-input" type="text" placeholder="">
+											<!-- <p class="color_primary tw-text-sm">驗證提示語</p> -->
+										</div>
+										<!-- /form item -->
+										<!-- form item -->
+										<div class="tw-space-y-1 min_width-1/2!@s">
+											<label class="tw-text-base tw-font-bold uk-form-label" for="f-wri"><strong
+													class="color3 tw-pr-1">*</strong>作者</label>
+											<input id="f-wri" class="uk-input" type="text" placeholder="">
+											<!-- <p class="color_primary tw-text-sm">驗證提示語</p> -->
+										</div>
+										<!-- /form item -->
+										<!-- form item -->
+										<div class="tw-space-y-1 min_width-1/2!@s">
+											<label class="tw-text-base tw-font-bold uk-form-label" for="f-pub"><strong
+													class="color3 tw-pr-1">*</strong>出版者</label>
+											<input id="f-pub" class="uk-input" type="text" placeholder="">
+											<!-- <p class="color_primary tw-text-sm">驗證提示語</p> -->
+										</div>
+										<!-- /form item -->
+										<!-- form item -->
+										<div class="tw-space-y-1 min_width-1/2!@s">
+											<label class="tw-text-base tw-font-bold uk-form-label" for="f-date">出版時間</label>
+											<input id="f-date" class="uk-input" type="date" placeholder="">
+											<!-- <p class="color_primary tw-text-sm">驗證提示語</p> -->
+										</div>
+										<!-- /form item -->
+										<!-- form item -->
+										<div class="tw-space-y-1 min_width-1/2!@s">
+											<label class="tw-text-base tw-font-bold uk-form-label" for="f-isbn" title="必填欄位"><strong
+													class="color3 tw-pr-1">*</strong>ISBN</label>
+											<input id="f-isbn" class="uk-input" type="text" placeholder="">
+											<!-- <p class="color_primary tw-text-sm">驗證提示語</p> -->
+										</div>
+										<!-- /form item -->
+										<!-- form item -->
+										<div class="tw-space-y-1 min_width-1/2!@s">
+											<label class="tw-text-base tw-font-bold uk-form-label" for="f-pri">定價</label>
+											<input id="f-pri" class="uk-input" type="number" placeholder="" min="0">
+											<!-- <p class="color_primary tw-text-sm">驗證提示語</p> -->
+										</div>
+										<!-- /form item -->
+										<!-- form item -->
+										<div class="tw-space-y-1 min_width-1/2!@s">
+											<label class="tw-text-base tw-font-bold uk-form-label" for="f-sup">補充說明</label>
+											<input id="f-sup" class="uk-input" type="text" placeholder="">
+											<!-- <p class="color_primary tw-text-sm">驗證提示語</p> -->
+										</div>
+										<!-- /form item -->
+										<!-- form item -->
+										<div class="tw-space-y-1 min_width-1/2!@s">
+											<label class="tw-text-base tw-font-bold uk-form-label" for="f-rec" title="必填欄位"><strong
+													class="color3 tw-pr-1">*</strong>推薦者</label>
+											<input id="f-rec" class="uk-input" type="text" placeholder="">
+											<!-- <p class="color_primary tw-text-sm">驗證提示語</p> -->
+										</div>
+										<!-- /form item -->
+										<!-- form item -->
+										<div class="tw-space-y-1 min_width-1/2!@s">
+											<label class="tw-text-base tw-font-bold uk-form-label" for="f-email" title="必填欄位"><strong
+													class="color3 tw-pr-1">*</strong>E-mail</label>
+											<input id="f-email" class="uk-input" type="email" placeholder="">
+											<!-- <p class="color_primary tw-text-sm">驗證提示語</p> -->
+										</div>
+										<!-- /form item -->
+										<!-- form item -->
+										<div class="tw-space-y-1 min_width-1/2!@s uk-width-1-2@m">
+											<label class="tw-text-base tw-font-bold uk-form-label" for="f-cap">驗證碼</label>
+											<div class="uk-grid uk-grid-small" uk-grid>
+												<div class="min_width-100 uk-width-expand">
+													<input id="f-cap" class="uk-input" type="text" placeholder="">
+												</div>
+												<div class="uk-width-auto">
+													<button class="btnPlayAudio tw-mr-2 tw-border-0 uk-button uk-button-default" href="" title="播放驗證碼語音"
+														playaudio='img/audio.wav' role="button"><i class="fas fa-volume-up"></i><span
+															class="tw-sr-only">播放驗證碼語音</span></button>
+													<img class="tw-inline-block tw-mr-2" data-src="http://fakeimg.pl/150x40/" width="150" height="40"
+														alt="驗證碼圖片" uk-img>
+													<button class="tw-border-0 uk-button uk-button-default" role="button" title="更新驗證碼圖片"><i
+															class="fas fa-redo"></i><span class="tw-sr-only">更新驗證碼圖片</span></button>
+												</div>
+											</div>
+											<!-- <p class="color_primary tw-text-sm">驗證提示語</p> -->
+										</div>
+										<!-- /form item -->
+										<!-- button -->
+										<div class="m:tw-mt-2 tw-mx-auto uk-width-1-1">
+											<div class="uk-grid uk-grid-small uk-child-width-expand" uk-grid>
+												<div class="tw-space-y-1 uk-text-nowrap">
+													<a href="" class="btn_primary tw-w-full uk-button uk-button-primary">確定</a>
+												</div>
+												<div class="tw-space-y-1 uk-text-nowrap">
+													<button class="tw-bg-gray-50 tw-w-full uk-button uk-button-default" type="reset">重填</button>
+												</div>
+											</div>
+										</div>
+										<!-- /button -->
+									</div>
+									<!-- /grid -->
+								</form>
+							</div>
+							<!-- /content -->
+		        </main>
+		        <!-- /main -->
+		      </div>
+		      <!-- /uk-grid -->
+		    </div>
+		    <!-- /uk-card -->
+		  </div>
+		  <!-- /container -->
+		</div>
+		<!-- /page main content -->
+<!-- footer -->
+<footer class="tw-relative tw-mt-4 m:tw-mt-8">
+	<div class="uk-container">
+		<!-- relative -->
+		<div class="tw-py-3 m:tw-py-4 tw-relative">
+			<!-- accesskey -->
+			<div class="tw-h-0 tw-relative uk-visible@m">
+				<a class="tw-no-underline tw-inline-block tw-px-1 uk-position-absolute" href="#B" id="AB" name="B"
+					title="下方功能區塊" accesskey="B" style="left:-30px">:::</a>
+			</div>
+			<!-- /accesskey -->
+			<p class="tw-mt-0 uk-text-center">
+				<a class="tw-pr-4 tw-pb-2 tw-block m:tw-inline" href="/p0-2.html">政府網站資料開放宣告</a>
+				<a class="tw-pr-4 tw-pb-2 tw-block m:tw-inline" href="/p3-6.html">本站聲明</a>
+				客家文化發展中心版權所有 copyright© 2021 THCDC All rights reserved.
+			</p>
+			<!-- grid -->
+			<div class="tw-mt-4 uk-flex-center uk-grid uk-grid-small" uk-grid uk-margin>
+				<div>地址：366 苗栗縣銅鑼鄉九湖村 12 鄰銅科南路 6 號</div>
+				<div>服務電話：(037)985-558 分機 325</div>
+				<div>傳真：(037)985-991</div>
+			</div>
+			<!-- /grid -->
+			<!-- grid -->
+			<div class="tw-mt-4 uk-flex-center uk-grid uk-grid-small" uk-grid uk-margin>
+				<!-- image button -->
+				<div>
+					<a class="m:tw-opacity-80 hover:tw-opacity-100" href="https://www.gov.tw/" title="開啟新視窗"><img
+							class="max_height-40" src="img/myegov.gif" alt="連結至我的E政府"></a>
+				</div>
+				<!-- /image button -->
+				<!-- image button -->
+				<div>
+					<a class="m:tw-opacity-80 hover:tw-opacity-100" href="" title="開啟新視窗"><img class="max_height-40"
+							src="img/wcag2AA.jpg" alt="連結至無障礙網站"></a>
+				</div>
+				<!-- /image button -->
+			</div>
+			<!-- /grid -->
+		</div>
+		<!-- /relative -->
+	</div>
+</footer>
+<!-- /footer -->
+		<a id="gototop" class="hover:color_white tw-text-white tw-bg-black tw-bg-opacity-50 hover:tw-bg-opacity-70 tw-opacity-0 tw-no-underline tw-p-2 tw-px-3 tw-rounded tw-text-center tw-fixed tw-bottom-0 tw-right-0 tw-mr-3 tw-mb-3" href="javascript:void(0)" title="回到最上"><i class="fas fa-angle-up"></i><span class="tw-sr-only">回到最上</span></a>
+	</body>
+</html>

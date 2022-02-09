@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html class="text-m" lang="zh-Hant-TW">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="Designer&Developer" content="楊軒羽 Shen Yang | Graphic Web Designer & Front-end Developer | 前端設計工程師">
+		<title>客家文化發展中心-圖書資料中心</title>
+		<!-- favicon -->
+		<link rel="shortcut icon" type="image/svg" href="img/favicon.svg" />
+		<!-- /favicon -->
+		<link rel="stylesheet" href="css/uikit.min.css">
+		<link rel="stylesheet" href="css/tailwind.min.css">
+		<link rel="stylesheet" href="css/fontawesome.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+		<link rel="stylesheet" href="css/colors.min.css">
+		<link rel="stylesheet" href="css/editor.min.css">
+		<link rel="stylesheet" href="css/style.min.css">
+		<script src="js/uikit.min.js"></script>
+		<script src="js/uikit-icons.min.js"></script>
+		<script src="js/script.min.js" defer></script>
+	</head>
+
+	<body id="top" class="page focus">
+		<div class="tw-text-center tw-leading-10 tw-text-white tw-bg-pink-900"><noscript class="tw-py-1">您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態！</noscript></div>
+		<span class="tw-hidden">Some images has been designed using resources from <a href="https://unsplash.com/">Unsplash</a> &amp; <a href="https://pixabay.com/">Pixabay</a> &amp; <a href="https://www.freepik.com/">Freepik</a> and some icons from <a href="https://www.flaticon.com/">Flaticon</a></span>
+		<!-- header -->
+		<header class="tw-shadow" >
+			<div class="uk-sticky" uk-sticky="media: (max-width: 959px); cls-active: tw-shadow-md">
+				<nav class="tw-w-full tw-shadow-md tw-z-10">
+					<!-- logo & sideLinks -->
+					<div class="logoBG s:tw-py-2 m:tw-py-4 tw-relative">
+						<!-- color background -->
+						<div class="tw-bg-white tw-bg-opacity-70 uk-position-cover"></div>
+						<!-- color background -->
+						<!-- container -->
+						<div class="uk-container">
+							<!-- uk-grid -->
+							<div class="uk-flex-middle uk-flex-between uk-grid uk-grid-small uk-grid-match uk-child-width-expand" uk-grid>
+								<!-- logo -->
+								<div class="logo tw-relative">
+									<h1 class="tw-m-0 tw-text-base">
+										<a class="logoimg tw-no-underline uk-flex uk-flex-middle" href="index3.html" title="客家文化發展中心-圖書資料中心">
+											<span class="tw-sr-only">客家文化發展中心-圖書資料中心</span>
+											<img class="uk-preserve" data-src="img/logo.svg" data-width data-height alt="客家文化發展中心-圖書資料中心" uk-img uk-svg>
+										</a>
+									</h1>
+								</div>
+								<!-- /logo -->
+								<!-- sideLinks -->
+								<div class="tw-m-0 tw-relative uk-width-auto uk-visible@m">
+									<div class="sub_nav uk-flex uk-flex-middle">
+										<span class="uk-visible@m"><a class="tw-no-underline tw-inline-block tw-px-2" href="#U" id="AU" name="U" title="上方功能區塊" accesskey="U" style="padding-bottom: 3px;">:::</a></span>
+										<div>
+											<span>
+											<a class="tw-px-2"  href="#">網站導覽</a></span>
+											<span>
+											<a class="tw-px-2"  href="#">中心首頁</a></span>
+											<span>
+											<a class="tw-px-2"  href="#">英文版</a></span>
+											<span>
+											<a class="tw-px-2"  href="#login" uk-toggle>圖資帳號登入</a></span>
+										</div>
+										<span class="text_size text_size-s hover_bg"><button class="tw-py-0 tw-border-none uk-button uk-button-default uk-button-small" type="button" title="縮小字級">A-</button></span>
+										<span class="text_size text_size-m hover_bg active"><button class="tw-py-0 tw-border-none uk-button uk-button-default uk-button-small" type="button" title="適中字級">A</button></span>
+										<span class="text_size text_size-l hover_bg"><button class="tw-py-0 tw-border-none uk-button uk-button-default uk-button-small" type="button" title="加大字級">A+</button></span>
+									</div>
+								</div>
+								<!-- /sideLinks -->
+								<!-- top nav buttons on mobile -->
+								<div class="uk-flex-nowrap uk-width-auto uk-hidden@m">
+									<button class="min_width-50! min_height-50! color_primary tw-px-0 uk-flex uk-flex-right uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas"><span class="tw-sr-only">選單</span></button>
+								</div>
+								<!-- /top nav buttons on mobile -->
+							</div>
+							<!-- /uk-grid -->
+						</div>
+						<!-- /container -->
+					</div>
+					<!-- /logo & sideLinks -->
+					<!-- main menu -->
+					<!-- main menu -->
+					<div class="mainMenu tw-relative uk-visible@m">
+						<!-- color background -->
+						<div class="mainMenuBg uk-position-cover"></div>
+						<!-- /color background -->
+						<!-- container -->
+						<div class="uk-container uk-container-expand">
+							<div class="uk-flex uk-navbar" uk-navbar>
+								<div class="uk-navbar-center">
+									<ul class="nav_bar tw-m-0 uk-tab">
+										<li>
+											<a class="color_white! tw-text-lg" href="#">館藏資源</a>
+											<div class="bg_white tw-opacity-90 uk-overflow-auto uk-dropdown" uk-dropdown="offset: 1">
+												<ul class="nav_header-dotted uk-nav uk-dropdown-nav">
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="#">館藏資源</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="#">電子資源查詢</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="#">資源探索系統</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="#">個人借閱紀錄</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="#">新書展示</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="#">客家文化發展中心數位典藏系統</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="#">客家文化發展中心數位典藏系統</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<a class="color_white! tw-text-lg" href="#">特藏資源</a>
+											<div class="bg_white tw-opacity-90 uk-overflow-auto uk-dropdown" uk-dropdown="offset: 1">
+												<ul class="nav_header-dotted uk-nav uk-dropdown-nav">
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="#">機構成果報告</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="#">專藏文庫</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<a class="color_white! tw-text-lg" href="#">關於本館</a>
+											<div class="bg_white tw-opacity-90 uk-overflow-auto uk-dropdown" uk-dropdown="offset: 1">
+												<ul class="nav_header-dotted uk-nav uk-dropdown-nav">
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="p3-1.html">緣起</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="p3-2.html">館舍空間</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="p3-3.html">位置及交通方式</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="p3-4.html">聯絡我們</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="p3-5.html">最新消息</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="p3-6.html">隱私權及安全宣告</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<a class="color_white! tw-text-lg" href="#">服務項目</a>
+											<div class="bg_white tw-opacity-90 uk-overflow-auto uk-dropdown" uk-dropdown="offset: 1">
+												<ul class="nav_header-dotted uk-nav uk-dropdown-nav">
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="p4-1.html">使用要點</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="p4-2.html">圖資中心預約導覽服務</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="p4-3.html">館藏薦購</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="p4-4.html">表單下載</a>
+													</li>
+													<li class="tw-mt-0 uk-nav-header">
+														<a class="hover:tw-underline tw-text-base tw-block" href="p4-5.html">常見問題</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<!-- <li>
+																<a class="color_white! tw-text-lg" href="#">表單下載</a>
+															</li> -->
+										<!-- <li>
+																<a class="color_white! tw-text-lg" href="#" target="_blank">常見問題</a>
+															</li> -->
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- /container -->
+					</div>
+					<!-- /main menu -->
+					<!-- /main menu -->
+				</nav>
+			</div>
+			
+		<!-- uk-offcanvas -->
+		<div id="offcanvas" uk-offcanvas>
+			<div class="bg_primary tw-py-5 uk-offcanvas-bar uk-box-shadow-large">
+				<button class="uk-offcanvas-close" type="button" title="關閉" uk-close></button>
+				<ul class="tw-pt-6 uk-nav uk-nav-default">
+					<li class="tw-py-1 uk-parent">
+						<div class="tw-flex tw-justify-between">
+							<a class="tw-flex tw-flex-1 tw-items-center" href="#"><span class="tw-text-white">資源查詢</span></a>
+							<a class="min_width-50 tw-flex tw-flex-none tw-items-start tw-justify-end tw-pt-px"
+								href="javascript:void(0)"><span class="toggle" uk-icon="icon: chevron-right" title="展開選單"><small
+										class="tw-sr-only">展開選單</small></span><span class="toggle tw-hidden" uk-icon="icon: chevron-down"
+									title="收合選單"><small class="tw-sr-only">收合選單</small></span></a>
+						</div>
+						<ul class="toggle tw-hidden tw-py-0 uk-nav uk-nav-sub">
+							<li class="tw-py-1"><a href="https://webpaclib.thcdc.hakka.gov.tw/"><span
+										class="tw-text-white tw-text-tw-opacity-50">館藏資源</span></a>
+							</li>
+							<li class="tw-py-1"><a href="https://lib.thcdc.hakka.gov.tw/smartweaver"><span
+										class="tw-text-white tw-text-tw-opacity-50">電子資源查詢</span></a>
+							</li>
+							<li class="tw-py-1"><a href="https://primo.thcdc.hakka.gov.tw/"><span
+										class="tw-text-white tw-text-tw-opacity-50">資源探索系統</span></a>
+							</li>
+							<li class="tw-py-1"><a href="#"><span class="tw-text-white tw-text-tw-opacity-50">個人借閱紀錄</span></a>
+							</li>
+							<li class="tw-py-1"><a href="#"><span class="tw-text-white tw-text-tw-opacity-50">客家文化發展中心數位典藏系統</span></a>
+							</li>
+							<li class="tw-py-1"><a href="http://125.227.157.247:8998/HAKKAINVES/#/"><span
+										class="tw-text-white tw-text-tw-opacity-50">客莊文化資源普查成果檢索系統</span></a>
+							</li>
+						</ul>
+					</li>
+					<li class="tw-py-1 uk-parent">
+						<div class="tw-flex tw-justify-between">
+							<a class="tw-flex tw-flex-1 tw-items-center" href="#"><span class="tw-text-white">特藏資源</span></a>
+							<a class="min_width-50 tw-flex tw-flex-none tw-items-start tw-justify-end tw-pt-px"
+								href="javascript:void(0)"><span class="toggle" uk-icon="icon: chevron-right" title="展開選單"><small
+										class="tw-sr-only">展開選單</small></span><span class="toggle tw-hidden" uk-icon="icon: chevron-down"
+									title="收合選單"><small class="tw-sr-only">收合選單</small></span></a>
+						</div>
+						<ul class="toggle tw-hidden tw-py-0 uk-nav uk-nav-sub">
+							<li class="tw-py-1"><a href="#"><span class="tw-text-white tw-text-tw-opacity-50">機構成果報告</span></a>
+							</li>
+							<li class="tw-py-1"><a href="#"><span class="tw-text-white tw-text-tw-opacity-50">專藏文庫</span></a>
+							</li>
+						</ul>
+					</li>
+					<li class="tw-py-1 uk-parent">
+						<div class="tw-flex tw-justify-between">
+							<a class="tw-flex tw-flex-1 tw-items-center" href="#"><span class="tw-text-white">關於本館</span></a>
+							<a class="min_width-50 tw-flex tw-flex-none tw-items-start tw-justify-end tw-pt-px"
+								href="javascript:void(0)"><span class="toggle" uk-icon="icon: chevron-right" title="展開選單"><small
+										class="tw-sr-only">展開選單</small></span><span class="toggle tw-hidden" uk-icon="icon: chevron-down"
+									title="收合選單"><small class="tw-sr-only">收合選單</small></span></a>
+						</div>
+						<ul class="toggle tw-hidden tw-py-0 uk-nav uk-nav-sub">
+							<li class="tw-py-1">
+								<a href="p3-1.html"><span class="tw-text-white tw-text-tw-opacity-50">緣起</span></a>
+							</li>
+							<li class="tw-py-1">
+								<a href="p3-2.html"><span class="tw-text-white tw-text-tw-opacity-50">館舍空間</span></a>
+							</li>
+							<li class="tw-py-1">
+								<a href="p3-3.html"><span class="tw-text-white tw-text-tw-opacity-50">位置及交通方式</span></a>
+							</li>
+							<li class="tw-py-1">
+								<a href="p3-4.html"><span class="tw-text-white tw-text-tw-opacity-50">聯絡我們</span></a>
+							</li>
+							<li class="tw-py-1">
+								<a href="p3-5.html"><span class="tw-text-white tw-text-tw-opacity-50">最新消息</span></a>
+							</li>
+							<li class="tw-py-1">
+								<a href="p3-6.html"><span class="tw-text-white tw-text-tw-opacity-50">隱私權及安全宣告</span></a>
+							</li>
+						</ul>
+					</li>
+					<li class="tw-py-1 uk-parent">
+						<div class="tw-flex tw-justify-between">
+							<a class="tw-flex tw-flex-1 tw-items-center" href="#"><span class="tw-text-white">服務項目</span></a>
+							<a class="min_width-50 tw-flex tw-flex-none tw-items-start tw-justify-end tw-pt-px"
+								href="javascript:void(0)"><span class="toggle" uk-icon="icon: chevron-right" title="展開選單"><small
+										class="tw-sr-only">展開選單</small></span><span class="toggle tw-hidden" uk-icon="icon: chevron-down"
+									title="收合選單"><small class="tw-sr-only">收合選單</small></span></a>
+						</div>
+						<ul class="toggle tw-hidden tw-py-0 uk-nav uk-nav-sub">
+							<li class="tw-py-1"><a href="p4-1.html"><span class="tw-text-white tw-text-tw-opacity-50">使用要點</span></a>
+							</li>
+							<li class="tw-py-1"><a href="p4-2.html"><span class="tw-text-white tw-text-tw-opacity-50">圖資中心預約導覽服務</span></a>
+							</li>
+							<li class="tw-py-1">
+								<a href="p4-3.html"><span class="tw-text-white tw-text-tw-opacity-50">館藏薦購</span></a>
+							</li>
+							<li class="tw-py-1">
+								<a href="p4-4.html"><span class="tw-text-white tw-text-tw-opacity-50">表單下載</span></a>
+							</li>
+							<li class="tw-py-1">
+								<a href="p4-5.html"><span class="tw-text-white tw-text-tw-opacity-50">常見問題</span></a>
+							</li>
+						</ul>
+					</li>
+					<li class="uk-nav-divider"></li>
+					<li><a href="#">網站導覽</a></li>
+					<li><a href="#">客發中心首頁</a></li>
+					<li><a href="#">英文版</a></li>
+					<li><a href="#">常問問題</a></li>
+					<li><a href="#">聯絡我們</a></li>
+					<li><a href="#">意見信箱</a></li>
+					<li><a href="#login" uk-toggle>圖資帳號登入</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- uk-offcanvas -->
+			</header>
+			<!-- uk-modal-login -->
+			<div id="login" class="uk-flex-top uk-modal" uk-modal>
+				<div class="uk-modal-dialog uk-margin-auto-vertical">
+					<form onsubmit="return false;">
+						<button class="uk-modal-close-default" type="button" title="關閉" uk-close><span
+								class="tw-sr-only">關閉</span></button>
+						<div class="uk-modal-header">
+							<h2 class="uk-modal-title">圖資帳號登入</h2>
+						</div>
+						<div class="uk-modal-body">
+							<div class="margin_y_child-even-m uk-grid uk-grid-collapse uk-child-width-expand@s" uk-grid>
+								<div class="min_width-1/4!@s">
+									<label class="min_height-40 font_size-10 tw-font-bold tw-flex uk-flex-middle uk-form-label"
+										for="form_id">讀者帳號</label>
+								</div>
+								<div class="tw-space-y-1 min_width-3/4!@s">
+									<input id="form_id" class="match uk-input" type="text" placeholder="讀者帳號/ID">
+									<!-- <p class="color_secondary-text tw-text-sm">驗證提示語</p> -->
+								</div>
+								<div class="min_width-1/4!@s">
+									<label class="min_height-40 font_size-10 tw-font-bold tw-flex uk-flex-middle uk-form-label"
+										for="form_pwd">讀者密碼</label>
+								</div>
+								<div class="tw-space-y-1 min_width-3/4!@s">
+									<input id="form_pwd" class="match uk-input" type="password" placeholder="讀者密碼/Password">
+									<!-- <p class="color_secondary-text tw-text-sm">驗證提示語</p> -->
+								</div>
+								<div class="note tw-mt-2">
+									<small class="tw-font-bold tw-block tw-mb-2"><i class="tw-mr-1 fas fa-question-circle"></i>登入說明</small>
+									<div class="noteText tw-text-sm">
+										<p>帳號：閱覽證號</p>
+										<p>密碼：預設為身份證字號</p>
+			
+										<p><strong>忘記密碼</strong></p>
+										<p>如無法登入，請於開館時間聯絡037-985-558分機325，或來信lib@mail2.hakka.gov.tw，註明閱覽證號及姓名，我們將儘速為您處理。</p>
+			
+										<p><strong>相關注意事項</strong></p>
+										<p><strong>請遵守智慧財產權及合理使用相關規定:</strong></p>
+										<p>圖書資料中心提供之電子資源僅供學術研究使用，嚴禁大量、連續及利用任何軟體下載及列印全部內容，請勿流通及進行商業用途。
+											不得將檢索所得之資料內容，如文字、圖表或版權聲明加以編輯、引申，或以任何形式與其他資料組合，違反上述規定，致損及本中心使用權，一經查證屬實，將處以停權處分，並由讀者自行負擔相關法律責任。</p>
+			
+										<p><strong>部分資料庫有上線人數限制，使用完畢請務必立即登出。</strong></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tw-text-center s:tw-text-left uk-modal-footer">
+							<div class="uk-grid-small uk-child-width-expand@s uk-grid" uk-grid>
+			
+								<div class="margin_y_child-all s:tw-text-center">
+									<a href="#" class="btn_primary min_width-100 uk-button uk-button-primary">登　　入</a>
+									<button class="min_width-100 uk-button uk-button-default uk-modal-close" type="button">取　　消</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- /uk-modal-login -->
+		
+			<!-- /header -->
+
+		
+		<!-- page main content -->
+		<div class="mainContent tw-p-0 m:tw-py-2 tw-relative" uk-height-viewport="expand: true">
+		  <!-- container -->
+		  <div class="container_responsive@s uk-container uk-container-xlarge">
+		
+		    <!-- Breadcrumb & User -->
+		    <div class="tw-px-2 tw-mb-2 tw-justify-between uk-grid uk-grid-small uk-grid-match uk-flex-middle" uk-grid>
+		      <div class="tw-m-0">
+		        
+		        <!-- uk-breadcrumb -->
+		        <ul class="tw-m-0 uk-float-left uk-breadcrumb">
+		        	<li><a class="tw-text-xs m:tw-text-sm" href="index3.html">首頁</a></li>
+		        	<li><a class="tw-text-xs m:tw-text-sm" href="p4-1.html">服務項目</a></li>
+		        	<li><span class="tw-text-xs m:tw-text-sm">使用要點</span></li>
+		        </ul>
+		        <!-- uk-breadcrumb -->      </div>
+		      <div class="tw-text-xs m:tw-text-sm content-center tw-m-0">
+		        <span class="tw-mr-2 uk-width-auto">帳號：陳大天</span>
+		        <a class="color_primary-text! uk-width-auto" href="index.html">登出</a>
+		      </div>
+		    </div>
+		    <!-- /Breadcrumb & User -->
+		    <!-- accesskey -->
+		    <div class="uk-position-relative uk-visible@m">
+		      <a class="tw-no-underline tw-px-1 uk-position-absolute" href="#L" id="AL" name="L" title="左側選單" accesskey="L" style="left:-30px;top: -5px;">:::</a>
+		    </div>
+		    <!-- /accesskey -->
+		    <!-- uk-card -->
+		    <div class="min_height-550@m s:tw-mb-2 uk-card uk-card-small uk-card-default uk-card-body" >
+		      <!-- uk-grid -->
+		      <div class="tw-space-y-4 m:tw-space-y-0 uk-grid-medium uk-grid-row-collapse uk-grid" uk-grid>
+		        <!-- left menu -->
+		        <nav class="leftMenu uk-width-1-4@m uk-width-1-5@l">
+		          
+		          <!-- listMenu -->
+		          <div class="listMenu_titlelink uk-visible@m">
+		          	<ul class="list_tabs uk-nav-default">
+		          		<li class="uk-nav-header uk-parent open">
+		          			<div class="tw-p-0 uk-grid uk-grid-collapse" uk-grid uk-height-match="target: >div>a">
+		          				<div class="uk-width-expand"><a class="tw-no-underline tw-break-all tw-block" href="#">服務項目</a></div>
+		          				<div class="uk-width-auto"><a class="tw-flex uk-flex-middle" href="" title="展開/收合選單"><span class="toggle tw-hidden" uk-icon="icon: chevron-right"></span><span class="toggle" uk-icon="icon: chevron-down"></span></a></div>
+		          			</div>
+		          			<ul class="toggle tw-p-0 uk-nav uk-nav-sub">
+		          				<li>
+		          					<ul class="uk-nav uk-nav-sub tw-p-0 tw-bg-white">
+		          						<li class="active"><a class="tw-no-underline tw-break-all tw-block" href="#">使用要點</a></li>
+		          						<li><a class="tw-no-underline tw-break-all tw-block" href="p4-2.html">圖資中心預約導覽服務</a></li>
+													<li><a class="tw-no-underline tw-break-all tw-block" href="p4-3.html">館藏薦購</a></li>
+													<li><a class="tw-no-underline tw-break-all tw-block" href="p4-4.html">表單下載</a></li>
+													<li><a class="tw-no-underline tw-break-all tw-block" href="p4-5.html">常見問題</a></li>
+		          					</ul>
+		          				</li>
+		          			</ul>
+		          		</li>
+		          	</ul>
+		          </div>
+		          <div class="uk-width-1-1 uk-hidden@m">
+		          	<button class="uk-button uk-button-default uk-width-1-1" type="button">服務項目</button>
+		          	<!-- Dropdown -->
+		          	<div class="min_width-100" uk-dropdown="boundary: ">
+		          		<ul class="uk-nav uk-dropdown-nav tw-text-left">
+		          			<li class="uk-parent">
+		          				<ul class="tw-pt-0 uk-nav uk-nav-sub">
+		          					<li><a href="#">使用要點</a></li>
+		          					<li><a href="p4-2.html">圖資中心預約導覽服務</a></li>
+												<li><a href="p4-3.html">館藏薦購</a></li>
+												<li><a href="p4-4.html">表單下載</a></li>
+												<li><a href="p4-5.html">常見問題</a></li>
+		          				</ul>
+		          			</li>
+		          		</ul>
+		          	</div>
+		          	<!-- /Dropdown -->
+		          </div>
+		          <!-- listMenu -->
+		        </nav>
+		        <!-- /left menu -->
+		        <!-- main -->
+		        <main class="uk-width-expand@m">
+		          <!-- accesskey -->
+							<div class="uk-position-relative uk-visible@m">
+								<a class="tw-no-underline tw-px-1 uk-position-absolute" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C"
+									style="left:-25px;top: 5px;">:::</a>
+							</div>
+							<!-- /accesskey -->
+							<h2 class="tw-border-b tw-text-base s:tw-text-2xl tw-mt-0">
+								<div class="tw-justify-between uk-grid uk-grid-small uk-grid-row-collapse uk-child-width-expand" uk-grid>
+									<div class="tw-justify-between uk-grid uk-grid-small uk-grid-row-collapse uk-child-width-expand" uk-grid>
+										<div>使用要點</div></div>
+									<div class="uk-flex uk-width-auto"><small class="m:tw-mt-2"><a class="tw-no-underline" href="#"><i
+													class="tw-mr-1 fas fa-angle-left"></i>回上頁</a></small></div>
+								</div>
+							</h2>
+		          <!-- content -->
+							<div id="content" class="tw-space-y-4">
+								<div class="uk-flex uk-width-auto"><small class="m:tw-mt-2">修訂日期：2014-11-05</small></div>
+								<h4 class="uk-text-center tw-font-bold">客家委員會客家文化發展中心臺灣客家文化館圖書資料中心使用要點</h4>
+								<dl class="uk-description-list">
+									<dt class="tw-text-lg tw-font-bold tw-pb-4">第一章 總則</dt>
+									<dd class="tw-bg-gray-50 tw-p-2 tw-space-y-4">
+										<!-- item -->
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第1條</div>
+											<div class="tw-font-bold">客家委員會客家文化發展中心臺灣客家文化館圖書資料中心（以下簡稱本中心），以典藏客家相關圖書、文獻與視聽資料為主要任務，所蒐藏之館藏限本中心內閱覽不得攜出。</div>
+										</div>
+										<!-- /item -->
+										<!-- item -->
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第2條</div>
+											<div>閱覽人除另有規定外，得無償使用本中心閱覽服務設備、場所及利用館藏圖書資訊。</div>
+										</div>
+										<!-- /item -->
+									</dd>
+									<dt class="tw-text-lg tw-font-bold tw-pb-4">
+										第二章 閱覽證申請 
+										<div><i class="color_primary fas fa-cloud-download-alt tw-mr-1"></i><a href="#">閱覽證申請書</a></div>
+									</dt>
+									<dd class="tw-bg-gray-50 tw-p-2 tw-space-y-4">
+										<!-- item -->
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第3條</div>
+											<div class="">閱覽人應憑本中心閱覽證，進出本中心及利用館藏圖書資訊與設備。</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第4條</div>
+											<div class="">凡具有下列資格之一者得申請本中心閱覽證：
+												<br>(一)年滿十六歲之中華民國國民。</br>
+												(二)未滿十六歲之高中職或具同等學歷之在學學生身分。</br>
+												(三)年滿十六歲之外國人，依法持有護照、我國政府核發之有效證件或經其使領館處核發之證明。</p>
+											</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第5條</div>
+											<div class="">閱覽證申請時間為本中心開放日(週一、週三至週日)上午九時至下午四時三十分，國定假日及休館日(週二)停止辦理。</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第6條</div>
+											<div class="">申請本中心閱覽證，應備一年內脫帽半身照片（一吋）一張，填妥申請書後，依第四點規定分別檢具下列證件，親自辦理之：<br>
+											(一)國民身分證。<br>
+											(二)在學學生證外，本國學生出具國民身分證，外國學生出具護照。<br>
+											(三)護照、我國政府核發之有效證件或經其使領館處核發之證明。</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第7條</div>
+											<div class="">為便利閱覽人使用圖書資訊及借閱視聽資料，得免附照片並抵押身分證或健保卡辦理臨時閱覽證，其辦理資格同第四點之申請資格。該證件限當日有效，閱覽人應於離館時繳回。</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第8條</div>
+											<div class="">閱覽證如有破損或遺失，應依本要點第四點至第六點規定申請補換發。</div>
+										</div>
+
+										<!-- /item -->
+									</dd>
+									<dt class="tw-text-lg tw-font-bold tw-pb-4">第三章 圖書資訊閱覽</dt>
+									<dd class="tw-bg-gray-50 tw-p-2 tw-space-y-4">
+										<!-- item -->
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第9條</div>
+											<div class="tw-font-bold">
+												閱覽人之背包、提袋、食物、飲料等，不得攜入館內，可暫時存放於自助寄物櫃。但背包、提袋符合下列規定，經本中心同意者，得攜入之：<br>
+												(一)手提電腦專用袋（內裝電腦）：以不超過四十二公分乘以三十二公分乘以十公分為原則。<br>
+												(二)其餘背包、提袋：以不超過三十公分乘以二十一公分乘以十公分為原則。<br>
+												閱覽人進出本中心，應主動出示攜帶物品配合檢查作業。<br>
+												第一項攜入館內之個人物品應自行保管，本中心不負保管責任。</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第10條</div>
+											<div>閱覽人於館內應保持肅靜，不得有抽菸、飲食、製造噪音、喧嘩滋事、高聲談笑及其他不當行為。
+											為維持閱覽環境安寧，閱覽人進入本中心應將行動電話、呼叫器及電腦等設備關閉或設定為靜音。</div>
+										</div>
+										<!-- /item -->
+									</dd>
+									<dt class="tw-text-lg tw-font-bold tw-pb-4">第四章 參考諮詢服務</dt>
+									<dd class="tw-bg-gray-50 tw-p-2 tw-space-y-4">
+										<!-- item -->
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第11條</div>
+											<div class="tw-font-bold">本中心為協助閱覽人檢索圖書資訊，以利用館內資源，提供口頭、書信、電話、電子郵件等參考諮詢服務。</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第12條</div>
+											<div>本中心提供導覽、圖書資訊利用指導及參觀活動等服務，參觀人員須於前一日來電預約報名。</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第13條</div>
+											<div>本中心配合館際合作，提供書刊借閱與複印相關規定服務。</div>
+										</div>
+										<!-- /item -->
+									</dd>
+									<dt class="tw-text-lg tw-font-bold tw-pb-4">第五章 違規處理</dt>
+									<dd class="tw-bg-gray-50 tw-p-2 tw-space-y-4">
+										<!-- item -->
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第14條</div>
+											<div>違反本規定者，本中心得視情節輕重，請其離館並暫停其閱覽權利。 若有妨害安寧秩序、妨害善良風俗、妨害公務、妨害他人身體財產等重大違規行為者，依社會秩序維護法相關規定報請警察機關處理之。</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第15條</div>
+											<div>閱覽證不得重複申請或轉借他人。經查重複辦理閱覽證或外借、冒領、冒用他人閱覽證屬實者，本中心得暫停其閱覽權利六個月。</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第16條</div>
+											<div>閱覽人應珍惜本中心館藏圖書資訊，如有竊取、毀損、遺失、塗寫或污損等情事，本中心得暫停其閱覽權利六個月，並視情節輕重依下列方式之一處理：<br>
+											(一)依法報請警察機關處理。<br>
+											(二)閱覽人購置相同版本之圖書資訊賠償。無法購得相同版本時，則計價賠償。計價方式如下：<br>
+											&emsp;1.以「定價」標示者，依定價兩倍。<br>
+											&emsp;2.以「基價」標示者，依該基價乘五十倍。<br>
+											&emsp;3.未標明定價或基價之圖書資訊，依下列原則計價賠償：<br>
+											&emsp;&emsp;(1)中文在一百頁以下者，每件以新臺幣五百元計價；超過一百頁者，按頁計算，每頁以新臺幣五元計價。<br>
+											&emsp;&emsp;(2)外文在一百頁以下者，每件以新臺幣一千元計價；超過一百頁者，按頁計算，每頁以新臺幣十元計價。<br>
+											&emsp;&emsp;(3)國內出版之錄音資料，每件以新臺幣一千元計價；錄影資料每件以新臺幣三千五百元計價。<br>
+											&emsp;&emsp;(4)國外出版之錄音、錄影資料，每件以新臺幣五千元計價。<br>
+											&emsp;4.附件遺失或毀損者，以所屬資料定價之兩倍計算。
+											未滿二十歲之閱覽人未依前項規定賠償者，通知其法定代理人或監護人辦理賠償事宜。</div>
+										</div>
+										<!-- /item -->
+									</dd>
+									<dt class="tw-text-lg tw-font-bold tw-pb-4">第六章 研究小間、討論室及視聽室借用</dt>
+									<dd class="tw-bg-gray-50 tw-p-2 tw-space-y-4">
+										<!-- item -->
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第17條</div>
+											<div class="tw-font-bold">研究小間、討論室及視聽室之申請借用，以本中心員工、志工及具有閱覽證者為限。</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第18條</div>
+											<div>申請借用研究小間、討論室及視聽室者，應持本中心員工識別證、志工證或閱覽證親至服務櫃檯辦理，或上網登記預約。</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第19條</div>
+											<div>研究小間、討論室及視聽室應於本中心開放時間內申請及使用。</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第20條</div>
+											<div>研究小間、討論室及視聽室之借用，依申請順序由本中心排定分配之。借用人不得與他人交換或轉讓使用，違者本中心得停止其借用六個月。</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第21條</div>
+											<div>借用時間<br>
+											(一)研究小間一次僅限借一間，借用期間以一星期為限，借用人於借用期間內不得再申請其他研究小間。但於到期前一日（不含休館日）借用人使用之研究小間無人申請時，得申請續借。<br>
+											(二)討論室申請使用借用人數以三至六人、時間以二小時為限，續借須重新申請。<br>
+											(三)視聽資料及器材每次限借一件（組），每次使用以三小時為限。必要時得再申請延長至多一小時，但以該延長時段無人申請時始得為之。中途離座超過三十分鐘，視同放棄使用權利，本中心得分配其他借用人使用。視聽小間提供五人以上、二十五人以下之團體使用，除本中心安排播映節目外之時段，均可受理預約登記使用。<br>
+											(四)借用人應於借用期限屆滿當日本中心閉館前十分鐘，歸還借用之研究小間、討論室、視聽室及視聽資料設備。</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第22條</div>
+											<div>研究小間借用人應負保管鑰匙之責，不得自行換鎖，亦不得複製鑰匙或轉借他人使用，違者永久停止其借用；如遺失鑰匙，應全額負擔換鎖之費用。</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第23條</div>
+											<div>借用人不得在研究小間、討論室及視聽室從事非研究性質之活動，並須保持安靜，注意環境清潔，不得有吸菸、飲食及其他不當行為，且不得任意破壞室內配置。違者本中心得立即停止借用六個月。</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第24條</div>
+											<div>歸還研究小間、討論室、視聽室及視聽資料設備時，應將私人物品移出，並會同本中心工作人員檢視清點研究小間、討論室及視聽室內設備。如有損毀，借用人除應負賠償責任外，本中心並得停止其借用六個月。</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第25條</div>
+											<div>借用人逾期未歸還研究小間、討論室及視聽室者，本中心得視其情節停止借用六個月。</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第26條</div>
+											<div>歸還研究小間、討論室及視聽室時，借用人應取出置放其中之私人物品，逾期未將私人物品移出者，本中心得視為無主物處理，使用者不得異議。</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第27條</div>
+											<div>借用人應妥善保管自身物品，其放置於研究小間、討論室及視聽室內之任何物品如有遺失，本中心不負賠償責任。</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第28條</div>
+											<div>本中心遇有必要時，得暫停借用、停止使用、取消預約研究小間、討論室及視聽室，借用人應配合。</div>
+										</div>
+
+										<!-- /item -->
+									</dd>
+									<dt class="tw-text-lg tw-font-bold tw-pb-4">第七章 寄物櫃使用須知</dt>
+									<dd class="tw-bg-gray-50 tw-p-2 tw-space-y-4">
+										<!-- item -->
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第29條</div>
+											<div class="tw-font-bold">本中心設有自助寄物櫃，供閱覽人免費暫時存放個人物品，不須登記。但本中心不負保管責任。</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第30條</div>
+											<div>因故意或過失損壞寄物櫃，應負賠償責任；對他人之寄放物造成損壞，亦應對他人負賠償責任。</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第31條</div>
+											<div>寄放物品應於當日離館時取回，否則本中心得視為無主物處理，使用者不得異議。</div>
+										</div>
+										<!-- /item -->
+									</dd>
+									<dt class="tw-text-lg tw-font-bold tw-pb-4">第八章 資料複印</dt>
+									<dd class="tw-bg-gray-50 tw-p-2 tw-space-y-4">
+										<!-- item -->
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第32條</div>
+											<div class="tw-font-bold">閱覽人得於本中心開館時間內使用影印機自行影印，並支付影印費用。</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第33條</div>
+											<div>使用者不得自行攜帶紙張進行資料複印，遇有設備故障時，應即向服務人員反應，勿自行拆裝設備，如有損壞，應負賠償責任。</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第34條</div>
+											<div>閱覽人應遵守著作權法規定。影印之資料須為非營利目的並符合著作權法合理使用範圍內，尊重他人著作權，不得非法影印，如有違反規定者，應自負法律責任。</div>
+										</div>
+										<!-- /item -->
+									</dd>
+									<dt class="tw-text-lg tw-font-bold tw-pb-4">第九章 附則</dt>
+									<dd class="tw-bg-gray-50 tw-p-2 tw-space-y-4">
+										<!-- item -->
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第35條</div>
+											<div class="tw-font-bold">日常活動需他人協助者至本館閱覽，宜有陪伴人同行，並善盡照顧之責任，陪伴人須符合本館入館閱覽資格。</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第36條</div>
+											<div>患法定傳染病者，依傳染病防治法相關規定，不得入館。</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第37條</div>
+											<div>本中心門窗、露台、安全門，非緊急狀況，閱覽人不得擅自開啟、使用。</div>
+										</div>
+										<div class="uk-grid uk-grid-small uk-child-width-expand@s">
+											<div class="min_width-110 uk-width-auto">第38條</div>
+											<div>本要點未規定者，適用其他法令規定。</div>
+										</div>
+										<!-- /item -->
+									</dd>
+								</dl>
+							</div>
+		          <!-- /content -->
+		        </main>
+		        <!-- /main -->
+		      </div>
+		      <!-- /uk-grid -->
+		    </div>
+		    <!-- /uk-card -->
+		  </div>
+		  <!-- /container -->
+		</div>
+		<!-- /page main content -->
+<!-- footer -->
+<footer class="tw-relative tw-mt-4 m:tw-mt-8">
+	<div class="uk-container">
+		<!-- relative -->
+		<div class="tw-py-3 m:tw-py-4 tw-relative">
+			<!-- accesskey -->
+			<div class="tw-h-0 tw-relative uk-visible@m">
+				<a class="tw-no-underline tw-inline-block tw-px-1 uk-position-absolute" href="#B" id="AB" name="B"
+					title="下方功能區塊" accesskey="B" style="left:-30px">:::</a>
+			</div>
+			<!-- /accesskey -->
+			<p class="tw-mt-0 uk-text-center">
+				<a class="tw-pr-4 tw-pb-2 tw-block m:tw-inline" href="/p0-2.html">政府網站資料開放宣告</a>
+				<a class="tw-pr-4 tw-pb-2 tw-block m:tw-inline" href="/p3-6.html">本站聲明</a>
+				客家文化發展中心版權所有 copyright© 2021 THCDC All rights reserved.
+			</p>
+			<!-- grid -->
+			<div class="tw-mt-4 uk-flex-center uk-grid uk-grid-small" uk-grid uk-margin>
+				<div>地址：366 苗栗縣銅鑼鄉九湖村 12 鄰銅科南路 6 號</div>
+				<div>服務電話：(037)985-558 分機 325</div>
+				<div>傳真：(037)985-991</div>
+			</div>
+			<!-- /grid -->
+			<!-- grid -->
+			<div class="tw-mt-4 uk-flex-center uk-grid uk-grid-small" uk-grid uk-margin>
+				<!-- image button -->
+				<div>
+					<a class="m:tw-opacity-80 hover:tw-opacity-100" href="https://www.gov.tw/" title="開啟新視窗"><img
+							class="max_height-40" src="img/myegov.gif" alt="連結至我的E政府"></a>
+				</div>
+				<!-- /image button -->
+				<!-- image button -->
+				<div>
+					<a class="m:tw-opacity-80 hover:tw-opacity-100" href="" title="開啟新視窗"><img class="max_height-40"
+							src="img/wcag2AA.jpg" alt="連結至無障礙網站"></a>
+				</div>
+				<!-- /image button -->
+			</div>
+			<!-- /grid -->
+		</div>
+		<!-- /relative -->
+	</div>
+</footer>
+<!-- /footer -->
+		<a id="gototop" class="hover:color_white tw-text-white tw-bg-black tw-bg-opacity-50 hover:tw-bg-opacity-70 tw-opacity-0 tw-no-underline tw-p-2 tw-px-3 tw-rounded tw-text-center tw-fixed tw-bottom-0 tw-right-0 tw-mr-3 tw-mb-3" href="javascript:void(0)" title="回到最上"><i class="fas fa-angle-up"></i><span class="tw-sr-only">回到最上</span></a>
+	</body>
+</html>
