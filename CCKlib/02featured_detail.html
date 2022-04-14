@@ -259,7 +259,7 @@
 		    <div class="modal-content">
 		      <form>
 		        <div class="modal-header">
-		          <p class="tw-text-2xl tw-font-bold modal-title">會員登入</p>
+		          <p id="modalTitle" class="tw-text-2xl tw-font-bold modal-title">會員登入</p>
 		          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span class="tw-sr-only">關閉</span></button>
 		        </div>
 		        <div class="modal-body">
@@ -348,9 +348,9 @@
 			            </h2>
 			            <!-- content -->
 			            <div id="content" class="py-2 py-md-3 tw-space-y-4 lg:tw-space-y-6">
-			              <form class="tw-space-y-4 lg:tw-space-y-6" onsubmit="return false;">
+			              <form class="tw-space-y-4" onsubmit="return false;">
 			                <h2 class="pseudo:item_pipe before:tw-text-[#911F27] tw-text-xl lg:tw-text-3xl">胡宗南將軍史料展</h2>
-			                <div class="tw-min-h-[200px] tw-bg-cover tw-bg-no-repeat tw-bg-center tw-border tw-border-gray-200" style="background-image: url(https://fakeimg.pl/1200x200/)"></div>
+			                <div class="tw-min-h-[200px] tw-bg-contain tw-bg-no-repeat tw-bg-center" style="background-image: url(https://fakeimg.pl/1350x200/)"></div>
 			                <!-- Tab Switcher -->
 			                <!-- Go to Tab with External Url Usage: http://url.sample/pagename.html#tabID -->
 			                <div class="tabSwitcher">
@@ -385,57 +385,161 @@
 			                      </div>
 			                    </div>
 			                    <div class="tab-pane p-0 fade tw-space-y-4" id="tabpanel3" role="tabpanel">
-			                      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
-			                        <div class="col">
-			                          <a class="d-block position-relative" href="https://unsplash.it/1200/900.jpg?image=200" width="1200" height="900" data-toggle="lightbox" data-gallery="gallery" data-caption="胡宗南將軍史料展">
-			                            <img src="https://unsplash.it/1200/900.jpg?image=200" alt="胡宗南將軍史料展">
-			                            <div class="position-relative">
-			                              <div class="position-absolute bottom-0 w-100 bg-primary bg-opacity-75 text-center text-white px-2 py-1 tw-text-sm lg:tw-text-base">胡宗南將軍史料展</div>
-			                            </div>
-			                          </a>
+			                      <div class="photoList">
+			                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+			                          <!-- item -->
+			                          <div class="col">
+			                            <a class="d-block position-relative" href="#modalSplide" data-bs-toggle="modal">
+			                              <div class="img aspect ratio-4/3 tw-bg-contain bg-black bg-opacity-75 tw-bg-no-repeat tw-bg-center" style="background-image: url(https://fakeimg.pl/1200x900/)"></div>
+			                              <div class="bg-primary bg-opacity-75 text-center text-white text-truncate px-2 py-1 tw-text-sm lg:tw-text-base">胡宗南將軍史料展</div>
+			                            </a>
+			                          </div>
+			                          <!-- /item -->
+			                          <!-- item -->
+			                          <div class="col">
+			                            <a class="d-block position-relative" href="#modalSplide" data-bs-toggle="modal">
+			                              <div class="img aspect ratio-4/3 tw-bg-contain bg-black bg-opacity-75 tw-bg-no-repeat tw-bg-center" style="background-image: url(https://unsplash.it/1200/900.jpg?image=100)"></div>
+			                              <div class="bg-primary bg-opacity-75 text-center text-white text-truncate px-2 py-1 tw-text-sm lg:tw-text-base">胡宗南將軍史料展2</div>
+			                            </a>
+			                          </div>
+			                          <!-- /item -->
+			                          <!-- item -->
+			                          <div class="col">
+			                            <a class="d-block position-relative" href="#modalSplide" data-bs-toggle="modal">
+			                              <div class="img aspect ratio-4/3 tw-bg-contain bg-black bg-opacity-75 tw-bg-no-repeat tw-bg-center" style="background-image: url(https://unsplash.it/1200/900.jpg?image=200)"></div>
+			                              <div class="bg-primary bg-opacity-75 text-center text-white text-truncate px-2 py-1 tw-text-sm lg:tw-text-base">胡宗南將軍史料展3</div>
+			                            </a>
+			                          </div>
+			                          <!-- /item -->
+			                          <!-- item -->
+			                          <div class="col">
+			                            <a class="d-block position-relative" href="#modalSplide" data-bs-toggle="modal">
+			                              <div class="img aspect ratio-4/3 tw-bg-contain bg-black bg-opacity-75 tw-bg-no-repeat tw-bg-center" style="background-image: url(https://unsplash.it/1200/900.jpg?image=300)"></div>
+			                              <div class="bg-primary bg-opacity-75 text-center text-white text-truncate px-2 py-1 tw-text-sm lg:tw-text-base">胡宗南將軍史料展4</div>
+			                            </a>
+			                          </div>
+			                          <!-- /item -->
+			                          <!-- item -->
+			                          <div class="col">
+			                            <a class="d-block position-relative" href="#modalSplide" data-bs-toggle="modal">
+			                              <div class="img aspect ratio-4/3 tw-bg-contain bg-black bg-opacity-75 tw-bg-no-repeat tw-bg-center" style="background-image: url(https://unsplash.it/1200/900.jpg?image=400)"></div>
+			                              <div class="bg-primary bg-opacity-75 text-center text-white text-truncate px-2 py-1 tw-text-sm lg:tw-text-base">胡宗南將軍史料展5</div>
+			                            </a>
+			                          </div>
+			                          <!-- /item -->
+			                          <!-- item -->
+			                          <div class="col">
+			                            <a class="d-block position-relative" href="#modalSplide" data-bs-toggle="modal">
+			                              <div class="img aspect ratio-4/3 tw-bg-contain bg-black bg-opacity-75 tw-bg-no-repeat tw-bg-center" style="background-image: url(https://unsplash.it/1200/900.jpg?image=500)"></div>
+			                              <div class="bg-primary bg-opacity-75 text-center text-white text-truncate px-2 py-1 tw-text-sm lg:tw-text-base">胡宗南將軍史料展6</div>
+			                            </a>
+			                          </div>
+			                          <!-- /item -->
 			                        </div>
-			                        <div class="col">
-			                          <a class="d-block position-relative" href="https://unsplash.it/1200/900.jpg?image=300" width="1200" height="900" data-toggle="lightbox" data-gallery="gallery" data-caption="胡宗南將軍史料展2">
-			                            <img src="https://unsplash.it/1200/900.jpg?image=300" alt="胡宗南將軍史料展2">
-			                            <div class="position-relative">
-			                              <div class="position-absolute bottom-0 w-100 bg-primary bg-opacity-75 text-center text-white px-2 py-1 tw-text-sm lg:tw-text-base">胡宗南將軍史料展2</div>
+			                        <!-- /row -->
+			                        <!-- bs-modal -->
+			                        <div class="photoModal modal fade" id="modalSplide" data-keyboard="false" tabindex="-1" aria-hidden="true">
+			                          <div class="modal-xl modal-dialog modal-dialog-centered">
+			                            <div class="modal-content">
+			                              <div class="modal-header">
+			                                <button class="btn-close position-absolute tw-right-4" type="button" data-bs-dismiss="modal" aria-label="Close"><span class="tw-sr-only">關閉</span></button>
+			                              </div>
+			                              <div class="modal-body">
+			                                <section id="main-carousel" class="splide" aria-label="Gallery">
+			                                  <div class="splide__track">
+			                                    <ul class="splide__list">
+			                                      <li class="splide__slide">
+			                                        <div class="img aspect ratio-4/3 tw-bg-contain bg-black bg-opacity-75 tw-bg-no-repeat tw-bg-center" style="background-image: url(https://fakeimg.pl/1200x900/)"></div>
+			                                        <div class="bg-primary bg-opacity-75 text-white px-2 py-1 tw-text-sm lg:tw-text-base">百能國臺四但？然心費靈子學人對於用上年那布、過使張更腦樣。們使其，父見義資孩例環積學但首金</div>
+			                                      </li>
+			                                      <li class="splide__slide">
+			                                        <div class="img aspect ratio-4/3 tw-bg-contain bg-black bg-opacity-75 tw-bg-no-repeat tw-bg-center" style="background-image: url(https://unsplash.it/1200/900.jpg?image=100)"></div>
+			                                        <div class="bg-primary bg-opacity-75 text-white px-2 py-1 tw-text-sm lg:tw-text-base">百能國臺四但？然心費靈子學人對於用上年那布、過使張更腦樣。們使其，父見義資孩例環積學但首金</div>
+			                                      </li>
+			                                      <li class="splide__slide">
+			                                        <div class="img aspect ratio-4/3 tw-bg-contain bg-black bg-opacity-75 tw-bg-no-repeat tw-bg-center" style="background-image: url(https://unsplash.it/1200/900.jpg?image=200)"></div>
+			                                        <div class="bg-primary bg-opacity-75 text-white px-2 py-1 tw-text-sm lg:tw-text-base">百能國臺四但？然心費靈子學人對於用上年那布、過使張更腦樣。們使其，父見義資孩例環積學但首金</div>
+			                                      </li>
+			                                      <li class="splide__slide">
+			                                        <div class="img aspect ratio-4/3 tw-bg-contain bg-black bg-opacity-75 tw-bg-no-repeat tw-bg-center" style="background-image: url(https://unsplash.it/1200/900.jpg?image=300)"></div>
+			                                        <div class="bg-primary bg-opacity-75 text-white px-2 py-1 tw-text-sm lg:tw-text-base">百能國臺四但？然心費靈子學人對於用上年那布、過使張更腦樣。們使其，父見義資孩例環積學但首金</div>
+			                                      </li>
+			                                      <li class="splide__slide">
+			                                        <div class="img aspect ratio-4/3 tw-bg-contain bg-black bg-opacity-75 tw-bg-no-repeat tw-bg-center" style="background-image: url(https://unsplash.it/1200/900.jpg?image=400)"></div>
+			                                        <div class="bg-primary bg-opacity-75 text-white px-2 py-1 tw-text-sm lg:tw-text-base">百能國臺四但？然心費靈子學人對於用上年那布、過使張更腦樣。們使其，父見義資孩例環積學但首金</div>
+			                                      </li>
+			                                      <li class="splide__slide">
+			                                        <div class="img aspect ratio-4/3 tw-bg-contain bg-black bg-opacity-75 tw-bg-no-repeat tw-bg-center" style="background-image: url(https://unsplash.it/1200/900.jpg?image=500)"></div>
+			                                        <div class="bg-primary bg-opacity-75 text-white px-2 py-1 tw-text-sm lg:tw-text-base">百能國臺四但？然心費靈子學人對於用上年那布、過使張更腦樣。們使其，父見義資孩例環積學但首金</div>
+			                                      </li>
+			                                    </ul>
+			                                  </div>
+			                                </section>
+			                                <ul id="thumbnails" class="thumbnails">
+			                                  <li class="thumbnail">
+			                                    <div class="img aspect ratio-4/3 tw-bg-contain bg-black bg-opacity-75 tw-bg-no-repeat tw-bg-center" style="background-image: url(https://fakeimg.pl/1200x900/)"></div>
+			                                  </li>
+			                                  <li class="thumbnail">
+			                                    <div class="img aspect ratio-4/3 tw-bg-contain bg-black bg-opacity-75 tw-bg-no-repeat tw-bg-center" style="background-image: url(https://unsplash.it/1200/900.jpg?image=100)"></div>
+			                                  </li>
+			                                  <li class="thumbnail">
+			                                    <div class="img aspect ratio-4/3 tw-bg-contain bg-black bg-opacity-75 tw-bg-no-repeat tw-bg-center" style="background-image: url(https://unsplash.it/1200/900.jpg?image=200)"></div>
+			                                  </li>
+			                                  <li class="thumbnail">
+			                                    <div class="img aspect ratio-4/3 tw-bg-contain bg-black bg-opacity-75 tw-bg-no-repeat tw-bg-center" style="background-image: url(https://unsplash.it/1200/900.jpg?image=300)"></div>
+			                                  </li>
+			                                  <li class="thumbnail">
+			                                    <div class="img aspect ratio-4/3 tw-bg-contain bg-black bg-opacity-75 tw-bg-no-repeat tw-bg-center" style="background-image: url(https://unsplash.it/1200/900.jpg?image=400)"></div>
+			                                  </li>
+			                                  <li class="thumbnail">
+			                                    <div class="img aspect ratio-4/3 tw-bg-contain bg-black bg-opacity-75 tw-bg-no-repeat tw-bg-center" style="background-image: url(https://unsplash.it/1200/900.jpg?image=500)"></div>
+			                                  </li>
+			                                </ul>
+			                              </div>
 			                            </div>
-			                          </a>
+			                          </div>
 			                        </div>
-			                        <div class="col">
-			                          <a class="d-block position-relative" href="https://unsplash.it/1200/900.jpg?image=400" width="1200" height="900" data-toggle="lightbox" data-gallery="gallery" data-caption="胡宗南將軍史料展3">
-			                            <img src="https://unsplash.it/1200/900.jpg?image=400" alt="胡宗南將軍史料展3">
-			                            <div class="position-relative">
-			                              <div class="position-absolute bottom-0 w-100 bg-primary bg-opacity-75 text-center text-white px-2 py-1 tw-text-sm lg:tw-text-base">胡宗南將軍史料展3</div>
-			                            </div>
-			                          </a>
-			                        </div>
-			                        <div class="col">
-			                          <a class="d-block position-relative" href="https://unsplash.it/1200/900.jpg?image=500" width="1200" height="900" data-toggle="lightbox" data-gallery="gallery" data-caption="胡宗南將軍史料展4">
-			                            <img src="https://unsplash.it/1200/900.jpg?image=500" alt="胡宗南將軍史料展4">
-			                            <div class="position-relative">
-			                              <div class="position-absolute bottom-0 w-100 bg-primary bg-opacity-75 text-center text-white px-2 py-1 tw-text-sm lg:tw-text-base">胡宗南將軍史料展4</div>
-			                            </div>
-			                          </a>
-			                        </div>
-			                        <div class="col">
-			                          <a class="d-block position-relative" href="https://unsplash.it/1200/900.jpg?image=600" width="1200" height="900" data-toggle="lightbox" data-gallery="gallery" data-caption="胡宗南將軍史料展5">
-			                            <img src="https://unsplash.it/1200/900.jpg?image=600" alt="胡宗南將軍史料展5">
-			                            <div class="position-relative">
-			                              <div class="position-absolute bottom-0 w-100 bg-primary bg-opacity-75 text-center text-white px-2 py-1 tw-text-sm lg:tw-text-base">胡宗南將軍史料展5</div>
-			                            </div>
-			                          </a>
-			                        </div>
-			                        <div class="col">
-			                          <a class="d-block position-relative" href="https://unsplash.it/1200/900.jpg?image=700" width="1200" height="900" data-toggle="lightbox" data-gallery="gallery" data-caption="胡宗南將軍史料展6">
-			                            <img src="https://unsplash.it/1200/900.jpg?image=700" alt="胡宗南將軍史料展6">
-			                            <div class="position-relative">
-			                              <div class="position-absolute bottom-0 w-100 bg-primary bg-opacity-75 text-center text-white px-2 py-1 tw-text-sm lg:tw-text-base">胡宗南將軍史料展6</div>
-			                            </div>
-			                          </a>
-			                        </div>
+			                        <!-- /bs-modal -->
+			                        <script>
+			                          document.addEventListener( 'DOMContentLoaded', () => {
+			                            var splide = new Splide( '#main-carousel', {
+			                              pagination: false,
+			                            } );
+			                            var thumbnails = document.getElementsByClassName( 'thumbnail' );
+			                            var current;
+			                            for ( var i = 0; i < thumbnails.length; i++ ) {
+			                              initThumbnail( thumbnails[ i ], i );
+			                            }
+			                            function initThumbnail( thumbnail, index ) {
+			                              thumbnail.addEventListener( 'click', function () {
+			                                splide.go( index );
+			                              } );
+			                            }
+			                            splide.on( 'mounted move', function () {
+			                              var thumbnail = thumbnails[ splide.index ];
+			                              if ( thumbnail ) {
+			                                if ( current ) {
+			                                  current.classList.remove( 'is-active' );
+			                                }
+			                                thumbnail.classList.add( 'is-active' );
+			                                current = thumbnail;
+			                              }
+			                            } );
+			                            splide.mount();
+			                      
+			                            var photoIndex
+			                            document.querySelectorAll('.photoList>.row>.col>a').forEach((item, index) => {
+			                              item.addEventListener('click', () => {
+			                                photoIndex = index
+			                              })
+			                            })
+			                            document.getElementById('modalSplide').addEventListener('shown.bs.modal', (event) => {
+			                              thumbnails[photoIndex].click();
+			                              console.log(photoIndex)
+			                            })
+			                          })
+			                        </script>
 			                      </div>
-			                      <!-- /row -->
 			                    </div>
 			                  </div>
 			                  <!-- /Tab Content -->

@@ -7,7 +7,7 @@
 		<meta name="Designer&Developer" content="楊軒羽 Shen Yang | Graphic Web Designer & Front-end Developer | 前端設計工程師">
 		<title>蔣經國圖書館入口網</title>
 		<!-- favicon -->
-		<link rel="shortcut icon" type="image/svg" href="img/favicon.svg" />
+		<link rel="shortcut icon" type="image/svg" href="" />
 		<!-- /favicon -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/bootstrap-icons.css">
@@ -33,7 +33,7 @@
 					<div class="logoBG d-flex w-100 tw-justify-between tw-items-center">
 						<!-- Logo -->
 						<h1 class="tw-m-0 tw-flex tw-w-full lg:tw-w-auto tw-justify-between tw-items-center">
-							<a class="logo navbar-brand w-100 py-0 py-lg-1" href="/CCKlib/index.html" title="蔣經國圖書館入口網">
+							<a class="logo navbar-brand w-100 py-0 py-lg-1" href="/index.html" title="蔣經國圖書館入口網">
 								<img class="w-100" src="img/logo.svg" alt="蔣經國圖書館入口網">
 							</a>
 							<button class="navbar-toggler tw-border-0" type="button" data-bs-toggle="offcanvas"
@@ -134,7 +134,7 @@
 									</li>
 									<li class="">
 										<a class="nav-link tw-text-black tw-text-xl tw-font-bold tw-border-b-4 tw-border-transparent hover:tw-text-black hover:tw-border-black"
-											href="#">活動紀錄</a>
+											href="p5-1.html">活動紀錄</a>
 									</li>
 								</ul>
 							</div>
@@ -263,13 +263,13 @@
 							</li>
 							<li class="py-1">
 								<div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
-									<a class="text-white d-block w-100 position-relative" href="#">活動紀錄</a>
+									<a class="text-white d-block w-100 position-relative" href="p5-1.html">活動紀錄</a>
 								</div>
 							</li>
 							<li class="dropdown-divider"></li>
 							<li class="py-1">
 								<div class="d-flex flex-nowrap align-items-stretch justify-content-between align-items-center">
-									<a class="text-white d-block w-100 position-relative" href="index.html">首頁</a>
+									<a class="text-white d-block w-100 position-relative" href="/CCKlib/index.html">首頁</a>
 								</div>
 							</li>
 							<li class="py-1">
@@ -300,7 +300,7 @@
 		    <div class="modal-content">
 		      <form>
 		        <div class="modal-header">
-		          <p class="tw-text-2xl tw-font-bold modal-title">會員登入</p>
+		          <p id="modalTitle" class="tw-text-2xl tw-font-bold modal-title">會員登入</p>
 		          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span class="tw-sr-only">關閉</span></button>
 		        </div>
 		        <div class="modal-body">
@@ -360,7 +360,7 @@
 		        <nav aria-label="breadcrumb">
 		        	<ol class="breadcrumb m-0">
 		        		<li class="breadcrumb-item"><a href="index.html">首頁</a></li>
-		        		<li class="breadcrumb-item"><a href="#">關於本館</a></li>
+		        		<li class="breadcrumb-item"><a href="p1-1 intro.html">關於本館</a></li>
 		        		<li class="breadcrumb-item active" aria-current="page">館藏精選</li>
 		        	</ol>
 		        </nav>
@@ -389,7 +389,7 @@
 		            </h2>
 		            <!-- content -->
 		            <div id="content" class="py-2 py-md-3 tw-space-y-4 lg:tw-space-y-6">
-		              <form class="tw-space-y-4 lg:tw-space-y-6" onsubmit="return false;">
+		              <form class="tw-space-y-4" onsubmit="return false;">
 		                
 		                <!-- pagination -->
 		                <div class="pagination">
@@ -425,7 +425,7 @@
 		                							</select>
 		                							
 		                						</label>
-		                						<span class="tw-mx-1">&nbsp;/<span class="tw-px-1" title="總頁數">1</span>頁</span>
+		                						<span class="tw-mx-1">&nbsp;/<span class="tw-px-1" title="總頁數">2</span>頁</span>
 		                					</div>
 		                				</div>
 		                				<div>
@@ -472,43 +472,57 @@
 		                	<!-- item -->
 		                	<div class="col">
 		                		<a class="bg-white d-block" href="p1-3-1.html">
-		                			<div class="aspect ratio-4/3 mb-2 tw-bg-contain tw-bg-no-repeat tw-bg-center tw-border tw-border-gray-200" style="background-image: url(./img/special1.png)">
-		                				<div class="position-relative">
-		                					<div class="position-absolute bottom-0 w-100 bg-primary bg-opacity-75 text-center text-white px-2 py-1 tw-text-sm lg:tw-text-base">胡宗南將軍史料展</div>
-		                				</div>
+		                			<div class="img aspect ratio-4/3 tw-bg-contain bg-black bg-opacity-75 tw-bg-no-repeat tw-bg-center" style="background-image: url(img/special1.png)">
 		                			</div>
+		                			<div class="bg-primary bg-opacity-75 text-center text-white px-2 py-1 tw-text-sm lg:tw-text-base">胡宗南將軍史料展</div>
 		                		</a>
 		                	</div>
 		                	<!-- /item -->
 		                	<!-- item -->
 		                	<div class="col">
 		                		<a class="bg-white d-block" href="p1-3-2.html">
-		                			<div class="aspect ratio-4/3 mb-2 tw-bg-contain tw-bg-no-repeat tw-bg-center tw-border tw-border-gray-200" style="background-image: url(./img/special2.png)">
-		                				<div class="position-relative">
-		                					<div class="position-absolute bottom-0 w-100 bg-primary bg-opacity-75 text-center text-white px-2 py-1 tw-text-sm lg:tw-text-base">來自海外贈書</div>
-		                				</div>
+		                			<div class="img aspect ratio-4/3 tw-bg-contain bg-black bg-opacity-75 tw-bg-no-repeat tw-bg-center" style="background-image: url(img/special2.png)">
 		                			</div>
+		                			<div class="bg-primary bg-opacity-75 text-center text-white px-2 py-1 tw-text-sm lg:tw-text-base">經國先生海外贈書展</div>
 		                		</a>
 		                	</div>
 		                	<!-- /item -->
-											<!-- item -->
-											<div class="col">
-												<a class="bg-white d-block" href="#">
-													<div class="aspect ratio-4/3 mb-2 tw-bg-contain tw-bg-no-repeat tw-bg-center tw-border tw-border-gray-200"
-														style="background-image: url(./img/special3.png)">
-														<div class="position-relative">
-															<div
-																class="position-absolute bottom-0 w-100 bg-primary bg-opacity-75 text-center text-white px-2 py-1 tw-text-sm lg:tw-text-base">
-																經國先生日記手稿展</div>
-														</div>
-													</div>
-												</a>
-											</div>
-											<!-- /item -->
-
-
-
-
+		                	<!-- item -->
+		                	<div class="col">
+		                		<a class="bg-white d-block" href="#">
+		                			<div class="img aspect ratio-4/3 tw-bg-contain bg-black bg-opacity-75 tw-bg-no-repeat tw-bg-center" style="background-image: url(img/special3.png)">
+		                			</div>
+		                			<div class="bg-primary bg-opacity-75 text-center text-white px-2 py-1 tw-text-sm lg:tw-text-base">經國先生日記手稿展</div>
+		                		</a>
+		                	</div>
+		                	<!-- /item -->
+		                	<!-- item -->
+		                	<div class="col">
+		                		<a class="bg-white d-block" href="#">
+		                			<div class="img aspect ratio-4/3 tw-bg-contain bg-black bg-opacity-75 tw-bg-no-repeat tw-bg-center" style="background-image: url(https://fakeimg.pl/300x700/)">
+		                			</div>
+		                			<div class="bg-primary bg-opacity-75 text-center text-white px-2 py-1 tw-text-sm lg:tw-text-base">館藏精選一</div>
+		                		</a>
+		                	</div>
+		                	<!-- /item -->
+		                	<!-- item -->
+		                	<div class="col">
+		                		<a class="bg-white d-block" href="#">
+		                			<div class="img aspect ratio-4/3 tw-bg-contain bg-black bg-opacity-75 tw-bg-no-repeat tw-bg-center" style="background-image: url(https://fakeimg.pl/700x300/)">
+		                			</div>
+		                			<div class="bg-primary bg-opacity-75 text-center text-white px-2 py-1 tw-text-sm lg:tw-text-base">館藏精選二</div>
+		                		</a>
+		                	</div>
+		                	<!-- /item -->
+		                	<!-- item -->
+		                	<div class="col">
+		                		<a class="bg-white d-block" href="#">
+		                			<div class="img aspect ratio-4/3 tw-bg-contain bg-black bg-opacity-75 tw-bg-no-repeat tw-bg-center" style="background-image: url(https://fakeimg.pl/400x300/)">
+		                			</div>
+		                			<div class="bg-primary bg-opacity-75 text-center text-white px-2 py-1 tw-text-sm lg:tw-text-base">館藏精選三</div>
+		                		</a>
+		                	</div>
+		                	<!-- /item -->
 		                </div>
 		                <!-- /featured -->
 		                
@@ -546,7 +560,7 @@
 		                							</select>
 		                							
 		                						</label>
-		                						<span class="tw-mx-1">&nbsp;/<span class="tw-px-1" title="總頁數">1</span>頁</span>
+		                						<span class="tw-mx-1">&nbsp;/<span class="tw-px-1" title="總頁數">2</span>頁</span>
 		                					</div>
 		                				</div>
 		                				<div>
