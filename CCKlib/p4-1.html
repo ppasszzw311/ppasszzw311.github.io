@@ -339,50 +339,32 @@
 								</h2>
 								<!-- content -->
 								<div id="content" class="py-2 py-md-3 tw-space-y-4 lg:tw-space-y-6">
-									<form class="tw-space-y-4" onsubmit="return false;">
+									<form class="tw-space-y-4" autocomplete="on" onsubmit="return false;">
 										<div class="steps">
-											<ul class="nav nav-pills row row-cols-auto gx-3 gy-2" role="tablist">
-												<li class="nav-item" role="presentation">
-													<button id="tab1" class="nav-link p-2 px-lg-3 py-lg-2 tw-text-sm lg:tw-text-base active"
-														data-bs-toggle="pill" data-bs-target="#tabpanel1" type="button" role="tab"
-														aria-controls="tabpanel1">步驟1</button>
-												</li>
-												<li class="nav-item" role="presentation">
-													<button id="tab2" class="nav-link p-2 px-lg-3 py-lg-2 tw-text-sm lg:tw-text-base"
-														data-bs-toggle="pill" data-bs-target="#tabpanel2" type="button" role="tab"
-														aria-controls="tabpanel2">步驟2</button>
-												</li>
-												<li class="nav-item" role="presentation">
-													<button id="tab3" class="nav-link p-2 px-lg-3 py-lg-2 tw-text-sm lg:tw-text-base"
-														data-bs-toggle="pill" data-bs-target="#tabpanel3" type="button" role="tab"
-														aria-controls="tabpanel3">步驟3</button>
-												</li>
-												<li class="nav-item" role="presentation">
-													<button id="tab4" class="nav-link p-2 px-lg-3 py-lg-2 tw-text-sm lg:tw-text-base"
-														data-bs-toggle="pill" data-bs-target="#tabpanel4" type="button" role="tab"
-														aria-controls="tabpanel4">步驟4</button>
-												</li>
-												<li class="nav-item" role="presentation">
-													<button id="tab5" class="nav-link p-2 px-lg-3 py-lg-2 tw-text-sm lg:tw-text-base"
-														data-bs-toggle="pill" data-bs-target="#tabpanel5" type="button" role="tab"
-														aria-controls="tabpanel5">步驟5</button>
-												</li>
-												<li class="nav-item" role="presentation">
-													<button id="tab6" class="nav-link p-2 px-lg-3 py-lg-2 tw-text-sm lg:tw-text-base"
-														data-bs-toggle="pill" data-bs-target="#tabpanel6" type="button" role="tab"
-														aria-controls="tabpanel6">步驟6</button>
-												</li>
-												<li class="nav-item" role="presentation">
-													<button id="tab7" class="nav-link p-2 px-lg-3 py-lg-2 tw-text-sm lg:tw-text-base"
-														data-bs-toggle="pill" data-bs-target="#tabpanel7" type="button" role="tab"
-														aria-controls="tabpanel7">步驟7</button>
-												</li>
-											</ul>
-											<div class="tab-content min_height-300 mt-4">
+											<div class="tw-fixed tw-bottom-0 tw-left-0 tw-right-0 tw-z-[1] bg-white shadow p-2">
+												<ul class="nav nav-pills row row-cols-auto gx-3 gy-2 pt-2 justify-content-sm-center" role="tablist">
+													<li class="nav-item m-0">
+														<button id="tab1" class="nav-link p-2 px-lg-3 py-lg-2 tw-text-sm lg:tw-text-base"
+															data-target="#step1">步驟1</button>
+													</li>
+													<li class="nav-item m-0">
+														<button id="tab2" class="nav-link p-2 px-lg-3 py-lg-2 tw-text-sm lg:tw-text-base"
+															data-target="#step2">步驟2</button>
+													</li>
+													<li class="nav-item m-0">
+														<button id="tab3" class="nav-link p-2 px-lg-3 py-lg-2 tw-text-sm lg:tw-text-base"
+															data-target="#step3">步驟3</button>
+													</li>
+													<li class="nav-item m-0">
+														<button id="tab4" class="nav-link p-2 px-lg-3 py-lg-2 tw-text-sm lg:tw-text-base"
+															data-target="#step4">步驟4</button>
+													</li>
+												</ul>
+											</div>
+											<div class="steps min_height-300 mt-4">
 												<!-- content1 -->
-												<div class="tab-pane fade show active" id="tabpanel1" role="tabpanel" aria-labelledby="tab1">
-													<h2 class="tw-text-xl lg:tw-text-3xl"><i
-															class="text-primary me-1 bi bi-arrow-right-circle-fill"></i>會員申請須知</h2>
+												<div class="step">
+													<h2 id="step0" class="tw-text-xl lg:tw-text-3xl my-4">會員申請須知</h2>
 													<p>凡具有下列資格之一者得申請本館閱覽證：</p>
 													<ul>
 														<li>
@@ -393,24 +375,20 @@
 														</li>
 													</ul>
 													<p>閱覽證申請可於本館網站下載或線上填寫申請單，申請人填寫完畢後連同相關證明文件與一吋近照一張，上傳或寄送至本館，經本館審核通過後發給閱覽證。</p>
-													<div class="d-flex flex-nowrap">
-														<a class="btnStep btn_primary btn btn-primary col-12 col-md-6 col-xl-4 mx-auto mt-4"
-															data-tab="2">開始申請</a>
-													</div>
+													<p class="mt-4 pt-2 border-top">【以下表單<span class="text-primary mx-1">*</span>皆為必填項目】</p>
 												</div>
 												<!-- /content1 -->
 												<!-- content2 -->
-												<div class="tab-pane fade" id="tabpanel2" role="tabpanel" aria-labelledby="tab2">
-													<h2 class="tw-text-xl lg:tw-text-3xl"><i
-															class="text-primary me-1 bi bi-arrow-right-circle-fill"></i>基本資料</h2>
-													<p>【以下表單<span class="text-primary mx-1">*</span>皆為必填項目】</p>
+												<div class="step">
+													<h2 id="step1" class="tw-text-xl lg:tw-text-3xl my-4"><i
+															class="text-primary me-1 bi bi-arrow-right-circle-fill"></i>步驟1：基本資料</h2>
 													<!-- row -->
 													<div class="row g-3">
 														<!-- form item -->
 														<div class="min_width-1/2@sm col-sm">
 															<label class="tw-text-base tw-font-bold form-label mb-1" for="f-name"><span
 																	class="text-primary me-1">*</span>中文姓名</label>
-															<input id="f-name" class="form-control" type="text" placeholder="">
+															<input id="f-name" class="w-1/2@lg form-control" type="text" placeholder="">
 															<p class="text-primary tw-text-sm">驗證提示語</p>
 														</div>
 														<!-- /form item -->
@@ -488,64 +466,68 @@
 														<!-- /form item -->
 													</div>
 													<!-- /row -->
-													<!-- button -->
-													<div class="d-flex flex-nowrap">
-														<a class="btnStep btn_primary btn btn-primary col-12 col-md-6 col-xl-4 mx-auto mt-4"
-															data-tab="3">下一步驟</a>
-													</div>
-													<!-- /button -->
 												</div>
 												<!-- /content2 -->
 												<!-- content3 -->
-												<div class="tab-pane fade" id="tabpanel3" role="tabpanel" aria-labelledby="tab3">
-													<h2 class="tw-text-xl lg:tw-text-3xl"><i
-															class="text-primary me-1 bi bi-arrow-right-circle-fill"></i>學歷及經歷</h2>
+												<div class="step">
+													<h2 id="step2" class="tw-text-xl lg:tw-text-3xl my-4"><i
+															class="text-primary me-1 bi bi-arrow-right-circle-fill"></i>步驟2：學歷及經歷</h2>
 													<fieldset class="row g-3">
 														<legend class="tw-text-lg col-form-label fw-bold pb-0">▍學歷(最高學歷)</legend>
 														<!-- form item -->
 														<div class="min_width-1/2@sm col-sm">
-															<label class="tw-text-base tw-font-bold form-label mb-1" for="f-sch">學校名稱</label>
+															<label class="tw-text-base tw-font-bold form-label mb-1" for="f-sch"><span
+																	class="text-primary me-1">*</span>學校名稱</label>
 															<input id="f-sch" class="form-control" type="text" placeholder="">
 															<p class="text-primary tw-text-sm">驗證提示語</p>
 														</div>
 														<!-- /form item -->
 														<!-- form item -->
 														<div class="min_width-1/2@sm col-sm">
-															<label class="tw-text-base tw-font-bold form-label mb-1" for="f-na">國別</label>
+															<label class="tw-text-base tw-font-bold form-label mb-1" for="f-na"><span
+																	class="text-primary me-1">*</span>國別</label>
 															<input id="f-na" class="form-control" type="text" placeholder="">
 															<p class="text-primary tw-text-sm">驗證提示語</p>
 														</div>
 														<!-- /form item -->
 														<!-- form item -->
 														<div class="min_width-1/2@sm col-sm">
-															<label class="tw-text-base tw-font-bold form-label mb-1" for="f-maj">主修學門系所</label>
+															<label class="tw-text-base tw-font-bold form-label mb-1" for="f-maj"><span
+																	class="text-primary me-1">*</span>主修學門系所</label>
 															<input id="f-maj" class="form-control" type="text" placeholder="">
 															<p class="text-primary tw-text-sm">驗證提示語</p>
 														</div>
 														<!-- /form item -->
 														<!-- form item -->
 														<div class="min_width-1/2@sm col-sm">
-															<label class="tw-text-base tw-font-bold form-label mb-1" for="f-deg">學位</label>
-															<input id="f-deg" class="form-control" type="text" placeholder="若仍在學者，請在學位欄填「肄業」">
+															<label class="tw-text-base tw-font-bold form-label mb-1" for="f-deg"><span
+																	class="text-primary me-1">*</span>學位</label>
+															<select id="f-deg" class="form-select">
+																<option selected>博士</option>
+																<option value="1">碩士</option>
+																<option value="2">學士</option>
+																<option value="3">在學</option>
+															</select>
 															<p class="text-primary tw-text-sm">驗證提示語</p>
 														</div>
 														<!-- /form item -->
 														<!-- form item -->
-														<div class="min_width-1/2@sm col-sm">
-															<label id="f-deg-per" class="tw-text-base tw-font-bold form-label mb-1">起迄年月</label>
+														<div class="min_width-1/2@sm col-sm-6">
+															<label id="f-deg-per" class="tw-text-base tw-font-bold form-label mb-1"><span
+																	class="text-primary me-1">*</span>起迄年月</label>
 															<div class="row g-2 align-items-center">
 																<div class="col-auto">自</div>
-																<div class="min_width-100 tw-w-[calc(100%/2-54px/2)] col-auto"><input class="form-control"
-																		type="text" placeholder="" aria-labelledby="f-deg-per"></div>
+																<div class="tw-w-[calc(100%/2-54px/2)] col-auto"><input class="form-control" type="text"
+																		placeholder="" aria-labelledby="f-deg-per"></div>
 																<div class="col-auto">至</div>
-																<div class="min_width-100 tw-w-[calc(100%/2-54px/2)] col-auto"><input class="form-control"
-																		type="text" placeholder="" aria-labelledby="f-deg-per"></div>
+																<div class="tw-w-[calc(100%/2-54px/2)] col-auto"><input class="form-control" type="text"
+																		placeholder="" aria-labelledby="f-deg-per"></div>
 															</div>
 															<p class="text-primary tw-text-sm">驗證提示語</p>
 														</div>
 														<!-- /form item -->
 													</fieldset>
-													<fieldset class="row g-2">
+													<fieldset class="clone row g-2">
 														<legend class="tw-text-lg col-form-label fw-bold pb-0">▍現職或學術經歷</legend>
 														<label id="f-cjob" class="tw-text-base tw-font-bold col-form-label py-0">-現職-</label>
 														<div class="col-12">
@@ -553,35 +535,39 @@
 																<div class="row g-3">
 																	<!-- form item -->
 																	<div class="min_width-1/2@sm col-sm">
-																		<label class="tw-text-base tw-font-bold form-label mb-1" for="f-ser">服務機構</label>
+																		<label class="tw-text-base tw-font-bold form-label mb-1" for="f-ser"><span
+																				class="text-primary me-1">*</span>服務機構</label>
 																		<input id="f-ser" class="form-control" type="text" placeholder="">
 																		<p class="text-primary tw-text-sm">驗證提示語</p>
 																	</div>
 																	<!-- /form item -->
 																	<!-- form item -->
 																	<div class="min_width-1/2@sm col-sm">
-																		<label class="tw-text-base tw-font-bold form-label mb-1" for="f-dep">服務部門/系所</label>
+																		<label class="tw-text-base tw-font-bold form-label mb-1" for="f-dep"><span
+																				class="text-primary me-1">*</span>服務部門/系所</label>
 																		<input id="f-dep" class="form-control" type="text" placeholder="">
 																		<p class="text-primary tw-text-sm">驗證提示語</p>
 																	</div>
 																	<!-- /form item -->
 																	<!-- form item -->
 																	<div class="min_width-1/2@sm col-sm">
-																		<label class="tw-text-base tw-font-bold form-label mb-1" for="f-job">職稱</label>
+																		<label class="tw-text-base tw-font-bold form-label mb-1" for="f-job"><span
+																				class="text-primary me-1">*</span>職稱</label>
 																		<input id="f-job" class="form-control" type="text" placeholder="">
 																		<p class="text-primary tw-text-sm">驗證提示語</p>
 																	</div>
 																	<!-- /form item -->
 																	<!-- form item -->
 																	<div class="min_width-1/2@sm col-sm">
-																		<label id="f-job-per" class="tw-text-base tw-font-bold form-label mb-1">起迄年月</label>
+																		<label id="f-job-per" class="tw-text-base tw-font-bold form-label mb-1"><span
+																				class="text-primary me-1">*</span>起迄年月</label>
 																		<div class="row g-2 align-items-center">
 																			<div class="col-auto">自</div>
-																			<div class="min_width-100 tw-w-[calc(100%/2-54px/2)] col-auto"><input class="form-control"
-																					type="text" placeholder="" aria-labelledby="f-job-per"></div>
+																			<div class="tw-w-[calc(100%/2-54px/2)] col-auto"><input class="form-control" type="text"
+																					placeholder="" aria-labelledby="f-job-per"></div>
 																			<div class="col-auto">至</div>
-																			<div class="min_width-100 tw-w-[calc(100%/2-54px/2)] col-auto"><input class="form-control"
-																					type="text" placeholder="" aria-labelledby="f-job-per"></div>
+																			<div class="tw-w-[calc(100%/2-54px/2)] col-auto"><input class="form-control" type="text"
+																					placeholder="" aria-labelledby="f-job-per"></div>
 																		</div>
 																		<p class="text-primary tw-text-sm">驗證提示語</p>
 																	</div>
@@ -589,41 +575,46 @@
 																</div>
 															</div>
 														</div>
-														<label id="f-exp" class="tw-text-base tw-font-bold col-form-label py-0">-經歷-</label>
+														<div class="col-12">
+															<div class="row g-2 align-items-center">
+																<div class="col-auto"><label id="f-exp"
+																		class="tw-text-base tw-font-bold col-form-label py-0">-經歷-</label></div>
+															</div>
+														</div>
 														<div class="col-12">
 															<div class="bg-light p-2">
 																<div class="row g-3">
 																	<!-- form item -->
 																	<div class="min_width-1/2@sm col-sm">
-																		<label class="tw-text-base tw-font-bold form-label mb-1" for="f-pser">服務機構</label>
-																		<input id="f-pser" class="form-control" type="text" placeholder="">
+																		<label class="tw-text-base tw-font-bold form-label mb-1" for="f-pser0">服務機構</label>
+																		<input id="f-pser0" class="form-control" type="text" placeholder="">
 																		<p class="text-primary tw-text-sm">驗證提示語</p>
 																	</div>
 																	<!-- /form item -->
 																	<!-- form item -->
 																	<div class="min_width-1/2@sm col-sm">
-																		<label class="tw-text-base tw-font-bold form-label mb-1" for="f-pdep">服務部門/系所</label>
-																		<input id="f-pdep" class="form-control" type="text" placeholder="">
+																		<label class="tw-text-base tw-font-bold form-label mb-1" for="f-pdep0">服務部門/系所</label>
+																		<input id="f-pdep0" class="form-control" type="text" placeholder="">
 																		<p class="text-primary tw-text-sm">驗證提示語</p>
 																	</div>
 																	<!-- /form item -->
 																	<!-- form item -->
 																	<div class="min_width-1/2@sm col-sm">
-																		<label class="tw-text-base tw-font-bold form-label mb-1" for="f-pjob">職稱</label>
-																		<input id="f-pjob" class="form-control" type="text" placeholder="">
+																		<label class="tw-text-base tw-font-bold form-label mb-1" for="f-pjob0">職稱</label>
+																		<input id="f-pjob0" class="form-control" type="text" placeholder="">
 																		<p class="text-primary tw-text-sm">驗證提示語</p>
 																	</div>
 																	<!-- /form item -->
 																	<!-- form item -->
 																	<div class="min_width-1/2@sm col-sm">
-																		<label id="f-pjob-per" class="tw-text-base tw-font-bold form-label mb-1">起迄年月</label>
+																		<label id="f-pjob-per0" class="tw-text-base tw-font-bold form-label mb-1">起迄年月</label>
 																		<div class="row g-2 align-items-center">
 																			<div class="col-auto">自</div>
-																			<div class="min_width-100 tw-w-[calc(100%/2-54px/2)] col-auto"><input class="form-control"
-																					type="text" placeholder="" aria-labelledby="f-pjob-per"></div>
+																			<div class="tw-w-[calc(100%/2-54px/2)] col-auto"><input class="form-control" type="text"
+																					placeholder="" aria-labelledby="f-pjob-per0"></div>
 																			<div class="col-auto">至</div>
-																			<div class="min_width-100 tw-w-[calc(100%/2-54px/2)] col-auto"><input class="form-control"
-																					type="text" placeholder="" aria-labelledby="f-pjob-per"></div>
+																			<div class="tw-w-[calc(100%/2-54px/2)] col-auto"><input class="form-control" type="text"
+																					placeholder="" aria-labelledby="f-pjob-per0"></div>
 																		</div>
 																		<p class="text-primary tw-text-sm">驗證提示語</p>
 																	</div>
@@ -631,19 +622,261 @@
 																</div>
 															</div>
 														</div>
+														<div class="alert py-0 pe-0 mb-0 tw-px-[0.2rem] col-12 d-none">
+															<div class="row gx-0 gy-2">
+																<div class="col">
+																	<div class="bg-light p-2">
+																		<div class="row g-3">
+																			<!-- form item -->
+																			<div class="min_width-1/2@sm col-sm">
+																				<label class="tw-text-base tw-font-bold form-label mb-1" for="f-pser1">服務機構</label>
+																				<input id="f-pser1" class="form-control" type="text" placeholder="">
+																				<p class="text-primary tw-text-sm">驗證提示語</p>
+																			</div>
+																			<!-- /form item -->
+																			<!-- form item -->
+																			<div class="min_width-1/2@sm col-sm">
+																				<label class="tw-text-base tw-font-bold form-label mb-1" for="f-pdep1">服務部門/系所</label>
+																				<input id="f-pdep1" class="form-control" type="text" placeholder="">
+																				<p class="text-primary tw-text-sm">驗證提示語</p>
+																			</div>
+																			<!-- /form item -->
+																			<!-- form item -->
+																			<div class="min_width-1/2@sm col-sm">
+																				<label class="tw-text-base tw-font-bold form-label mb-1" for="f-pjob1">職稱</label>
+																				<input id="f-pjob1" class="form-control" type="text" placeholder="">
+																				<p class="text-primary tw-text-sm">驗證提示語</p>
+																			</div>
+																			<!-- /form item -->
+																			<!-- form item -->
+																			<div class="min_width-1/2@sm col-sm">
+																				<label id="f-pjob-per1" class="tw-text-base tw-font-bold form-label mb-1">起迄年月</label>
+																				<div class="row g-2 align-items-center">
+																					<div class="col-auto">自</div>
+																					<div class="tw-w-[calc(100%/2-54px/2)] col-auto"><input class="form-control"
+																							type="text" placeholder="" aria-labelledby="f-pjob-per1"></div>
+																					<div class="col-auto">至</div>
+																					<div class="tw-w-[calc(100%/2-54px/2)] col-auto"><input class="form-control"
+																							type="text" placeholder="" aria-labelledby="f-pjob-per1"></div>
+																				</div>
+																				<p class="text-primary tw-text-sm">驗證提示語</p>
+																			</div>
+																			<!-- /form item -->
+																		</div>
+																	</div>
+																</div>
+																<div class="col-auto">
+																	<button type="button" class="min_width-35 btn-close opacity-75" title="刪除經歷"><span
+																			class="tw-sr-only">刪除經歷</span></button>
+																</div>
+															</div>
+														</div>
+														<div class="alert py-0 pe-0 mb-0 tw-px-[0.2rem] col-12 d-none">
+															<div class="row gx-0 gy-2">
+																<div class="col">
+																	<div class="bg-light p-2">
+																		<div class="row g-3">
+																			<!-- form item -->
+																			<div class="min_width-1/2@sm col-sm">
+																				<label class="tw-text-base tw-font-bold form-label mb-1" for="f-pser2">服務機構</label>
+																				<input id="f-pser2" class="form-control" type="text" placeholder="">
+																				<p class="text-primary tw-text-sm">驗證提示語</p>
+																			</div>
+																			<!-- /form item -->
+																			<!-- form item -->
+																			<div class="min_width-1/2@sm col-sm">
+																				<label class="tw-text-base tw-font-bold form-label mb-1" for="f-pdep2">服務部門/系所</label>
+																				<input id="f-pdep2" class="form-control" type="text" placeholder="">
+																				<p class="text-primary tw-text-sm">驗證提示語</p>
+																			</div>
+																			<!-- /form item -->
+																			<!-- form item -->
+																			<div class="min_width-1/2@sm col-sm">
+																				<label class="tw-text-base tw-font-bold form-label mb-1" for="f-pjob2">職稱</label>
+																				<input id="f-pjob2" class="form-control" type="text" placeholder="">
+																				<p class="text-primary tw-text-sm">驗證提示語</p>
+																			</div>
+																			<!-- /form item -->
+																			<!-- form item -->
+																			<div class="min_width-1/2@sm col-sm">
+																				<label id="f-pjob-per2" class="tw-text-base tw-font-bold form-label mb-1">起迄年月</label>
+																				<div class="row g-2 align-items-center">
+																					<div class="col-auto">自</div>
+																					<div class="tw-w-[calc(100%/2-54px/2)] col-auto"><input class="form-control"
+																							type="text" placeholder="" aria-labelledby="f-pjob-per2"></div>
+																					<div class="col-auto">至</div>
+																					<div class="tw-w-[calc(100%/2-54px/2)] col-auto"><input class="form-control"
+																							type="text" placeholder="" aria-labelledby="f-pjob-per2"></div>
+																				</div>
+																				<p class="text-primary tw-text-sm">驗證提示語</p>
+																			</div>
+																			<!-- /form item -->
+																		</div>
+																	</div>
+																</div>
+																<div class="col-auto">
+																	<button type="button" class="min_width-35 btn-close opacity-75" title="刪除經歷"><span
+																			class="tw-sr-only">刪除經歷</span></button>
+																</div>
+															</div>
+														</div>
+														<div class="alert py-0 pe-0 mb-0 tw-px-[0.2rem] col-12 d-none">
+															<div class="row gx-0 gy-2">
+																<div class="col">
+																	<div class="bg-light p-2">
+																		<div class="row g-3">
+																			<!-- form item -->
+																			<div class="min_width-1/2@sm col-sm">
+																				<label class="tw-text-base tw-font-bold form-label mb-1" for="f-pser3">服務機構</label>
+																				<input id="f-pser3" class="form-control" type="text" placeholder="">
+																				<p class="text-primary tw-text-sm">驗證提示語</p>
+																			</div>
+																			<!-- /form item -->
+																			<!-- form item -->
+																			<div class="min_width-1/2@sm col-sm">
+																				<label class="tw-text-base tw-font-bold form-label mb-1" for="f-pdep3">服務部門/系所</label>
+																				<input id="f-pdep3" class="form-control" type="text" placeholder="">
+																				<p class="text-primary tw-text-sm">驗證提示語</p>
+																			</div>
+																			<!-- /form item -->
+																			<!-- form item -->
+																			<div class="min_width-1/2@sm col-sm">
+																				<label class="tw-text-base tw-font-bold form-label mb-1" for="f-pjob3">職稱</label>
+																				<input id="f-pjob3" class="form-control" type="text" placeholder="">
+																				<p class="text-primary tw-text-sm">驗證提示語</p>
+																			</div>
+																			<!-- /form item -->
+																			<!-- form item -->
+																			<div class="min_width-1/2@sm col-sm">
+																				<label id="f-pjob-per3" class="tw-text-base tw-font-bold form-label mb-1">起迄年月</label>
+																				<div class="row g-2 align-items-center">
+																					<div class="col-auto">自</div>
+																					<div class="tw-w-[calc(100%/2-54px/2)] col-auto"><input class="form-control"
+																							type="text" placeholder="" aria-labelledby="f-pjob-per3"></div>
+																					<div class="col-auto">至</div>
+																					<div class="tw-w-[calc(100%/2-54px/2)] col-auto"><input class="form-control"
+																							type="text" placeholder="" aria-labelledby="f-pjob-per3"></div>
+																				</div>
+																				<p class="text-primary tw-text-sm">驗證提示語</p>
+																			</div>
+																			<!-- /form item -->
+																		</div>
+																	</div>
+																</div>
+																<div class="col-auto">
+																	<button type="button" class="min_width-35 btn-close opacity-75" title="刪除經歷"><span
+																			class="tw-sr-only">刪除經歷</span></button>
+																</div>
+															</div>
+														</div>
+														<div class="alert py-0 pe-0 mb-0 tw-px-[0.2rem] col-12 d-none">
+															<div class="row gx-0 gy-2">
+																<div class="col">
+																	<div class="bg-light p-2">
+																		<div class="row g-3">
+																			<!-- form item -->
+																			<div class="min_width-1/2@sm col-sm">
+																				<label class="tw-text-base tw-font-bold form-label mb-1" for="f-pser4">服務機構</label>
+																				<input id="f-pser4" class="form-control" type="text" placeholder="">
+																				<p class="text-primary tw-text-sm">驗證提示語</p>
+																			</div>
+																			<!-- /form item -->
+																			<!-- form item -->
+																			<div class="min_width-1/2@sm col-sm">
+																				<label class="tw-text-base tw-font-bold form-label mb-1" for="f-pdep4">服務部門/系所</label>
+																				<input id="f-pdep4" class="form-control" type="text" placeholder="">
+																				<p class="text-primary tw-text-sm">驗證提示語</p>
+																			</div>
+																			<!-- /form item -->
+																			<!-- form item -->
+																			<div class="min_width-1/2@sm col-sm">
+																				<label class="tw-text-base tw-font-bold form-label mb-1" for="f-pjob4">職稱</label>
+																				<input id="f-pjob4" class="form-control" type="text" placeholder="">
+																				<p class="text-primary tw-text-sm">驗證提示語</p>
+																			</div>
+																			<!-- /form item -->
+																			<!-- form item -->
+																			<div class="min_width-1/2@sm col-sm">
+																				<label id="f-pjob-per4" class="tw-text-base tw-font-bold form-label mb-1">起迄年月</label>
+																				<div class="row g-2 align-items-center">
+																					<div class="col-auto">自</div>
+																					<div class="tw-w-[calc(100%/2-54px/2)] col-auto"><input class="form-control"
+																							type="text" placeholder="" aria-labelledby="f-pjob-per4"></div>
+																					<div class="col-auto">至</div>
+																					<div class="tw-w-[calc(100%/2-54px/2)] col-auto"><input class="form-control"
+																							type="text" placeholder="" aria-labelledby="f-pjob-per4"></div>
+																				</div>
+																				<p class="text-primary tw-text-sm">驗證提示語</p>
+																			</div>
+																			<!-- /form item -->
+																		</div>
+																	</div>
+																</div>
+																<div class="col-auto">
+																	<button type="button" class="min_width-35 btn-close opacity-75" title="刪除經歷"><span
+																			class="tw-sr-only">刪除經歷</span></button>
+																</div>
+															</div>
+														</div>
+														<div class="alert py-0 pe-0 mb-0 tw-px-[0.2rem] col-12 d-none">
+															<div class="row gx-0 gy-2">
+																<div class="col">
+																	<div class="bg-light p-2">
+																		<div class="row g-3">
+																			<!-- form item -->
+																			<div class="min_width-1/2@sm col-sm">
+																				<label class="tw-text-base tw-font-bold form-label mb-1" for="f-pser5">服務機構</label>
+																				<input id="f-pser5" class="form-control" type="text" placeholder="">
+																				<p class="text-primary tw-text-sm">驗證提示語</p>
+																			</div>
+																			<!-- /form item -->
+																			<!-- form item -->
+																			<div class="min_width-1/2@sm col-sm">
+																				<label class="tw-text-base tw-font-bold form-label mb-1" for="f-pdep5">服務部門/系所</label>
+																				<input id="f-pdep5" class="form-control" type="text" placeholder="">
+																				<p class="text-primary tw-text-sm">驗證提示語</p>
+																			</div>
+																			<!-- /form item -->
+																			<!-- form item -->
+																			<div class="min_width-1/2@sm col-sm">
+																				<label class="tw-text-base tw-font-bold form-label mb-1" for="f-pjob5">職稱</label>
+																				<input id="f-pjob5" class="form-control" type="text" placeholder="">
+																				<p class="text-primary tw-text-sm">驗證提示語</p>
+																			</div>
+																			<!-- /form item -->
+																			<!-- form item -->
+																			<div class="min_width-1/2@sm col-sm">
+																				<label id="f-pjob-per5" class="tw-text-base tw-font-bold form-label mb-1">起迄年月</label>
+																				<div class="row g-2 align-items-center">
+																					<div class="col-auto">自</div>
+																					<div class="tw-w-[calc(100%/2-54px/2)] col-auto"><input class="form-control"
+																							type="text" placeholder="" aria-labelledby="f-pjob-per5"></div>
+																					<div class="col-auto">至</div>
+																					<div class="tw-w-[calc(100%/2-54px/2)] col-auto"><input class="form-control"
+																							type="text" placeholder="" aria-labelledby="f-pjob-per5"></div>
+																				</div>
+																				<p class="text-primary tw-text-sm">驗證提示語</p>
+																			</div>
+																			<!-- /form item -->
+																		</div>
+																	</div>
+																</div>
+																<div class="col-auto">
+																	<button type="button" class="min_width-35 btn-close opacity-75" title="刪除經歷"><span
+																			class="tw-sr-only">刪除經歷</span></button>
+																</div>
+															</div>
+														</div>
+														<div class="blockBtnAdd col-12"><button
+																class="btnAdd btn_grey-light btn btn-light btn-sm d-block col-12 col-md-auto mx-auto"
+																type="button" title="新增經歷"><i class="bi bi-plus-circle me-2"></i>新增經歷（最多新增5筆）</button></div>
 													</fieldset>
-													<!-- button -->
-													<div class="d-flex flex-nowrap">
-														<a class="btnStep btn_primary btn btn-primary col-12 col-md-6 col-xl-4 mx-auto mt-4"
-															data-tab="4">下一步驟</a>
-													</div>
-													<!-- /button -->
 												</div>
 												<!-- /content3 -->
 												<!-- content4 -->
-												<div class="tab-pane fade" id="tabpanel4" role="tabpanel" aria-labelledby="tab4">
-													<h2 class="tw-text-xl lg:tw-text-3xl"><i
-															class="text-primary me-1 bi bi-arrow-right-circle-fill"></i>研究方向關鍵字及研究計畫</h2>
+												<div class="step">
+													<h2 id="step3" class="tw-text-xl lg:tw-text-3xl my-4"><i
+															class="text-primary me-1 bi bi-arrow-right-circle-fill"></i>步驟3：研究方向關鍵字及研究計畫</h2>
 													<fieldset class="row g-3">
 														<legend class="tw-text-lg col-form-label fw-bold pb-0">▍研究方向關鍵字</legend>
 														<!-- form item -->
@@ -673,79 +906,98 @@
 														</div>
 														<!-- /form item -->
 														<!-- form item -->
-														<div class="min_width-1/2@sm col-sm">
+														<div class="min_width-1/2@sm col-sm-12">
 															<label class="tw-text-base tw-font-bold form-label mb-1" for="f-sum">研究摘要（500字以內）</label>
 															<textarea id="f-sum" class="form-control" rows="3"></textarea>
 															<p class="text-primary tw-text-sm">驗證提示語</p>
 														</div>
 														<!-- /form item -->
 													</fieldset>
-													<!-- button -->
-													<div class="d-flex flex-nowrap">
-														<a class="btnStep btn_primary btn btn-primary col-12 col-md-6 col-xl-4 mx-auto mt-4"
-															data-tab="5">下一步驟</a>
-													</div>
-													<!-- /button -->
 												</div>
 												<!-- /content4 -->
 												<!-- content5 -->
-												<div class="tab-pane fade" id="tabpanel5" role="tabpanel" aria-labelledby="tab5">
-													<h2 class="tw-text-xl lg:tw-text-3xl"><i
-															class="text-primary me-1 bi bi-arrow-right-circle-fill"></i>研究需求及上傳佐證資料</h2>
+												<div class="step">
+													<h2 id="step4" class="tw-text-xl lg:tw-text-3xl my-4"><i
+															class="text-primary me-1 bi bi-arrow-right-circle-fill"></i>步驟4：研究需求及上傳佐證資料</h2>
 													<fieldset class="row g-3">
 														<legend class="tw-text-lg col-form-label fw-bold pb-0">▍來館研究需求</legend>
 														<!-- form item -->
-														<div class="min_width-1/2@sm col-sm">
-															<div class="form-check">
-																<label class="form-check-label"><input class="form-check-input me-2" type="checkbox"
-																		value="">館藏閱覽</label>
+														<div class="min_width-1/2@sm col-sm-12">
+															<div class="row g-2">
+																<div class="col-auto">
+																	<div class="col-form-label">　</div>
+																	<label class="min_width-175 form-check-label py-2"><input class="form-check-input me-2"
+																			type="checkbox" value="">館藏閱覽</label>
+																</div>
+																<div class="col">
+																	<label class="tw-text-base tw-font-bold col-form-label" for="f-sou1">請列舉需要使用的資源</label>
+																	<input id="f-sou1" class="form-control" type="text" placeholder="">
+																</div>
 															</div>
-															<label class="tw-text-base tw-font-bold col-form-label" for="f-sou1">請列舉需要使用的資源</label>
-															<input id="f-sou1" class="form-control" type="text" placeholder="">
 															<p class="text-primary tw-text-sm">驗證提示語</p>
 														</div>
 														<!-- /form item -->
 														<!-- form item -->
-														<div class="min_width-1/2@sm col-sm">
-															<div class="form-check">
-																<label class="form-check-label"><input class="form-check-input me-2" type="checkbox"
-																		value="">參考諮詢</label>
+														<div class="min_width-1/2@sm col-sm-12">
+															<div class="row g-2">
+																<div class="col-auto">
+																	<div class="col-form-label">　</div>
+																	<label class="min_width-175 form-check-label py-2"><input class="form-check-input me-2"
+																			type="checkbox" value="">參考諮詢</label>
+																</div>
+																<div class="col">
+																	<label class="tw-text-base tw-font-bold col-form-label" for="f-sou2">請列舉需要使用的資源</label>
+																	<input id="f-sou2" class="form-control" type="text" placeholder="">
+																</div>
 															</div>
-															<label class="tw-text-base tw-font-bold col-form-label" for="f-sou2">請列舉需要使用的資源</label>
-															<input id="f-sou2" class="form-control" type="text" placeholder="">
 															<p class="text-primary tw-text-sm">驗證提示語</p>
 														</div>
 														<!-- /form item -->
 														<!-- form item -->
-														<div class="min_width-1/2@sm col-sm">
-															<div class="form-check">
-																<label class="form-check-label"><input class="form-check-input me-2" type="checkbox"
-																		value="">館際合作文獻傳遞</label>
+														<div class="min_width-1/2@sm col-sm-12">
+															<div class="row g-2">
+																<div class="col-auto">
+																	<div class="col-form-label">　</div>
+																	<label class="min_width-175 form-check-label py-2"><input class="form-check-input me-2"
+																			type="checkbox" value="">館際合作文獻傳遞</label>
+																</div>
+																<div class="col">
+																	<label class="tw-text-base tw-font-bold col-form-label" for="f-sou3">請列舉需要使用的資源</label>
+																	<input id="f-sou3" class="form-control" type="text" placeholder="">
+																</div>
 															</div>
-															<label class="tw-text-base tw-font-bold col-form-label" for="f-sou3">請列舉需要使用的資源</label>
-															<input id="f-sou3" class="form-control" type="text" placeholder="">
 															<p class="text-primary tw-text-sm">驗證提示語</p>
 														</div>
 														<!-- /form item -->
 														<!-- form item -->
-														<div class="min_width-1/2@sm col-sm">
-															<div class="form-check">
-																<label class="form-check-label"><input class="form-check-input me-2" type="checkbox"
-																		value="">使用資料庫</label>
+														<div class="min_width-1/2@sm col-sm-12">
+															<div class="row g-2">
+																<div class="col-auto">
+																	<div class="col-form-label">　</div>
+																	<label class="min_width-175 form-check-label py-2"><input class="form-check-input me-2"
+																			type="checkbox" value="">使用資料庫</label>
+																</div>
+																<div class="col">
+																	<label class="tw-text-base tw-font-bold col-form-label" for="f-sou4">請列舉需要使用的資源</label>
+																	<input id="f-sou4" class="form-control" type="text" placeholder="">
+																</div>
 															</div>
-															<label class="tw-text-base tw-font-bold col-form-label" for="f-sou4">請列舉需要使用的資源</label>
-															<input id="f-sou4" class="form-control" type="text" placeholder="">
 															<p class="text-primary tw-text-sm">驗證提示語</p>
 														</div>
 														<!-- /form item -->
 														<!-- form item -->
-														<div class="min_width-1/2@sm col-sm">
-															<div class="form-check">
-																<label class="form-check-label"><input class="form-check-input me-2" type="checkbox"
-																		value="">其他</label>
+														<div class="min_width-1/2@sm col-sm-12">
+															<div class="row g-2">
+																<div class="col-auto">
+																	<div class="col-form-label">　</div>
+																	<label class="min_width-175 form-check-label py-2"><input class="form-check-input me-2"
+																			type="checkbox" value="">其他</label>
+																</div>
+																<div class="col">
+																	<label class="tw-text-base tw-font-bold col-form-label" for="f-sou5">請列舉需要使用的資源</label>
+																	<input id="f-sou5" class="form-control" type="text" placeholder="">
+																</div>
 															</div>
-															<label class="tw-text-base tw-font-bold col-form-label" for="f-sou5">請列舉需要使用的資源</label>
-															<input id="f-sou5" class="form-control" type="text" placeholder="">
 															<p class="text-primary tw-text-sm">驗證提示語</p>
 														</div>
 														<!-- /form item -->
@@ -777,214 +1029,11 @@
 													<!-- button -->
 													<div class="d-flex flex-nowrap">
 														<a class="btnStep btn_primary btn btn-primary col-12 col-md-6 col-xl-4 mx-auto mt-4"
-															data-tab="6">下一步驟</a>
+															href="p4-1-1.html">確認送出</a>
 													</div>
 													<!-- /button -->
 												</div>
 												<!-- /content5 -->
-												<!-- content6 -->
-												<div class="tab-pane fade" id="tabpanel6" role="tabpanel" aria-labelledby="tab6">
-													<h2 class="tw-text-xl lg:tw-text-3xl"><i
-															class="text-primary me-1 bi bi-arrow-right-circle-fill"></i>申請表再次確認</h2>
-													<!-- border -->
-													<div class="border p-2 p-lg-4">
-														<h3 class="h4 fw-bold my-4">一、基本資料</h3>
-														<div class="row gx-3 gy-4">
-															<div class="col-md-6 col-lg-3">
-																<h3 class="tw-text-base fw-bold mb-1">證件號碼</h3>
-																<p class="value text-break m-0">A123456789</p>
-															</div>
-															<div class="col-md-6 col-lg-3">
-																<h3 class="tw-text-base fw-bold mb-1">填表日期</h3>
-																<p class="value text-break m-0">2022/5/5</p>
-															</div>
-															<div class="col-md-6 col-lg-3">
-																<h3 class="tw-text-base fw-bold mb-1">中文姓名</h3>
-																<p class="value text-break m-0">小呆瓜</p>
-															</div>
-															<div class="col-md-6 col-lg-3">
-																<h3 class="tw-text-base fw-bold mb-1">英文姓名</h3>
-																<p class="value text-break m-0">Pig</p>
-															</div>
-															<div class="col-md-6 col-lg-3">
-																<h3 class="tw-text-base fw-bold mb-1">國籍</h3>
-																<p class="value text-break m-0">台灣</p>
-															</div>
-															<div class="col-md-6 col-lg-3">
-																<h3 class="tw-text-base fw-bold mb-1">出生日期</h3>
-																<p class="value text-break m-0">1990/1/1</p>
-															</div>
-															<div class="col-md-6 col-lg-3">
-																<h3 class="tw-text-base fw-bold mb-1">聯絡地址</h3>
-																<p class="value text-break m-0">台北市希望路128號</p>
-															</div>
-															<div class="col-md-6 col-lg-3">
-																<h3 class="tw-text-base fw-bold mb-1">聯絡電話</h3>
-																<p class="value text-break m-0">22221111</p>
-															</div>
-															<div class="col-md-6 col-lg-3">
-																<h3 class="tw-text-base fw-bold mb-1">聯絡手機</h3>
-																<p class="value text-break m-0">09081234563</p>
-															</div>
-															<div class="col-md-6 col-lg-3">
-																<h3 class="tw-text-base fw-bold mb-1">聯絡手機</h3>
-																<p class="value text-break m-0">尚未輸入</p>
-															</div>
-															<div class="col-md-6 col-lg-3">
-																<h3 class="tw-text-base fw-bold mb-1">E-mail</h3>
-																<p class="value text-break m-0">pig@myhome.com</p>
-															</div>
-														</div>
-														<h3 class="h4 fw-bold my-4">二、最高學歷</h3>
-														<div class="row gx-3 gy-4">
-															<div class="col-md-6 col-lg-3">
-																<h3 class="tw-text-base fw-bold mb-1">學校名稱</h3>
-																<p class="value text-break m-0">希望大學</p>
-															</div>
-															<div class="col-md-6 col-lg-3">
-																<h3 class="tw-text-base fw-bold mb-1">國別</h3>
-																<p class="value text-break m-0">台灣</p>
-															</div>
-															<div class="col-md-6 col-lg-3">
-																<h3 class="tw-text-base fw-bold mb-1">主修學門系所</h3>
-																<p class="value text-break m-0">醫學系</p>
-															</div>
-															<div class="col-md-6 col-lg-3">
-																<h3 class="tw-text-base fw-bold mb-1">學位</h3>
-																<p class="value text-break m-0">學士</p>
-															</div>
-															<div class="col-md-6 col-lg-3">
-																<h3 class="tw-text-base fw-bold mb-1">起訖年月</h3>
-																<p class="value text-break m-0">自<span class="start px-1">2018/9</span>至<span
-																		class="end ps-1">2022/6</span></p>
-															</div>
-														</div>
-														<h3 class="h4 fw-bold my-4">三、現職或學術經歷</h3>
-														<p class="fw-bold mt-4 mb-0">-現職-</p>
-														<div class="bg-light p-2">
-															<div class="row g-2">
-																<div class="col-md-6 col-lg-3">
-																	<h3 class="tw-text-base fw-bold mb-1">服務機構</h3>
-																	<p class="value text-break m-0">飛資得</p>
-																</div>
-																<div class="col-md-6 col-lg-3">
-																	<h3 class="tw-text-base fw-bold mb-1">服務部門／系所</h3>
-																	<p class="value text-break m-0">業務部</p>
-																</div>
-																<div class="col-md-6 col-lg-3">
-																	<h3 class="tw-text-base fw-bold mb-1">職稱</h3>
-																	<p class="value text-break m-0">業務經理</p>
-																</div>
-																<div class="col-md-6 col-lg-3">
-																	<h3 class="tw-text-base fw-bold mb-1">起訖年月</h3>
-																	<p class="value text-break m-0">自<span class="start px-1">2018/9</span>至<span
-																			class="end ps-1">-</span></p>
-																</div>
-															</div>
-														</div>
-														<p class="fw-bold mt-4 mb-0">-經歷-</p>
-														<div class="bg-light p-2">
-															<div class="row g-2">
-																<div class="col-md-6 col-lg-3">
-																	<h3 class="tw-text-base fw-bold mb-1">服務機構</h3>
-																	<p class="value text-break m-0">飛資得</p>
-																</div>
-																<div class="col-md-6 col-lg-3">
-																	<h3 class="tw-text-base fw-bold mb-1">服務部門／系所</h3>
-																	<p class="value text-break m-0">業務部</p>
-																</div>
-																<div class="col-md-6 col-lg-3">
-																	<h3 class="tw-text-base fw-bold mb-1">職稱</h3>
-																	<p class="value text-break m-0">業務經理</p>
-																</div>
-																<div class="col-md-6 col-lg-3">
-																	<h3 class="tw-text-base fw-bold mb-1">起訖年月</h3>
-																	<p class="value text-break m-0">自<span class="start px-1">2017/1</span>至<span
-																			class="end ps-1">2018/5</span></p>
-																</div>
-															</div>
-														</div>
-														<h3 class="h4 fw-bold my-4">四、請填寫與研究方向有關之關鍵字</h3>
-														<div class="row row-cols-auto gx-4 gy-2">
-															<div class="col">
-																<p class="value text-break bg-light px-2 mb-0">春覺也的</p>
-															</div>
-															<div class="col">
-																<p class="value text-break bg-light px-2 mb-0">官也資</p>
-															</div>
-															<div class="col">
-																<p class="value text-break bg-light px-2 mb-0">然家好</p>
-															</div>
-															<div class="col">
-																<p class="value text-break bg-light px-2 mb-0">他其落小</p>
-															</div>
-														</div>
-														<h3 class="h4 fw-bold my-4">五、研究計畫</h3>
-														<div class="row g-2">
-															<div class="col-md-6">
-																<h3 class="tw-text-base fw-bold mb-1">研究主題</h3>
-																<p class="value text-break m-0">兩中苦頭師明連人縣在不運世</p>
-															</div>
-															<div class="col-md-6">
-																<h3 class="tw-text-base fw-bold mb-1">研究摘要</h3>
-																<p class="value text-break m-0">
-																	春覺也官也資然家好的他其落小；好基期會是使紙進別河以說上從，地土完向業政準味？體大地色客庭眼神長子們眾主見子場河國不。程裡成她青盡路有上家不狀子的法要告，球遊作學我，一養導行銷法甚性神在結；影臺的來有型新頭
-																</p>
-															</div>
-														</div>
-														<h3 class="h4 fw-bold my-4">六、來館研究需求</h3>
-														<div class="row g-2">
-															<div class="col-md-6">
-																<h3 class="tw-text-base fw-bold mb-1">館藏閱覽</h3>
-																<p class="value text-break m-0"><span>使用資源：</span>兩中苦頭師明連人縣在不運世</p>
-															</div>
-															<div class="col-md-6">
-																<h3 class="tw-text-base fw-bold mb-1">參考諮詢</h3>
-																<p class="value text-break m-0"><span>使用資源：</span>春覺也官也資然家好的他其落小</p>
-															</div>
-														</div>
-														<h3 class="h4 fw-bold my-4">七、上傳資料</h3>
-														<div class="row g-4">
-															<div class="col-md-4">
-																<h3 class="tw-text-base fw-bold mb-1">一年內脫帽半身照片（一吋）一張</h3>
-																<img class="max_width-250 w-100 mt-1" src="img/user.svg" alt="半身照片">
-																<p class="value text-break m-0" hidden>尚未上傳</p>
-															</div>
-															<div class="col-md-4">
-																<h3 class="tw-text-base fw-bold mb-1">學生證或職員證等佐證文件</h3>
-																<img class="max_width-400 w-100 mt-1" src="https://picsum.photos/id/237/1200/900" alt="佐證文件">
-																<p class="value text-break m-0" hidden>尚未上傳</p>
-															</div>
-															<div class="col-md-4">
-																<h3 class="tw-text-base fw-bold mb-1">簽名</h3>
-																<img class="max_width-200 w-100 mt-1" src="" alt="簽名" hidden>
-																<p class="value text-break m-0">尚未上傳</p>
-															</div>
-														</div>
-													</div>
-													<!-- /border -->
-													<!-- button -->
-													<div class="d-flex flex-nowrap">
-														<a class="btnStep btn_primary btn btn-primary col-12 col-md-6 col-xl-4 mx-auto mt-4"
-															data-tab="7">確認送出申請</a>
-													</div>
-													<!-- /button -->    
-												</div>
-												<!-- /content6 -->
-												<!-- content7 -->
-												<div class="tab-pane fade" id="tabpanel7" role="tabpanel" aria-labelledby="tab7">
-													<div class="text-center">
-														<h2 class="tw-text-xl lg:tw-text-3xl">您的會員申請已提交</h2>
-														<p>本館審核通過後發給閱覽證。</p>
-													</div>
-													<!-- button -->
-													<div class="d-flex flex-nowrap">
-														<a class="btnStep btn_primary btn btn-primary col-12 col-md-6 col-xl-4 mx-auto mt-4"
-															data-tab="2">返回修改</a>
-													</div>
-													<!-- /button -->
-												</div>
-												<!-- /content7 -->
 											</div>
 										</div>
 									</form>
