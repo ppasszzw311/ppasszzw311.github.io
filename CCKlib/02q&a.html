@@ -22,7 +22,7 @@
 		<link rel="stylesheet" href="css/style.min.css">
 	</head>
 
-	<body id="top" class="page editor tw-min-h-screen">
+	<body id="top" class="page q&aPage tw-min-h-screen">
 		<span class="tw-hidden">Some images has been designed using resources from <a href="https://unsplash.com/">Unsplash</a> &amp; <a href="https://pixabay.com/">Pixabay</a> &amp; <a href="https://www.freepik.com/">Freepik</a> and some icons from <a href="https://www.flaticon.com/">Flaticon</a></span>
 		<!-- header -->
 		<header class="sticky-top lg:tw-relative">
@@ -343,239 +343,179 @@
 		            <h2 class="border-bottom tw-text-base sm:tw-text-2xl tw-font-bold">
 		              <!-- flex -->
 		              <div class="row row-cols-auto g-4">
-		                <div class="tw-flex-1">標題名稱</div>
-		                <div><small><a class="text-decoration-none" href="/"><i class="tw-mr-1 fas fa-angle-left"></i>回上頁</a></small></div>
+		                <div class="tw-flex-1">常見問題</div>
 		              </div>
 		              <!-- /flex -->
 		            </h2>
 		            <!-- content -->
 		            <div id="content" class="py-2 py-md-3 tw-space-y-4 lg:tw-space-y-6">
 		              <form class="tw-space-y-4" onsubmit="return false;">
-		                <h3></h3>
-		                <div class="ckeditor" uk-margin>
-		                	<!-- listDot -->
-		                	<div class="listDot">
-		                		<ul>
-		                			<li>
-		                				L1
-		                				<ul>
-		                					<li>L2</li>
-		                					<li>
-		                						L2
-		                						<ul>
-		                							<li>L3</li>
-		                							<li>L3</li>
-		                						</ul>
-		                					</li>
-		                				</ul>
-		                			</li>
-		                			<li>L1</li>
-		                		</ul>
-		                	</div>
-		                	<!-- listDot -->
-		                	<!-- listNumber -->
-		                	<div class="listNumber">
-		                		<ol>
-		                			<li>
-		                				L1
-		                				<ol>
-		                					<li>L2</li>
-		                					<li>
-		                						L2
-		                						<ol>
-		                							<li>L3</li>
-		                							<li>L3</li>
-		                						</ol>
-		                					</li>
-		                				</ol>
-		                			</li>
-		                			<li>L1</li>
-		                		</ol>
-		                	</div>
-		                	<!-- listNumber -->
-		                	<!-- listDotWithNumber -->
-		                	<div class="listDotWithNumber">
-		                		<ul>
-		                			<li>
-		                				L1
-		                				<ol>
-		                					<li>L2</li>
-		                					<li>L2</li>
-		                				</ol>
-		                			</li>
-		                			<li>L1</li>
-		                		</ul>
-		                	</div>
-		                	<!-- listDotWithNumber -->
-		                	<!-- listNumberWithDot -->
-		                	<div class="listNumberWithDot">
-		                		<ol>
-		                			<li>
-		                				L1
-		                				<ul>
-		                					<li>L2</li>
-		                					<li>L2</li>
-		                				</ul>
-		                			</li>
-		                			<li>L1</li>
-		                		</ol>
-		                	</div>
-		                	<!-- listNumberWithDot -->
-		                
-		                	<div class="card card-body" style="background-color: #e2e8f0;">
-		                		<h3>Primary</h3>
-		                		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		                	</div>
-		                
-		                	<h3>標題文字-h3</h3>
-		                	<p class="h3">標題文字-h3</p>
-		                	<h4>標題文字-h4</h4>
-		                	<p class="h4">標題文字-h4</p>
-		                	<h5>標題文字-h5</h5>
-		                	<p class="h5">標題文字-h5</p>
-		                	<h6>標題文字-h6</h6>
-		                	<p class="h6">標題文字-h6</p>
-		                	<p><a href="#">http://sample.com.tw</a>，書孩個體苦做，行習高人可看舉在什但優！是馬此有組，樹親生信意美大過產立！來靜我故半演們種熱光……或該更。開經功家可了，命化臺到陸產文老如然節，身初把，步信女背切不張財前日指統假？所文影清是，方此小了合國子易連體德利會之的參，馬方不了機圖都至展有別開場來裡了覺對活的，時做建了力國廠委果分一備女進小功創有？那給國靜球學動他藝轉明、化漸飯不！
-		                	</p>
-		                
-		                	<div><i class="color_primary fas fa-arrow-circle-right tw-mr-1"></i><a href="#">連結圖示</a></div>
-		                	<div><i class="color_primary fas fa-cloud-download-alt tw-mr-1"></i><a href="#">檔案下載圖式</a></div>
-		                
-		                	<div class="block">
-		                		<div class="px-1 py-2 tw-text-black" style="background: #5b9bd5;">路線一：書孩個體苦做，行習高人可看舉在什但優是馬此有組</div>
-		                		<div class="px-1 py-2">書孩個體苦做，行習高人可看舉在什但優！是馬此有組，樹親生信意美大過產立！來靜我故半演們種熱光……或該更。開經功家可了，命化臺到陸產文老如然節，身初把，步信女背切不張財前日指統假？所文影清是，方此小了合國子易連體德利會之的參，馬方不了機圖都至展有別開場來裡了覺對活的，時做建了力國廠委果分一備女進小功創有？那給國靜球學動他藝轉明、化漸飯不</div>
-		                		<div class="px-1 py-2 tw-text-black" style="background: #70ad47;">路線二：書孩個體苦做，行習高人可看舉在什但優是馬此有組</div>
-		                		<div class="px-1 py-2">書孩個體苦做，行習高人可看舉在什但優！是馬此有組，樹親生信意美大過產立！來靜我故半演們種熱光……或該更。開經功家可了，命化臺到陸產文老如然節，身初把，步信女背切不張財前日指統假？所文影清是，方此小了合國子易連體德利會之的參，馬方不了機圖都至展有別開場來裡了覺對活的，時做建了力國廠委果分一備女進小功創有？那給國靜球學動他藝轉明、化漸飯不</div>
-		                		<div class="px-1 py-2 tw-text-black" style="background: #ed7d31;">路線三：書孩個體苦做，行習高人可看舉在什但優是馬此有組</div>
-		                		<div class="px-1 py-2">書孩個體苦做，行習高人可看舉在什但優！是馬此有組，樹親生信意美大過產立！來靜我故半演們種熱光……或該更。開經功家可了，命化臺到陸產文老如然節，身初把，步信女背切不張財前日指統假？所文影清是，方此小了合國子易連體德利會之的參，馬方不了機圖都至展有別開場來裡了覺對活的，時做建了力國廠委果分一備女進小功創有？那給國靜球學動他藝轉明、化漸飯不</div>
-		                	</div>
-		                
-		                	<table class="table_center" border="1" cellpadding="0" cellspacing="0" width="784">
-		                		<thead>
-		                			<tr>
-		                				<th>Hours</th>
-		                				<th>Monday</th>
-		                				<th>Tuesday</th>
-		                				<th>Wednesday</th>
-		                				<th>Thursday</th>
-		                				<th>Friday</th>
-		                			</tr>
-		                		</thead>
-		                		<tbody>
-		                			<tr>
-		                				<td>Morning 9:00-12:00
-		                				</td>
-		                				<td>X</td>
-		                				<td>X</td>
-		                				<td>X</td>
-		                				<td>X</td>
-		                				<td>X</td>
-		                			</tr>
-		                			<tr>
-		                				<td>Afternoon 1:30-4:30
-		                				</td>
-		                				<td>X</td>
-		                				<td>X</td>
-		                				<td>X</td>
-		                				<td>X</td>
-		                				<td>X</td>
-		                			</tr>
-		                		</tbody>
-		                	</table>
-		                
-		                	<table border="1" cellpadding="0" cellspacing="0" width="784">
-		                		<thead>
-		                			<tr>
-		                				<th>Hours</th>
-		                				<th>Monday</th>
-		                				<th>Tuesday</th>
-		                			</tr>
-		                		</thead>
-		                		<tbody>
-		                			<tr>
-		                				<td><span class="heading d-block uk-hidden@m">Heading1</span>Morning 9:00-12:00
-		                				</td>
-		                				<td><span class="heading d-block uk-hidden@m">Heading2</span>X</td>
-		                				<td><span class="heading d-block uk-hidden@m">Heading3</span>X</td>
-		                			</tr>
-		                			<tr>
-		                				<td><span class="heading d-block uk-hidden@m">Heading1</span>Afternoon 1:30-4:30
-		                				</td>
-		                				<td><span class="heading d-block uk-hidden@m">Heading2</span>X</td>
-		                				<td><span class="heading d-block uk-hidden@m">Heading3</span>X</td>
-		                			</tr>
-		                		</tbody>
-		                	</table>
-		                
-		                	<table border="1" width="50%">
-		                		<caption>Table-有外框無間距 width="50%，在手機版自動寬度100%"</caption>
-		                		<thead>
-		                			<tr>
-		                				<th style="color: red; font-weight: bolder; font-family: '細明體';">欄位1</th>
-		                				<th>欄位2</th>
-		                				<th>欄位3</th>
-		                			</tr>
-		                		</thead>
-		                		<tbody>
-		                			<tr>
-		                				<td style="color: blue; font-weight: bolder; font-family: '細明體'; font-size: 24px;">細明體</td>
-		                				<td>預設黑體文字</td>
-		                				<td>Table Footer</td>
-		                			</tr>
-		                			<tr>
-		                				<td>Table Data</td>
-		                				<td>Table Data</td>
-		                				<td><i class="color_primary fas fa-cloud-download-alt tw-mr-1"></i>診斷書補發申請書</td>
-		                			</tr>
-		                		</tbody>
-		                	</table>
-		                
-		                	<table border="0" cellspacing="20">
-		                		<caption>Table-無外框有間距20</caption>
-		                		<thead>
-		                			<tr>
-		                				<th>Table Heading</th>
-		                				<th>Table Heading</th>
-		                				<th>Table Heading</th>
-		                			</tr>
-		                		</thead>
-		                		<tbody>
-		                			<tr>
-		                				<td>Table Footer</td>
-		                				<td>Table Footer</td>
-		                				<td>Table Footer</td>
-		                			</tr>
-		                			<tr>
-		                				<td>Table Data</td>
-		                				<td>Table Data</td>
-		                				<td>Table Data</td>
-		                			</tr>
-		                		</tbody>
-		                	</table>
-		                
-		                	<table border="1" cellspacing="10" style="width: 80%;">
-		                		<caption>Table-有外框有間距10</caption>
-		                		<thead>
-		                			<tr>
-		                				<th>Table Heading</th>
-		                				<th>Table Heading</th>
-		                				<th>Table Heading</th>
-		                			</tr>
-		                		</thead>
-		                		<tbody>
-		                			<tr>
-		                				<td>Table Footer</td>
-		                				<td>Table Footer</td>
-		                				<td>Table Footer</td>
-		                			</tr>
-		                			<tr>
-		                				<td>Table Data</td>
-		                				<td>Table Data</td>
-		                				<td>Table Data</td>
-		                			</tr>
-		                		</tbody>
-		                	</table>
-		                </div>              </form>
+		                <!-- Tab Switcher -->
+		                <!-- Go to Tab with External Url Usage: http://url.sample/pagename.html#tabID -->
+		                <div class="tabSwitcher">
+		                  <ul class="nav nav-tabs m-0" role="tablist">
+		                    <li>
+		                      <button id="" class="nav-link p-2 px-lg-3 py-lg-2 tw-text-sm lg:tw-text-base active" data-bs-toggle="tab" data-bs-target="#tabpanel1" type="button" role="tab">全部</button>
+		                    </li>
+		                    <li>
+		                      <button id="" class="nav-link p-2 px-lg-3 py-lg-2 tw-text-sm lg:tw-text-base" data-bs-toggle="tab" data-bs-target="#tabpanel2" type="button" role="tab">Tab2</button>
+		                    </li>
+		                    <li>
+		                      <button id="" class="nav-link p-2 px-lg-3 py-lg-2 tw-text-sm lg:tw-text-base" data-bs-toggle="tab" data-bs-target="#tabpanel3" type="button" role="tab">Tab3</button>
+		                    </li>
+		                  </ul>
+		                  <!-- Tab Content -->
+		                  <div class="tab-content pt-3">
+		                    <div class="tab-pane p-0 fade tw-space-y-4 show active" id="tabpanel1" role="tabpanel">
+		                      <!-- searchBox -->
+		                      <div class="searchBox">
+		                        
+		                        <div class="row gx-2 gy-3">
+		                          <!-- input -->
+		                          <div class="col">
+		                            <div class="row g-2 align-items-center">
+		                              <div class="col">
+		                                <label class="w-100">
+		                                  <span class="visually-hidden">關鍵字搜尋</span>
+		                                  <input class="form-control" type="text" placeholder="輸入關鍵字搜尋" title="輸入關鍵字搜尋">
+		                                </label>
+		                              </div>
+		                            </div>
+		                          </div>
+		                          <!-- /input -->
+		                          <!-- searchButton -->
+		                          <div class="min_width-100! col-sm-auto"><a class="btn_primary min_width-150 w-100 btn btn-primary" href="#"><i class="me-1 fas fa-search"></i>搜尋</a>
+		                          </div>
+		                          <!-- /searchButton -->
+		                        </div>
+		                        <!-- /row -->
+		                      </div>
+		                      <!-- /container -->
+		                      <!-- searchBox -->
+		                      
+		                      <!-- pagination -->
+		                      <div class="pagination">
+		                      	<!-- row -->
+		                      	<div class="row row-cols-auto align-items-center justify-content-center g-2 w-100">
+		                      		<div>
+		                      			<button class="bg-transparent border-0 btn btn-light btn-sm" disabled type="button" title="上一頁">
+		                      				<i class="fas fa-angle-left fa-fw"></i>
+		                      				<span class="tw-sr-only">上一頁</span>
+		                      			</button>
+		                      			<a class="tw-text-gray-500 hover:tw-text-black bg-transparent border-0 btn btn-light btn-sm" href="#" title="上一頁" hidden>
+		                      				<i class="fas fa-angle-left fa-fw"></i>
+		                      				<span class="tw-sr-only">上一頁</span>
+		                      			</a>
+		                      		</div>
+		                      		<div>
+		                      			<div class="row row-cols-auto gx-0 gy-2 align-items-center">
+		                      				<label class="tw-flex tw-items-center">
+		                      					
+		                      					<select class="tw-w-auto form-select form-select-sm" title="頁碼選單" onChange="window.location.href=this.value">
+		                      						<option value="/0" selected>1</option>
+		                      						<option value="/1">2</option>
+		                      					</select>
+		                      					
+		                      				</label>
+		                      				<span class="tw-mx-1">&nbsp;/<span class="tw-px-1" title="總頁數">2</span>頁</span>
+		                      			</div>
+		                      		</div>
+		                      		<div>
+		                      			<a class="tw-text-gray-500 hover:tw-text-black bg-transparent border-0 btn btn-light btn-sm" href="#" title="下一頁">
+		                      				<span class="tw-sr-only">下一頁</span>
+		                      				<i class="fas fa-angle-right fa-fw"></i>
+		                      			</a>
+		                      			<button class="bg-transparent border-0 btn btn-light btn-sm" disabled href="#" title="下一頁" hidden>
+		                      				<span class="tw-sr-only">下一頁</span>
+		                      				<i class="fas fa-chevron-right fa-fw"></i>
+		                      			</button>
+		                      		</div>
+		                      	</div>
+		                      	<!-- /row -->
+		                      </div>
+		                      <!-- /pagination -->
+		                      <!-- accordion -->
+		                      <div class="accordion accordion-flush" id="accordion">
+		                        <div class="accordion-item">
+		                          <h2 class="accordion-header" id="accordion1">
+		                            <button class="tw-font-bold accordion-button align-items-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+		                              的山有位轉有最片當我市檢，的樣地，保西步起不能府定同在開便直陽到心望心元基推他沒一界來市起是位取之土兒助認有要人人起母。人正候鄉去候員來
+		                            </button>
+		                          </h2>
+		                          <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="accordion1" data-bs-parent="#accordion">
+		                            <div class="accordion-body">
+		                              成機期沒增、大濟冷好生，<strong class="color_primary">癌症</strong>山做府你說一如人可樣隊。交以要上做活哥是收這進難告水此而了路子這立室北什之：企長人：部的的臺研愛個意球在關在小卻，老陽重方自的送書眾不親論量，我油生，點的子聯
+		                            </div>
+		                          </div>
+		                        </div>
+		                        <div class="accordion-item">
+		                          <h2 class="accordion-header" id="accordion2">
+		                            <button class="tw-font-bold accordion-button align-items-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+		                              的山有位轉有最片當我市檢，的樣地，保西步起不能府定同在開便直陽到心望心元基推他沒一界來市起是位取之土兒助認有要人人起母。人正候鄉去候員來
+		                            </button>
+		                          </h2>
+		                          <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="accordion2" data-bs-parent="#accordion">
+		                            <div class="accordion-body">
+		                              成機期沒增、大濟冷好生，<strong class="color_primary">癌症</strong>山做府你說一如人可樣隊。交以要上做活哥是收這進難告水此而了路子這立室北什之：企長人：部的的臺研愛個意球在關在小卻，老陽重方自的送書眾不親論量，我油生，點的子聯
+		                            </div>
+		                          </div>
+		                        </div>
+		                      </div>
+		                      <!-- accordion -->
+		                      
+		                      <!-- pagination -->
+		                      <div class="pagination">
+		                      	<!-- row -->
+		                      	<div class="row row-cols-auto align-items-center justify-content-center g-2 w-100">
+		                      		<div>
+		                      			<button class="bg-transparent border-0 btn btn-light btn-sm" disabled type="button" title="上一頁">
+		                      				<i class="fas fa-angle-left fa-fw"></i>
+		                      				<span class="tw-sr-only">上一頁</span>
+		                      			</button>
+		                      			<a class="tw-text-gray-500 hover:tw-text-black bg-transparent border-0 btn btn-light btn-sm" href="#" title="上一頁" hidden>
+		                      				<i class="fas fa-angle-left fa-fw"></i>
+		                      				<span class="tw-sr-only">上一頁</span>
+		                      			</a>
+		                      		</div>
+		                      		<div>
+		                      			<div class="row row-cols-auto gx-0 gy-2 align-items-center">
+		                      				<label class="tw-flex tw-items-center">
+		                      					
+		                      					<select class="tw-w-auto form-select form-select-sm" title="頁碼選單" onChange="window.location.href=this.value">
+		                      						<option value="/0" selected>1</option>
+		                      						<option value="/1">2</option>
+		                      					</select>
+		                      					
+		                      				</label>
+		                      				<span class="tw-mx-1">&nbsp;/<span class="tw-px-1" title="總頁數">2</span>頁</span>
+		                      			</div>
+		                      		</div>
+		                      		<div>
+		                      			<a class="tw-text-gray-500 hover:tw-text-black bg-transparent border-0 btn btn-light btn-sm" href="#" title="下一頁">
+		                      				<span class="tw-sr-only">下一頁</span>
+		                      				<i class="fas fa-angle-right fa-fw"></i>
+		                      			</a>
+		                      			<button class="bg-transparent border-0 btn btn-light btn-sm" disabled href="#" title="下一頁" hidden>
+		                      				<span class="tw-sr-only">下一頁</span>
+		                      				<i class="fas fa-chevron-right fa-fw"></i>
+		                      			</button>
+		                      		</div>
+		                      	</div>
+		                      	<!-- /row -->
+		                      </div>
+		                      <!-- /pagination -->
+		                    </div>
+		                    <div class="tab-pane p-0 fade tw-space-y-4" id="tabpanel2" role="tabpanel">
+		                      content 2
+		                    </div>
+		                    <div class="tab-pane p-0 fade tw-space-y-4" id="tabpanel3" role="tabpanel">
+		                      content 3
+		                    </div>
+		                  </div>
+		                  <!-- /Tab Content -->
+		                </div>
+		                <!-- Tab Switcher -->
+		              </form>
 		            </div>
 		            <!-- /content -->
 		          </div>
