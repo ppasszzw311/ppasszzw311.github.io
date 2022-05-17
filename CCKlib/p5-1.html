@@ -432,56 +432,111 @@
 		                      <!-- /container -->
 		                      <!-- searchBox -->
 		                      
-		                      <!-- pagination -->
-		                      <div class="pagination">
-		                      	<!-- row -->
-		                      	<div class="row row-cols-auto align-items-center justify-content-center g-2 w-100">
-		                      		<div>
-		                      			<button class="bg-transparent border-0 btn btn-light btn-sm" disabled type="button" title="上一頁">
-		                      				<i class="fas fa-angle-left fa-fw"></i>
-		                      				<span class="tw-sr-only">上一頁</span>
-		                      			</button>
-		                      			<a class="tw-text-gray-500 hover:tw-text-black bg-transparent border-0 btn btn-light btn-sm" href="#" title="上一頁" hidden>
-		                      				<i class="fas fa-angle-left fa-fw"></i>
-		                      				<span class="tw-sr-only">上一頁</span>
-		                      			</a>
-		                      		</div>
-		                      		<div>
-		                      			<div class="row row-cols-auto gx-0 gy-2 align-items-center">
-		                      				<label class="tw-flex tw-items-center">
-		                      					
-		                      					<select class="tw-w-auto form-select form-select-sm" title="頁碼選單" onChange="window.location.href=this.value">
-		                      						<option value="/0" selected>1</option>
-		                      						<option value="/1">2</option>
-		                      					</select>
-		                      					
-		                      				</label>
-		                      				<span class="tw-mx-1">&nbsp;/<span class="tw-px-1" title="總頁數">2</span>頁</span>
-		                      			</div>
-		                      		</div>
-		                      		<div>
-		                      			<a class="tw-text-gray-500 hover:tw-text-black bg-transparent border-0 btn btn-light btn-sm" href="#" title="下一頁">
-		                      				<span class="tw-sr-only">下一頁</span>
-		                      				<i class="fas fa-angle-right fa-fw"></i>
-		                      			</a>
-		                      			<button class="bg-transparent border-0 btn btn-light btn-sm" disabled href="#" title="下一頁" hidden>
-		                      				<span class="tw-sr-only">下一頁</span>
-		                      				<i class="fas fa-chevron-right fa-fw"></i>
-		                      			</button>
-		                      		</div>
-		                      	</div>
-		                      	<!-- /row -->
-		                      </div>
-		                      <!-- /pagination -->
+													<!-- pagination -->
+													<div class="pagination">
+														<!-- row -->
+														<div class="row row-cols-auto gx-0 gy-2 justify-content-between align-items-center align-items-stretch w-100">
+															<!-- Sort Select -->
+															<div class="sortSelect">
+																<label>
+																	<span class="tw-sr-only">排序選單</span>
+																	<select class="form-select form-select-sm" title="排序選單" title="排序選單" onchange="window.location.href=this.value">
+																		<option value="" selected>題名(遞增)</option>
+																		<option value="/1">option</option>
+																	</select>
+																</label>
+															</div>
+															<!-- /Sort Select -->
+															<div class="tw-text-sm order-last">
+																<div class="row row-cols-auto g-1 justify-content-center align-items-center">
+																	<div>
+																		<a class="min_width-40 btn btn-light btn-sm tw-border-0 tw-bg-white" disabled href="#" title="首頁">
+																			<i class="fas fa-angle-double-left fa-fw"></i>
+																			<span class="tw-sr-only">首頁</span>
+																		</a>
+																		<a class="tw-text-gray-500 hover:tw-text-black min_width-40 btn btn-light btn-sm tw-border-0 tw-bg-white"
+																			href="#" title="首頁" hidden>
+																			<i class="fas fa-angle-double-left fa-fw"></i>
+																			<span class="tw-sr-only">首頁</span>
+																		</a>
+																		<a class="min_width-40 btn btn-light btn-sm tw-border-0 tw-bg-white" disabled href="#" title="上一頁">
+																			<i class="fas fa-angle-left fa-fw"></i>
+																			<span class="tw-sr-only">上一頁</span>
+																		</a>
+																		<a class="tw-text-gray-500 hover:tw-text-black min_width-40 btn btn-light btn-sm tw-border-0 tw-bg-white"
+																			href="#" title="上一頁" hidden>
+																			<i class="fas fa-angle-left fa-fw"></i>
+																			<span class="tw-sr-only">上一頁</span>
+																		</a>
+																	</div>
+																	<div>
+																		<div class="row row-cols-auto gx-0 gy-4 justify-content-sm-center align-items-center">
+																			<label class="tw-flex tw-items-center">
+													
+																				<select class="tw-w-auto form-select form-select-sm" title="頁碼選單"
+																					onChange="window.location.href=this.value">
+																					<option value="/0" selected>1</option>
+																					<option value="/1">2</option>
+																				</select>
+													
+																			</label>
+																			<span class="tw-mx-1">&nbsp;/<span class="tw-px-1" title="總頁數">2</span>頁</span>
+																		</div>
+																	</div>
+																	<div class="order-lg-last">
+																		<a class="tw-text-gray-500 hover:tw-text-black min_width-40 btn btn-light btn-sm tw-border-0 tw-bg-white"
+																			href="#" title="下一頁">
+																			<span class="tw-sr-only">下一頁</span>
+																			<i class="fas fa-angle-right fa-fw"></i>
+																		</a>
+																		<a class="min_width-40 btn btn-light btn-sm tw-border-0 tw-bg-white" disabled href="#" title="下一頁" hidden>
+																			<span class="tw-sr-only">下一頁</span>
+																			<i class="fas fa-chevron-right fa-fw"></i>
+																		</a>
+																		<a class="tw-text-gray-500 hover:tw-text-black min_width-40 btn btn-light btn-sm tw-border-0 tw-bg-white"
+																			href="#" title="末頁">
+																			<span class="tw-sr-only">末頁</span>
+																			<i class="fas fa-angle-double-right fa-fw"></i>
+																		</a>
+																		<a class="min_width-40 btn btn-light btn-sm tw-border-0 tw-bg-white" disabled href="#" title="末頁" hidden>
+																			<span class="tw-sr-only">末頁</span>
+																			<i class="fas fa-chevron-double-right fa-fw"></i>
+																		</a>
+																	</div>
+																</div>
+															</div>
+															<div class="select order-lg-last">
+																<div class="row row-cols-auto g-2 gx-4 justify-content-between align-items-center">
+																	<div class="numberPage">
+																		<div class="row row-cols-auto gx-0 gy-4 justify-content-sm-center align-items-center">
+																			<label class="tw-flex tw-items-center tw-space-x-1">
+																				<span class="tw-pr-1">每頁</span>
+																				<select class="tw-w-auto form-select form-select-sm" title="筆數選單"
+																					onChange="window.location.href=this.value">
+																					<option value="/0" selected>12</option>
+																					<option value="/1">24</option>
+																				</select>
+																				<span>筆</span>
+																			</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<!-- /row -->
+													</div>
+													<!-- /pagination -->
+
+
 		                      <table class="stackedTable tableStriped tableDivider tableSmall">
 		                      	<thead>
 		                      		<tr>
-		                      			<th class="uk-width-1-5@sm text-nowrap"></th>
-		                      			<th class="uk-width-3-5@sm text-nowrap">活動名稱</th>
+		                      			<th class="uk-width-1-5@sm text-nowrap text-center"></th>
+		                      			<th class="uk-width-3-5@sm text-nowrap text-center">活動名稱</th>
 		                      			<th class="uk-width-1-5@sm text-nowrap">活動日期</th>
 		                      		</tr>
 		                      	</thead>
-		                      	<tbody>
+		                      	<tbody class="align-center">
 															<tr>
 																<td>
 																	<!-- image -->
@@ -491,7 +546,7 @@
 																	</div>
 																	<!-- /image -->
 																</td>
-																<td><a class="color_primary!" href="p5-1-1.html">蔣經國先生主政時期（1972~1988）的外交經濟與內政發展 研討會</a>
+																<td><a class="uk-width-1-5@sm py-2" href="p5-1-1.html">蔣經國先生主政時期（1972~1988）的外交經濟與內政發展 研討會</a>
 																</td>
 																<td><time>2022-04-08</time></td>
 															</tr>
@@ -504,7 +559,7 @@
 																	</div>
 																	<!-- /image -->
 																</td>
-		                      			<td><a class="color_primary!" href="p5-1-2.html">「經國七海文化園區」暨「蔣經國總統圖書館」開幕典禮</a>
+		                      			<td><a class="uk-width-1-5@sm py-2" href="p5-1-2.html">經國七海文化園區暨「蔣經國總統圖書館」開幕典禮</a>
 		                      			</td>
 																<td><time>2022-01-22</time></td>
 		                      		</tr>
@@ -517,7 +572,7 @@
 																	</div>
 																	<!-- /image -->
 																</td>
-																<td><a class="color_primary!" href="p5-1-3.html">國圖致贈復刻善本經典予蔣經國國際學術交流基金會</a>
+																<td><a class="uk-width-1-5@sm py-2" href="p5-1-3.html">國圖致贈復刻善本經典予蔣經國國際學術交流基金會</a>
 																</td>
 																<td><time>2021-10-27</time></td>
 															</tr>
@@ -525,47 +580,100 @@
 		                      	</tbody>
 		                      </table>
 		                      
-		                      <!-- pagination -->
-		                      <div class="pagination">
-		                      	<!-- row -->
-		                      	<div class="row row-cols-auto align-items-center justify-content-center g-2 w-100">
-		                      		<div>
-		                      			<button class="bg-transparent border-0 btn btn-light btn-sm" disabled type="button" title="上一頁">
-		                      				<i class="fas fa-angle-left fa-fw"></i>
-		                      				<span class="tw-sr-only">上一頁</span>
-		                      			</button>
-		                      			<a class="tw-text-gray-500 hover:tw-text-black bg-transparent border-0 btn btn-light btn-sm" href="#" title="上一頁" hidden>
-		                      				<i class="fas fa-angle-left fa-fw"></i>
-		                      				<span class="tw-sr-only">上一頁</span>
-		                      			</a>
-		                      		</div>
-		                      		<div>
-		                      			<div class="row row-cols-auto gx-0 gy-2 align-items-center">
-		                      				<label class="tw-flex tw-items-center">
-		                      					
-		                      					<select class="tw-w-auto form-select form-select-sm" title="頁碼選單" onChange="window.location.href=this.value">
-		                      						<option value="/0" selected>1</option>
-		                      						<option value="/1">2</option>
-		                      					</select>
-		                      					
-		                      				</label>
-		                      				<span class="tw-mx-1">&nbsp;/<span class="tw-px-1" title="總頁數">2</span>頁</span>
-		                      			</div>
-		                      		</div>
-		                      		<div>
-		                      			<a class="tw-text-gray-500 hover:tw-text-black bg-transparent border-0 btn btn-light btn-sm" href="#" title="下一頁">
-		                      				<span class="tw-sr-only">下一頁</span>
-		                      				<i class="fas fa-angle-right fa-fw"></i>
-		                      			</a>
-		                      			<button class="bg-transparent border-0 btn btn-light btn-sm" disabled href="#" title="下一頁" hidden>
-		                      				<span class="tw-sr-only">下一頁</span>
-		                      				<i class="fas fa-chevron-right fa-fw"></i>
-		                      			</button>
-		                      		</div>
-		                      	</div>
-		                      	<!-- /row -->
-		                      </div>
-		                      <!-- /pagination -->
+													<!-- pagination -->
+													<div class="pagination">
+														<!-- row -->
+														<div class="row row-cols-auto gx-0 gy-2 justify-content-between align-items-center align-items-stretch w-100">
+															<!-- Sort Select -->
+															<div class="sortSelect">
+																<label>
+																	<span class="tw-sr-only">排序選單</span>
+																	<select class="form-select form-select-sm" title="排序選單" title="排序選單" onchange="window.location.href=this.value">
+																		<option value="" selected>題名(遞增)</option>
+																		<option value="/1">option</option>
+																	</select>
+																</label>
+															</div>
+															<!-- /Sort Select -->
+															<div class="tw-text-sm order-last">
+																<div class="row row-cols-auto g-1 justify-content-center align-items-center">
+																	<div>
+																		<a class="min_width-40 btn btn-light btn-sm tw-border-0 tw-bg-white" disabled href="#" title="首頁">
+																			<i class="fas fa-angle-double-left fa-fw"></i>
+																			<span class="tw-sr-only">首頁</span>
+																		</a>
+																		<a class="tw-text-gray-500 hover:tw-text-black min_width-40 btn btn-light btn-sm tw-border-0 tw-bg-white"
+																			href="#" title="首頁" hidden>
+																			<i class="fas fa-angle-double-left fa-fw"></i>
+																			<span class="tw-sr-only">首頁</span>
+																		</a>
+																		<a class="min_width-40 btn btn-light btn-sm tw-border-0 tw-bg-white" disabled href="#" title="上一頁">
+																			<i class="fas fa-angle-left fa-fw"></i>
+																			<span class="tw-sr-only">上一頁</span>
+																		</a>
+																		<a class="tw-text-gray-500 hover:tw-text-black min_width-40 btn btn-light btn-sm tw-border-0 tw-bg-white"
+																			href="#" title="上一頁" hidden>
+																			<i class="fas fa-angle-left fa-fw"></i>
+																			<span class="tw-sr-only">上一頁</span>
+																		</a>
+																	</div>
+																	<div>
+																		<div class="row row-cols-auto gx-0 gy-4 justify-content-sm-center align-items-center">
+																			<label class="tw-flex tw-items-center">
+													
+																				<select class="tw-w-auto form-select form-select-sm" title="頁碼選單"
+																					onChange="window.location.href=this.value">
+																					<option value="/0" selected>1</option>
+																					<option value="/1">2</option>
+																				</select>
+													
+																			</label>
+																			<span class="tw-mx-1">&nbsp;/<span class="tw-px-1" title="總頁數">2</span>頁</span>
+																		</div>
+																	</div>
+																	<div class="order-lg-last">
+																		<a class="tw-text-gray-500 hover:tw-text-black min_width-40 btn btn-light btn-sm tw-border-0 tw-bg-white"
+																			href="#" title="下一頁">
+																			<span class="tw-sr-only">下一頁</span>
+																			<i class="fas fa-angle-right fa-fw"></i>
+																		</a>
+																		<a class="min_width-40 btn btn-light btn-sm tw-border-0 tw-bg-white" disabled href="#" title="下一頁" hidden>
+																			<span class="tw-sr-only">下一頁</span>
+																			<i class="fas fa-chevron-right fa-fw"></i>
+																		</a>
+																		<a class="tw-text-gray-500 hover:tw-text-black min_width-40 btn btn-light btn-sm tw-border-0 tw-bg-white"
+																			href="#" title="末頁">
+																			<span class="tw-sr-only">末頁</span>
+																			<i class="fas fa-angle-double-right fa-fw"></i>
+																		</a>
+																		<a class="min_width-40 btn btn-light btn-sm tw-border-0 tw-bg-white" disabled href="#" title="末頁" hidden>
+																			<span class="tw-sr-only">末頁</span>
+																			<i class="fas fa-chevron-double-right fa-fw"></i>
+																		</a>
+																	</div>
+																</div>
+															</div>
+															<div class="select order-lg-last">
+																<div class="row row-cols-auto g-2 gx-4 justify-content-between align-items-center">
+																	<div class="numberPage">
+																		<div class="row row-cols-auto gx-0 gy-4 justify-content-sm-center align-items-center">
+																			<label class="tw-flex tw-items-center tw-space-x-1">
+																				<span class="tw-pr-1">每頁</span>
+																				<select class="tw-w-auto form-select form-select-sm" title="筆數選單"
+																					onChange="window.location.href=this.value">
+																					<option value="/0" selected>12</option>
+																					<option value="/1">24</option>
+																				</select>
+																				<span>筆</span>
+																			</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<!-- /row -->
+													</div>
+													<!-- /pagination -->
 		                    </div>
 		                    <div class="tab-pane p-0 fade tw-space-y-4" id="tabpanel2" role="tabpanel">
 		                      content 2
