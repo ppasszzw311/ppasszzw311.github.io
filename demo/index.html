@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>設備健康度樣板</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    
+    <style>
+    
+     
+ 
+        .b-skills
+        {
+            border-top: 1px solid #f9f9f9;
+            padding-top: 46px;
+            text-align: center;
+        }
+        
+        .b-skills:last-child { margin-bottom: -30px; }
+        
+        .b-skills h2 { margin-bottom: 50px; font-weight: 900; text-transform: uppercase;}
+        
+        .skill-item
+        {
+            position: relative;
+            max-width: 250px;
+            width: 100%;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        
+        .chart-container
+        {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-top: 100%;
+            margin-bottom: 27px;
+        }
+        
+        .skill-item .chart,
+        .skill-item .chart canvas
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+        }
+        
+        .skill-item .chart:before
+        {
+            content: "";
+            width: 0;
+            height: 100%;
+        }
+        
+        .skill-item .chart:before,
+        .skill-item .percent
+        {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        .skill-item .percent
+        {
+            position: relative;
+            line-height: 1;
+            font-size: 40px;
+            font-weight: 900;
+            z-index: 2;
+        }
+        
+        .skill-item  .percent:after
+        {
+            content: attr(data-after);
+            font-size: 20px;
+        }
+               
+               p{
+                   font-weight: 900;
+               }
+         
+            
+            </style>
+</head>
+<body>
+    <header>
+        <div class="d-flex row">
+            <p class="h3 text-center">
+                <SPan>MACHINE Real Time Chart</SPan><span class="h3 text-center"> Hisorical data Inoolrl</span>
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="time-zone">
+                    <p class="h5 text-center">
+                        Time
+                    </p>
+                    <div class="showtime text-center">
+
+                    </div>
+                </div>
+                <div class="select-methine text-center">
+                    <p>Select Mechine</p>
+                    <select name="mechine" id="meching">
+                        <option value="1" class="">請選擇機器</option>
+                        <option value="2">CH2</option>
+                        <option value="3">CH5</option>
+                        <option value="4">CH7</option>
+                        <option value="5">CH8</option>
+                        <option value="6">CH9</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 py-2">
+                        <a href="./machine.html" class="text-decoration-none text-reset">
+                            <div class="card" style="min-width: 300px; width: 18rem;">
+                                <div class="card-body">
+                                    <p class="h5 text-center">CH2</p>
+                                    <section id="s-team" class="section">
+                                    <div class="b-skills">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6 ">
+                                                    <div class="skill-item center-block">
+                                                        <div class="chart-container">
+                                                            <div class="chart " data-percent="98" data-bar-color="#a7d212">
+                                                                <span class="percent" data-after="%">98</span>
+                                                            </div>
+                                                        </div>
+                        
+                                                        <p class="fs-6">設備健康度</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 text-center">
+                                                    <i class="fa-solid fa-lightbulb"></i>&nbsp;
+                                                    <i class="fa-solid fa-triangle-exclamation"></i>&nbsp;
+                                                    <i class="fa-solid fa-stopwatch"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 py-2">
+                        <a href="./machine.html" class="text-decoration-none text-reset">
+                            <div class="card" style="min-width: 300px; width: 18rem;">
+                                <div class="card-body">
+                                    <p class="h5 text-center">CH5</p>
+                                    <section id="s-team" class="section">
+                                    <div class="b-skills">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                    <div class="skill-item center-block">
+                                                        <div class="chart-container">
+                                                            <div class="chart " data-percent="65" data-bar-color="#ff4241">
+                                                                <span class="percent" data-after="%">65</span>
+                                                            </div>
+                                                        </div>
+                        
+                                                        <p>設備健康度</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 text-center">
+                                                    <i class="fa-solid fa-lightbulb"></i>&nbsp;
+                                                    <i class="fa-solid fa-triangle-exclamation"></i>&nbsp;
+                                                    <i class="fa-solid fa-stopwatch"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                </div>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <div class="col-lg-4 col-sm-6 py-2">
+                        <a href="./machine.html" class="text-decoration-none text-reset">
+                            <div class="card" style="min-width: 300px; width: 18rem;">
+                                <div class="card-body">
+                                    <p class="h5 text-center">CH7</p>
+                                    <section id="s-team" class="section">
+                                    <div class="b-skills">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                    <div class="skill-item center-block">
+                                                        <div class="chart-container">
+                                                            <div class="chart " data-percent="75" data-bar-color="#edc214">
+                                                                <span class="percent" data-after="%">75</span>
+                                                            </div>
+                                                        </div>
+                        
+                                                        <p>設備健康度</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 text-center">
+                                                    <i class="fa-solid fa-lightbulb"></i>&nbsp;
+                                                    <i class="fa-solid fa-triangle-exclamation"></i>&nbsp;
+                                                    <i class="fa-solid fa-stopwatch"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 py-2">
+                        <a href="./machine.html" class="text-decoration-none text-reset">
+                            <div class="card" style="min-width: 300px; width: 18rem;">
+                                <div class="card-body">
+                                    <p class="h5 text-center">CH8</p>
+                                    <section id="s-team" class="section">
+                                    <div class="b-skills">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                    <div class="skill-item center-block">
+                                                        <div class="chart-container">
+                                                            <div class="chart " data-percent="88" data-bar-color="#23afe3">
+                                                                <span class="percent" data-after="%">88</span>
+                                                            </div>
+                                                        </div>
+                        
+                                                        <p>設備健康度</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 text-center">
+                                                    <i class="fa-solid fa-lightbulb"></i>&nbsp;
+                                                    <i class="fa-solid fa-triangle-exclamation"></i>&nbsp;
+                                                    <i class="fa-solid fa-stopwatch"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                </div>
+                            </div>
+                        </a>
+                        
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="./machine.html" class="text-decoration-none text-reset">
+                            <div class="card" style="min-width: 300px; width: 18rem;">
+                                <div class="card-body">
+                                    <p class="h5 text-center">CH9</p>
+                                    <section id="s-team" class="section">
+                                    <div class="b-skills">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                    <div class="skill-item center-block">
+                                                        <div class="chart-container">
+                                                            <div class="chart " data-percent="84" data-bar-color="#edc214">
+                                                                <span class="percent" data-after="%">84</span>
+                                                            </div>
+                                                        </div>
+                        
+                                                        <p>設備健康度</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 text-center">
+                                                    <i class="fa-solid fa-lightbulb"></i>&nbsp;
+                                                    <i class="fa-solid fa-triangle-exclamation"></i>&nbsp;
+                                                    <i class="fa-solid fa-stopwatch"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+ 
+              
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Launch demo modal
+                </button>
+
+                <div id="m"></div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <canvas id="myChart" width="800" height="600"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+
+    <!-- import bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+    <script src="/js/jquery.appear.min.js"></script>
+    <script src="/js/jquery.easypiechart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        'use strict';
+    
+    var $window = $(window);
+    
+    function run()
+    {
+        var fName = arguments[0],
+            aArgs = Array.prototype.slice.call(arguments, 1);
+        try {
+            fName.apply(window, aArgs);
+        } catch(err) {
+             
+        }
+    };
+     
+    /* chart
+    ================================================== */
+    function _chart ()
+    {
+        $('.b-skills').appear(function() {
+            setTimeout(function() {
+                $('.chart').easyPieChart({
+                    easing: 'easeOutElastic',
+                    delay: 3000,
+                    barColor: '#369670',
+                    trackColor: '#fff',
+                    scaleColor: false,
+                    lineWidth: 21,
+                    trackWidth: 21,
+                    size: 250,
+                    lineCap: 'round',
+                    onStep: function(from, to, percent) {
+                        this.el.children[0].innerHTML = Math.round(percent);
+                    }
+                });
+            }, 150);
+        });
+    };
+     
+    
+    $(document).ready(function() {
+      
+        run(_chart);
+      
+        
+    });
+    
+    
+        
+        </script>
+    
+</body>
+</html>
