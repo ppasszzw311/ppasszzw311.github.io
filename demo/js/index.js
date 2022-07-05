@@ -31,7 +31,7 @@ var myChart = new Chart(ctx, {
     type: 'line', //圖表類型
     data: {
       //標題
-      labels: ['Red', 'Blue', 'Yellow', 'Green','Purple','Purple','Purple','Purple', 'Purple', 'Orange'],
+      labels: ['2022/07/05 00:00', 'Blue', 'Yellow', 'Green','Purple','Purple','Purple','Purple', 'Purple', 'Orange'],
       datasets: [{
         label: '# test', //標籤
         data: [12, 19, 3, 5, 2, 3,57,7,75,55], //資料

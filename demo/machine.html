@@ -129,61 +129,61 @@
                             <div class="col-lg-4 col-sm-6 p-2">
                                 <label for="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;轉速:</label>
                                 <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    <input type="text">
+                                    <input type="number" class="text-align-right" value="608.829" disabled>
                                 </a>
                             </div>
                             <div class="col-lg-4 col-sm-6 p-2">
                                 <label for="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;扭矩:</label>
                                 <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    <input type="text">
+                                    <input type="number" value="120.259" disabled>
                                 </a>
                             </div>
                             <div class="col-lg-4 col-sm-6 p-2">
                                 <label for="">第二區溫度:</label>
                                 <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    <input type="text">
+                                    <input type="number" value="476.774" disabled>
                                 </a>
                             </div>
                             <div class="col-lg-4 col-sm-6 p-2">
                                 <label for="">第三區溫度:</label>
                                 <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    <input type="text">
+                                    <input type="number" value="472.514" disabled>
                                 </a>
                             </div>
                             <div class="col-lg-4 col-sm-6 p-2">
                                 <label for="">第四區溫度:</label>
                                 <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    <input type="text">
+                                    <input type="number" value="469.893" disabled>
                                 </a>
                             </div>
                             <div class="col-lg-4 col-sm-6 p-2">
                                 <label for="">第五區溫度:</label>
                                 <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    <input type="text">
+                                    <input type="number" value="476.447" disabled>
                                 </a>
                             </div>
                             <div class="col-lg-4 col-sm-6 p-2">
                                 <label for="">第六區溫度:</label>
                                 <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    <input type="text">
+                                    <input type="number" value="469.893" disabled>
                                 </a>
                             </div>
                             <div class="col-lg-4 col-sm-6 p-2">
                                 <label for="">第七區溫度:</label>
                                 <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    <input type="text">
+                                    <input type="number" value="476.119" disabled>
                                 </a>
                             </div>
                             <div class="col-lg-4 col-sm-6 p-2">
                                 <label for="">第八區溫度:</label>
                                 <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    <input type="text">
+                                    <input type="number" value="467.927" disabled>
                                 </a>
                             </div>
                             <div class="col-lg-4 col-sm-6 p-2">
                                 <label for="">第九區溫度:</label>
                                 <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    <input type="text">
+                                    <input type="number" value="477.757" disabled>
                                 </a>
                             </div>
                             
@@ -231,9 +231,9 @@
                             </div>
                             <div class="modal-body">
                                 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                                    <button type="button" class="btn btn-light">近一日</button>
-                                    <button type="button" class="btn btn-primary">近一周</button>
-                                    <button type="button" class="btn btn-light">近一月</button>
+                                    <button type="button" class="btn btn-light" id="day">近一日</button>
+                                    <button type="button" class="btn btn-primary" id="week">近一周</button>
+                                    <button type="button" class="btn btn-light" id="month">近一月</button>
                                 </div>
                                 <canvas id="myChart" width="800" height="600"></canvas>
                             </div>
