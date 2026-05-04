@@ -3,23 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>陳清瑜 (Pablo Chen) — 履歷 / Portfolio</title>
+  <title>陳清瑜 (Pablo Chen) — Full-Stack / Backend Engineer</title>
   <link rel="stylesheet" href="/assets/css/resume.css">
-  <meta name="description" content="陳清瑜 — 軟體/專案/作品集，履歷與聯絡資訊">
+  <meta name="description" content="陳清瑜的工程履歷：全端與後端工程實務、系統設計、資料流與專案作品。">
 </head>
 <body>
   <header class="site-header">
     <div class="container">
       <div class="hero">
-        <div class="avatar" aria-hidden="true"></div>
+        <div class="avatar" aria-hidden="true">PC</div>
         <div class="hero-text">
-          <h1>陳清瑜</h1>
-          <p class="muted">Pablo Chen — 軟體工程 / 專案設計 / 資料可視化</p>
+          <p class="eyebrow">Portfolio · Resume</p>
+          <h1>陳清瑜 Pablo Chen</h1>
+          <p class="lead">以 <strong>全端 / 後端工程</strong> 為核心，專注在資料流整合、系統可靠性與可維運性。</p>
           <nav class="nav">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#about">關於我</a>
+            <a href="#skills">技術能力</a>
+            <a href="#architecture">工程方法</a>
+            <a href="#projects">代表作品</a>
+            <a href="#next">下一步</a>
+            <a href="#contact">聯絡方式</a>
           </nav>
         </div>
       </div>
@@ -28,50 +31,90 @@
 
   <main class="container">
     <section id="about">
-      <h2>About</h2>
-      <p>我是陳清瑜 (Pablo)，有多年從事專案與前端 / 後端整合的經驗。這個頁面是我整理公開作品與履歷的入口，之後會把重要作品與說明陸續搬到這裡。</p>
+      <h2>關於我</h2>
+      <p>我目前的角色以後端與全端整合為主，實務上負責需求拆解、API 設計、資料模型規劃、前端串接，以及部署與監控流程。這個 repo 除了保留歷史作品，也會持續整理成可用於面試與技術溝通的工程檔案。</p>
     </section>
 
-    <section id="experience">
-      <h2>Experience</h2>
-      <ul class="timeline">
-        <li>
-          <strong>專案 / 公司名稱</strong> <span class="muted">2021 - 現在</span>
-          <p>負責系統整合、前端介面與後端資料處理，並協助部署與維運。</p>
-        </li>
-        <li>
-          <strong>過去專案 / 組織</strong> <span class="muted">2018 - 2021</span>
-          <p>參與多個資料視覺化與網站建置專案，包含 IoT 儀表板與報表系統。</p>
-        </li>
-      </ul>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="cards">
+    <section id="skills">
+      <h2>技術能力</h2>
+      <div class="grid two-cols">
         <article class="card">
-          <h3>機台即時看板 (Demo)</h3>
-          <p>基於 Chart.js 與 Bootstrap 的儀表板。原始檔案放在 <code>/demo/</code>，可做為即時資料視覺化示範。</p>
-          <p><a href="/demo/index.html">檢視 Demo</a></p>
+          <h3>Backend</h3>
+          <ul>
+            <li>RESTful API / CRUD / 權限驗證流程</li>
+            <li>資料庫 schema 設計、索引與查詢優化</li>
+            <li>排程任務與資料同步（batch / ETL）</li>
+            <li>錯誤追蹤、日誌規範與可觀測性基礎</li>
+          </ul>
         </article>
-
         <article class="card">
-          <h3>其他作品集</h3>
-          <p>過去的專案與設計稿分散在 <code>/otherproject/</code> 與 <code>/html/</code>，我可以協助整理代表性作品到這頁面。</p>
+          <h3>Full-Stack</h3>
+          <ul>
+            <li>前端介面整合與資料視覺化（Chart / Dashboard）</li>
+            <li>前後端資料契約管理（request / response schema）</li>
+            <li>部署流程與環境切分（dev / staging / production）</li>
+            <li>效能優化與使用者體驗改善</li>
+          </ul>
         </article>
       </div>
     </section>
 
+    <section id="architecture">
+      <h2>工程方法（我在專案中的價值）</h2>
+      <div class="grid three-cols">
+        <article class="card">
+          <h3>1. 問題定義</h3>
+          <p>先拆清楚商業需求、資料來源與邊界條件，再設計可驗證的任務分工與里程碑。</p>
+        </article>
+        <article class="card">
+          <h3>2. 系統設計</h3>
+          <p>透過 API 規格、資料模型與流程圖把工程風險前移，避免後期大幅返工。</p>
+        </article>
+        <article class="card">
+          <h3>3. 可維運性</h3>
+          <p>建立一致的錯誤處理、日誌與監控訊號，讓問題可被快速定位與修復。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>代表作品</h2>
+      <div class="grid two-cols">
+        <article class="card">
+          <h3>機台即時看板（Demo）</h3>
+          <p>以 Dashboard 呈現資料與狀態趨勢，展示前端可視化與資料解讀能力。</p>
+          <p class="meta">路徑：<code>/demo/</code></p>
+          <p><a href="/demo/index.html">開啟專案</a></p>
+        </article>
+
+        <article class="card">
+          <h3>多專案整合展示</h3>
+          <p>彙整歷史專案原型與正式頁面，逐步補上「目標、技術、職責、成果」四段式說明。</p>
+          <p class="meta">路徑：<code>/otherproject/</code>、<code>/html/</code></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="next">
+      <h2>建議再補強（可讓作品更像工程履歷）</h2>
+      <ol>
+        <li>每個代表專案增加 README：背景、技術棧、我的職責、挑戰與成果（數字化）。</li>
+        <li>提供 1~2 個 API 範例（request/response）與資料表設計片段。</li>
+        <li>加入部署與維運說明：例如 CI/CD、監控、回滾策略、故障處理流程。</li>
+        <li>放上系統架構圖（可用 draw.io），說明服務間互動與資料流向。</li>
+      </ol>
+    </section>
+
     <section id="contact">
-      <h2>Contact</h2>
-      <p>電子郵件: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-      <p>GitHub: <a href="https://github.com/ppasszzw311">ppasszzw311</a></p>
+      <h2>聯絡方式</h2>
+      <p>Email：<a href="mailto:your-email@example.com">your-email@example.com</a>（建議改成正式信箱）</p>
+      <p>GitHub：<a href="https://github.com/ppasszzw311">ppasszzw311</a></p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <small>© <span id="year"></span> 陳清瑜 — 建議將此專案設定為 GitHub Pages 的 Root (main branch) 以公開首頁。</small>
+      <small>© <span id="year"></span> Pablo Chen · Built for GitHub Pages</small>
     </div>
   </footer>
 

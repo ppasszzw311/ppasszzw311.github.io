@@ -1,33 +1,32 @@
----
-description: 總覽
----
+# Pablo Chen Portfolio (GitHub Pages)
 
-## 總覽
+這個 repo 目前作為我的個人作品入口，目標是以「全端 / 後端工程能力」為主軸，逐步把過去專案整理成能清楚呈現工程價值的技術履歷。
 
-本操作手冊主要針對使用我們的ProxyOne產品的管理者進行相關設定及管理的說明。頁面部分可能會因為不同客制化而有些部分不同，本手冊是依據產品最主要之功能及設定模組進行說明。
-
-各項功能實際操作可參閱以下各頁面說明其設定及操作方式。若參閱本操作手冊後仍有疑問請洽＿＿＿＿
-
-----
-
-快速預覽與部署
-
-- 在本地預覽：在專案根目錄執行一個簡單的靜態伺服器，例如使用 Python 3 的 http.server：
+## 快速預覽
 
 ```bash
-# 在 repo 根目錄執行，macOS / zsh
 python3 -m http.server 8000
-# 然後打開瀏覽器 http://localhost:8000/ 查看
 ```
 
-- 建議：將本 repo 的 `main` 分支設定為 GitHub Pages 的發佈來源 (Repository > Settings > Pages)，以便使用 `index.html` 作為網站首頁。
+開啟 `http://localhost:8000/`。
 
-----
+## 目前內容
 
-我已新增一個簡單的履歷首頁 `index.html` 及樣式 `assets/css/resume.css`，你可以把想要突出的作品（例如 `demo/` 或 `otherproject/` 中的代表專案）內容搬到 `index.html` 中或建立獨立頁面連結回來。
+- `index.html`：新版履歷首頁（工程定位、技能、方法、作品、補強建議）
+- `assets/css/resume.css`：首頁樣式
+- `demo/`：即時看板展示
+- `otherproject/`：歷史專案集合
 
-若要我幫你把特定作品的內容整理到這個首頁（例如挑選 3 個代表專案並補描述與截圖），告訴我你想展示的專案路徑與一段簡短說明，我會代為整理。
+## 建議後續補齊（讓 repo 更有說服力）
 
+1. **專案說明模板一致化**：每個代表專案至少有「背景 / 技術 / 職責 / 結果」四段。
+2. **Backend 實務證據**：補 API spec、DB schema、錯誤碼與資料流。
+3. **維運能力展示**：補 CI/CD、監控告警、故障處理與回滾策略。
+4. **可量化成果**：例如效能提升%、回應時間、故障率下降等指標。
+5. **聯絡資訊完整化**：更新 Email、LinkedIn、技術文章或演講連結。
 
+## GitHub Pages 建議設定
 
-
+- Branch：`main`
+- Folder：`/ (root)`
+- Homepage：`index.html`
