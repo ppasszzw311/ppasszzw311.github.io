@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>陳清瑜 (Pablo Chen) — 履歷 / Portfolio</title>
+  <link rel="stylesheet" href="/assets/css/resume.css">
+  <meta name="description" content="陳清瑜 — 軟體/專案/作品集，履歷與聯絡資訊">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="hero">
+        <div class="avatar" aria-hidden="true"></div>
+        <div class="hero-text">
+          <h1>陳清瑜</h1>
+          <p class="muted">Pablo Chen — 軟體工程 / 專案設計 / 資料可視化</p>
+          <nav class="nav">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About</h2>
+      <p>我是陳清瑜 (Pablo)，有多年從事專案與前端 / 後端整合的經驗。這個頁面是我整理公開作品與履歷的入口，之後會把重要作品與說明陸續搬到這裡。</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul class="timeline">
+        <li>
+          <strong>專案 / 公司名稱</strong> <span class="muted">2021 - 現在</span>
+          <p>負責系統整合、前端介面與後端資料處理，並協助部署與維運。</p>
+        </li>
+        <li>
+          <strong>過去專案 / 組織</strong> <span class="muted">2018 - 2021</span>
+          <p>參與多個資料視覺化與網站建置專案，包含 IoT 儀表板與報表系統。</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>機台即時看板 (Demo)</h3>
+          <p>基於 Chart.js 與 Bootstrap 的儀表板。原始檔案放在 <code>/demo/</code>，可做為即時資料視覺化示範。</p>
+          <p><a href="/demo/index.html">檢視 Demo</a></p>
+        </article>
+
+        <article class="card">
+          <h3>其他作品集</h3>
+          <p>過去的專案與設計稿分散在 <code>/otherproject/</code> 與 <code>/html/</code>，我可以協助整理代表性作品到這頁面。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>電子郵件: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/ppasszzw311">ppasszzw311</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> 陳清瑜 — 建議將此專案設定為 GitHub Pages 的 Root (main branch) 以公開首頁。</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
